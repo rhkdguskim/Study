@@ -1,2 +1,2 @@
-# testexam
-Improve my coding skills
+### 테스트 예제 입니다.
+코딩실력을 기르기위해서 만들어진 예제입니다.
