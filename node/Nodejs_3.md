@@ -113,3 +113,13 @@ export default checkOddorEven;
 ### 기타 추천 강의
 - 코딩앙마 https://www.youtube.com/@codingangma - 자바스크립트, 리엑트
 - Web Dev Simplified https://www.youtube.com/@WebDevSimplified - 자바스크립트, node express
+
+
+## 노드 내장 모듈 사용하기
+### os
+- 운영체제 정보를 가져 올 수 있습니다.
+- require('os')
+
+### path
+- 운영체제 별로 경로 구분자가 다르기때문에 필요하다.
+- 
