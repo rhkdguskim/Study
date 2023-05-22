@@ -590,3 +590,209 @@ router.put('/', CheckSrv, (req,res) => {
 
 module.exports = router;
 ```
+
+### 쿠키와 세션 이해하기
+- 로그인을 구현하려면 세션을 알고 있어야한다.
+- 쿠키를 서버에 전송한다.
+
+``` javascript
+const http = require('http');
+
+http.createSever((req, res) => {
+  console.log(req.url, req.headers.cookie);
+  res.writeHead(200, {'Set-Cokkie':'mycookie=test'});
+  red.end('Hello Cookie');
+})
+.listen(8083, () => {
+  console.log('8083번 포트에서 서버 대기중입니다.')
+})
+```
+- 첫번째 진입시 쿠키에 데이터가 없으므로 undefined 발생
+- 두번째 진입시 쿠키게 데이터가 있으므로 로그 찍힘.
+
+``` javascript
+const http = require('http');
+const fs = require('fs');
+const path = require('path');
+
+const parseCokkies = (cookie = '') => {
+  cookie
+  .split(';')
+  .map(v => v.split('='))
+  .reduce((acc, [k,v] => {
+    acc[k.trim()] = decodeURIComponent(v);
+    return acc;
+  }), {})
+}
+
+http.createServer(async (req, res) => {
+  const cookies = parseCookies(req.headers.cookie);
+
+  if(req.url.startsWith('/login')) {
+    const url = new URL(req.url, 'http://localhost:8084');
+    const name = url.searchParams.get('name');
+    const expires = new Date();
+
+    expires.setMinute(expires.getMinutes() + 5);
+
+    req.writeHead(302, {
+      Location:'/',
+      'Set-Cookie': `name=${endoeURIComponent(name)}; Expires=${expires.toGMTString()}; HttpOnly; Path=/`,
+    });
+    res.end();
+  } else if (cookies.name) {
+    res.writeHead(200, {'Content-Type': 'text/plain; charset=utf-8'})
+    res.end(`${cookies.name}님 안녕하세요.`)
+  } else {
+    try {
+      const data = await fs.readFile(path.join(__dirname, 'cookie2.html'));
+      res.writeHead(200, {'Content-Type':'text/html; charset=utf-8'});
+      res.end(data);
+    } catch (err) {
+      res.writeHead(500, {'Content-Type':'text/plain; charset=utf-8'})
+      res.send(err.message);
+    }
+  }
+})
+.listen(8084, () => {
+  console.log('8084번 포트에서 서버 대기중입니다.')
+})
+
+```
+- /login과 /로 분리함
+- parseCookie 함수는 쿠키 문자열을 쉽게 사용하기 위해 자바스크립트 객체 형식으로 바꾸는 함수
+- 민감한 개인정보를 쿠키에 넣어두는 것은 적절하지 못합니다.
+
+``` javascript
+const http = require('http');
+const fs = require('fs');
+const path = require('path');
+
+const parseCokkies = (cookie = '') => {
+  cookie
+  .split(';')
+  .map(v => v.split('='))
+  .reduce((acc, [k,v] => {
+    acc[k.trim()] = decodeURIComponent(v);
+    return acc;
+  }), {})
+}
+
+http.createServer(async (req, res) => {
+  const cookies = parseCookies(req.headers.cookie);
+
+  if(req.url.startsWith('/login')) {
+    const url = new URL(req.url, 'http://localhost:8084');
+    const name = url.searchParams.get('name');
+    const expires = new Date();
+    expires.setMinute(expires.getMinutes() + 5);
+    const uniqueInt = Date.now();
+    session[uniqueInt] = {
+      name,
+      expires,
+    }
+
+    req.writeHead(302, {
+      Location:'/',
+      'Set-Cookie': `session=${uniqueInt}; Expires=${expires.toGMTString()}; HttpOnly; Path=/`,
+    });
+    res.end();
+  } else if (cookies.session && session[cookies.session].expires > new Date()) {
+    res.writeHead(200, {'Content-Type': 'text/plain; charset=utf-8'})
+    res.end(`${session[cookies.session].name}님 안녕하세요.`)
+  } else {
+    try {
+      const data = await fs.readFile(path.join(__dirname, 'cookie2.html'));
+      res.writeHead(200, {'Content-Type':'text/html; charset=utf-8'});
+      res.end(data);
+    } catch (err) {
+      res.writeHead(500, {'Content-Type':'text/plain; charset=utf-8'})
+      res.send(err.message);
+    }
+  }
+})
+.listen(8084, () => {
+  console.log('8084번 포트에서 서버 대기중입니다.')
+})
+
+```
+- 서버에 사용자 정보를 저장하고 클라이언트와 세션 아이디로만 소통 합니다. 세션 아이디는 꼭 쿠키를 사용하여 주고 받지 않아도 됩니다.
+
+### https와 http2
+- https 모듈은 웹 서버에 SSL 암호화를 추가합니다. GET이나 POST 요청이 오가는 데이터를 암호화해서 중간에 다른사람이 요청을 가로채더라도 내용을 확인 할 수 없게 합니다. 요즘은 로그인이나 결제가 필요한 창에서 https 적용이 필수가 되는 추세입니다.
+- https모듈을 사용해야함. 하지만 https는 아무나 사용불가, 인증서는 인증기관에서 발급하거나 무료로 받을 수 있다.
+
+``` javascript
+const https = requre('https');
+const fs = require('fs');
+
+https.createServer({
+  cert: fs.readFileSync('도메인 인증서 경로'),
+  key: fs.readFileSync('도메인 비밀 키 경로'),
+  ca : [
+    fs.readFileSync('상위 인증서 경로'),
+    fs.readFileSync('상위 인증서 경로'),
+  ],
+}, (req, res) => {
+  res.writeHead(200, {'Content-Type':'text/html; charset=utf-8'});
+  res.write('<h1>Hello Node!</h1>')
+  res.write('<p>Hello Server!</p>')
+})
+.listen(443, () => {
+  console.log('443번 포트에서 서버 대기 중 입니다');
+})
+```
+
+``` javascript
+const http2 = requre('http2');
+const fs = require('fs');
+
+http2.createSecureServer({
+  cert: fs.readFileSync('도메인 인증서 경로'),
+  key: fs.readFileSync('도메인 비밀 키 경로'),
+  ca : [
+    fs.readFileSync('상위 인증서 경로'),
+    fs.readFileSync('상위 인증서 경로'),
+  ],
+}, (req, res) => {
+  res.writeHead(200, {'Content-Type':'text/html; charset=utf-8'});
+  res.write('<h1>Hello Node!</h1>')
+  res.write('<p>Hello Server!</p>')
+})
+.listen(443, () => {
+  console.log('443번 포트에서 서버 대기 중 입니다');
+})
+```
+- http 모듈과 거의 유사함. https 모듈을 http2로, createServer 메서드를 createSecure Server 메서드로 바꾸면 됨.
+
+### cluster
+- 클러스터 모듈은 기본적으로 싱글 프로세스로 동작하는 노드가 CPU 코어를 모두 사용 할 수 있게 해주는 모듈입니다.
+- 메모리를 공유하지 못하는 장점 -> 레디스 등의 서버를 도입하여 해결 할 수 있다.
+
+``` javascript
+const cluster = require('cluster');
+const http = require('http');
+const numCPUs = require('os').cpus().length;
+
+if(cluster.isMaster) {
+  console.log(`마스터 프로세스 아이디 : ${process.pid}`);
+  for(let i = 0; i < numCPUs; i++) {
+    cluster.fork();
+  }
+
+  cluster.on('exit', (worker, code, signal) => {
+    console.log(`${worker.process.pid} 번이 종료되었습니다.`)
+    console.log('code',code,'signal',signal);
+  })
+} else {
+  http.createSever((req, res) => {
+  res.writeHead(200, {'Content-Type':'text/html; charset=utf-8'});
+  res.write('<h1>Hello Node!</h1>')
+  res.end('<p>Hello Cluster!!</p>')
+}).listen(8086)
+
+  console.log(`${worker.process.pid} 번 워커 실행`)
+}
+```
+- worker_threads 예제와 모양이 비슷함, 다만 스레드가 있는게 아니라 프로세스입니다.
+- 클러스터 모듈로 클러스터링을 구현 할 수 있지만, 실무에서는 pm2등의 모듈로 cluster기능을 사용하곤 합니다.
