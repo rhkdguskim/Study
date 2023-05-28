@@ -1,7 +1,19 @@
-### 코딩 공부
+## 스터리 관련 자료 정리
 
-1. 알고리즘
+### Algorithm(./algorithm)
+ - 알고리즘 관련 내용정리
 
-2. 자료구조
+### chatgpt
+- chatgtp 관련 내용정리
 
-3. Nodejs, 자바스크립트
+### Node
+- Node 관련 내용정리
+
+### Redis
+- Redis 관련 내용정리
+
+### database
+- database 관련 내용정리
+
+### Etc
+- 기타 관련 내용정리
