@@ -12,8 +12,41 @@ def InsertSort(arr) :
         arr[j + 1] = key
 
     return arr
-        
-                
 
-InsertSort(arr)
+def InsertSort2(arr) :
+    n = len(arr)
+    for i in range (1, n):
+        for j in range(i, 0, -1):
+            if arr[j] < arr[j-1]: # 한칸씩 왼쪽으로 이동
+                arr[j], arr[j-1] = arr[j-1], arr[j]
+            else :
+                break
+            
+            
+def quick_sort(arr, start , end) :
+    if start >= end: # 원소가 1개인 경우 종료
+        return
+    pivot = start # pivot을 첫번째 원소로 설정
+    left = start +1
+    right = end
+    
+    while left <= right :
+        
+        while left <= end and arr[left] <= arr[pivot]: # 피벗보다 큰 데이터를 찾을때까지 반복
+            left += 1
+        
+        while right > start and arr[right] >= arr[pivot] : # 피벗보다 작은 데이터를 찾으면
+            right -= 1
+            
+        if left >= right : # 엇갈림
+            arr[right], arr[pivot] = arr[pivot], arr[right]
+        else :
+            arr[right] , arr[left] = arr[left], arr[right]
+            
+        quick_sort(arr, start, right -1)
+        quick_sort(arr, right + 1, end)
+        
+
+
+InsertSort2(arr)
 print(arr)
