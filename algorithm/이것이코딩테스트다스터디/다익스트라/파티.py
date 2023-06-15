@@ -28,8 +28,6 @@ for i in range(1, N+1):
     if(distance[i] != INF):
         student[i] += distance[i]
 
-dp = [[[] for _ in range(N + 1)] for _ in range(N + 1)]
-print(dp)
 for i in range(1, N+1):
     if(distance[i] != INF):
         distance = [INF] * (N+1)
