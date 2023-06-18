@@ -8,6 +8,23 @@ itemlist = []
 for _ in range(N):
     itemlist.append(list(map(int, input().split()))) # 물건의 무게, 물건의 가치
 
+bag = []
+def makelist(itemlist, idx):
+    totalweight = 0
+    totalvalue = 0
+    for data in bag:
+        totalweight += data[0]
+        if totalweight <= W:
+            totalvalue += data[1]
+        else:
+            return totalvalue
+    
+    itemlists = itemlist
+    for i in len(itemlists):
+        bag.append(itemlists.pop(i)) 
+        makelist(itemlists, i)
+        bag.pop()
+    
 
 valuelist = []
 def checkBagWeight(bag):
