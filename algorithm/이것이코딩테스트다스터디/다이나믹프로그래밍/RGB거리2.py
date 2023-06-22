@@ -12,24 +12,23 @@ for i in range(N):
     color['G'].append(j)
     color['B'].append(k)
     
-    
+dp = []
 def soulution(i, rgb):
     if i > N:
         return 0
     
     if i==N-1:
         return color[rgb][i]
-    result=0
+    
+    result = int(10e9)
+    housepaint = color[rgb][i]
     for char in RGB:
         if rgb not in char:
-            sol = soulution(i+1, char)
-            cost = sol + color[rgb][i]
-            print("sol", sol, 'color',color[rgb][i], rgb)
-            if cost > result:
+            cost = soulution(i+1, char) + housepaint
+            if result > cost:
                 result = cost
 
     return result
 
 for char in RGB:
-    print(char)
-    print(soulution(0,char))
+    dp.append(soulution(0,char))
