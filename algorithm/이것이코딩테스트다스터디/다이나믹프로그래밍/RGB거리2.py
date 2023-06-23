@@ -27,8 +27,12 @@ def soulution(i, rgb):
             cost = soulution(i+1, char) + housepaint
             if result > cost:
                 result = cost
+            else :
+                return int(10e9)
 
     return result
 
 for char in RGB:
     dp.append(soulution(0,char))
+    
+print(dp)
