@@ -11,6 +11,7 @@ for _ in range(N):
     s , t = map(int, sys.stdin.readline().split())
     educlass.append([s , t])
 
+educlass.sort()
 rooms = []
 start, end = educlass.pop()
 rooms.append(deque([[start, end]])) # 한개를 빼서 room을 만든다.
