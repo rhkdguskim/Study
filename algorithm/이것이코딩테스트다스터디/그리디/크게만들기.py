@@ -1,25 +1,22 @@
 # https://www.acmicpc.net/problem/2812
-N, K = map(int, input().split())
-number = str(input())
+# 맨앞에 숫자들이 작은숫자들이 있다면 이숫자들을 중에서 제일 작은값을 최대 K개 삭제한다.
+import sys
+N,K = map(int,sys.stdin.readline().split())
+nums = list(map(int,sys.stdin.readline().strip()))
 
-maxnumber = 0
-maxidx = 0
-for i in range(K):
-    num = int(number[i])
-    if num > maxnumber:
-        maxnumber = num
-        maxidx = i
+result = []
+delNum = K
 
-newnumber = number[maxidx:]
-print(maxidx)
-counter = N - maxidx+1
-print(counter)
-result = ''
-
-for i in range(len(newnumber)):
-    if len(newnumber)-1 > i and int(newnumber[i+1]) >= int(newnumber[i]) and counter > 0:
-        counter -= 1
-    else :
-        result += newnumber[i]
-        
-print(result)
+for i in range(N):
+    while delNum>0 and result:
+        if result[len(result)-1] < nums[i]:
+            result.pop()
+            delNum-=1
+        else:
+            break
+    result.append(nums[i])
+    
+for i in range(N-K):
+    print(result[i],end="")
+# 10 4
+# 4177252841
