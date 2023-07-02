@@ -10,8 +10,14 @@ for i in range(0, N+1):
 
 for i in range(N+1, K+1):
     if i % 2 == 0: # 짝수이면
-        dp[i] = min(dp[i//2], dp[i-1]+1, dp[i])
+        if i != K:
+            dp[i] = min(dp[i//2], dp[i-1]+1, dp[i+1]+1)
+        else:
+            dp[i] = min(dp[i//2], dp[i-1]+1)
     else : # 홀수이면
-        dp[i] = min(dp[i-1]+1, dp[i])
+        if i != K:
+            dp[i] = min(dp[i-1]+1, dp[i+1]+1, dp[i//2]+1)
+        else:
+            dp[i] = min(dp[i-1]+1, dp[i//2]+1)
 
 print(dp[K]) # 동생까지의 최단경로를 구한다.
