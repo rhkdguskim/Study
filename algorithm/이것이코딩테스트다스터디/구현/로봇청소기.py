@@ -1,8 +1,8 @@
 # https://www.acmicpc.net/problem/14503
 N, M = map(int, input().split())
 direction = [0, 1, 2, 3] # 북 동 남 서 현재 방향
-moveback = [[1,0], [0,-1], [-1,0], [0,1]]
-movefront = [[-1,0], [0,1], [1,0], [0,-1]]
+moveback = [[1,0], [0,-1], [-1,0], [0,1]] # 뒤로 이동
+movefront = [[-1,0], [0,1], [1,0], [0,-1]] # 앞으로 이동
 room = []
 robot = list()
 robotdirection = 0
