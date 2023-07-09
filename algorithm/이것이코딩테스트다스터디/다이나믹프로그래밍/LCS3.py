@@ -17,14 +17,20 @@ arr = ''
 count = 1
 maxdp = dp[length1][length2]
 print(maxdp)
-for i in range(length1, 0, -1):
-    for j in range(length2, 0, -1):
-        if dp[i][j] == maxdp and (dp[i][j] > dp[i-1][j] and dp[i][j] > dp[i][j-1]):
-            arr += str(str1[i-1])
-            maxdp -= 1
+i = length1
+j = length2
+while i >= 0 and j >= 0:
+    if dp[i-1][j] == dp[i][j]:
+        i -= 1
+    elif dp[i][j-1] == dp[i][j]:
+        j -= 1
+    else:
+        arr += str1[i-1]
+        j -= 1
+        i -= 1
 
-newarr = ''
+reversechar = ''
 for i in range(len(arr)-1, -1, -1):
-    newarr += arr[i]
+    reversechar += arr[i]
     
-print(newarr)
+print(reversechar)
