@@ -1,26 +1,20 @@
 # https://www.acmicpc.net/problem/2156
-import sys 
-sys.setrecursionlimit(10**6)
 n = int(input())
 item = []
 for _ in range(n):
     item.append(int(input()))
+if n > 2:
+    dp = [0 for _ in range(n+1)]
+    dp[0] = item[0]
+    dp[1] = item[0]+item[1]
+    dp[2] = max(dp[1], item[0]+item[2], item[1] + item[2])
 
-dptable = [0 for _ in range(sum(item)+1)]
-def dp(n, depth):
-    if depth == 3:
-        return item[n]
-    
-    if n == 0:
-        return 0
-    
-    if depth == 2:
-        dptable[n-1] = dp(n-1, 0)
-        result = dptable[n-1]
-    else:
-        dptable[n-1] = max(dp(n-1, depth+1) + item[n-1], dp(n-1, 0))
-        result = dptable[n-1]
-    
-    return result
+    for i in range(3, n):
+        dp[i] = max(dp[i-1], dp[i-2] + item[i], dp[i-3] + item[i] + item[i-1])
 
-print(dp(n,0))
+    print(dp[n-1])
+else :
+    if n == 1:
+        print(item[0])
+    if n == 2:
+        print(item[0]+item[1])
