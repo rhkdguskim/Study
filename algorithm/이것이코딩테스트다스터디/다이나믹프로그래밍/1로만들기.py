@@ -16,3 +16,4 @@ while(dp[i] != X):
     i += 1
     
 print(i)
+
