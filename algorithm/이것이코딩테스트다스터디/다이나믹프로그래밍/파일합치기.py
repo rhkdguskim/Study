@@ -15,5 +15,3 @@ for _ in range(T):
                     
 
     print(dp[0][K-1])
-    
-    
