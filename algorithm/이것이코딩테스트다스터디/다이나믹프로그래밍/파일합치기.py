@@ -1,20 +1,19 @@
 #https://www.acmicpc.net/problem/11066
-def filesum(arr, dp, depth):
-    newarr = arr[:]
-    if 2 >= len(newarr):
-        dp[depth] = sum(newarr)
-        return dp[depth]
-    
-    dp[depth] = min(filesum(newarr[1:], dp,depth+1) + newarr[0], filesum(newarr[:len(newarr)-1], dp,depth+1)+ newarr[-1])
-    return dp[depth]
-
 T = int(input())
-
 for _ in range(T):
     K = int(input())
     arr = list(map(int, input().split()))
-    dp = [0 for _ in range(K)]
-    print(dp)
-    filesum(arr, dp, 0)
-    print(dp)
+    dp = [[0 for _ in range(K)] for _ in range(K)]
+    for j in range(1, K):
+        for i in range(j-1, -1 , -1):
+            minvalue = int(10e9)
+            for k in range(j-i):
+                minvalue = min(minvalue, dp[i][i+k] + dp[i+k+1][j])
+            
+            dp[i][j] = minvalue + sum(arr[i:j+1])
+            
+                    
 
+    print(dp[0][K-1])
+    
+    
