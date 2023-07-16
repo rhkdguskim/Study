@@ -3,29 +3,29 @@ from bisect import bisect_left
 N = int(input())
 arr = list(map(int, input().split()))
 
-leftdp = [1 for _ in range(N+1)]
-rightdp = [1 for _ in range(N+1)]
-temp = [arr[0]]
-
+maxvalue = 0
 for i in range(N):
-    if arr[i] > temp[-1]:
-        temp.append(arr[i])
-        leftdp[i] = len(temp)
-    else :
-        idx = bisect_left(temp, arr[i])
-        temp[idx] = arr[i]
-        leftdp[i] = idx + 1
+    leftarr = arr[:i+1]
+    rightarr = arr[i:]
+    
+    
+    temp = [leftarr[0]]
+    for j in range(len(leftarr)):
+        if leftarr[j] > temp[-1]:
+            temp.append(leftarr[j])
+        else:
+            idx = bisect_left(temp, leftarr[j])
+            temp[idx] = leftarr[j]
+            
+    rightarr.reverse()
+    temp2 = [rightarr[0]]
+    for j in range(len(rightarr)):
+        if rightarr[j] > temp2[-1]:
+            temp2.append(rightarr[j])
+        else:
+            idx = bisect_left(temp2, rightarr[j])
+            temp2[idx] = rightarr[j]
+            
+    maxvalue = max(maxvalue, len(temp)+len(temp2) -1)
 
-arr.reverse()
-temp = [arr[0]]
-for i in range(N):
-    if arr[i] > temp[-1]:
-        temp.append(arr[i])
-        rightdp[i] = len(temp)
-    else :
-        idx = bisect_left(temp, arr[i])
-        temp[idx] = arr[i]
-        rightdp[i] = idx + 1
-
-for i in range(len(leftdp)):
-    print(leftdp[i]+rightdp[i])
+print(maxvalue)
