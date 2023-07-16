@@ -2,7 +2,7 @@ class Node(object):
     def __init__(self, key, data=None):
         self.key = key
         self.data = data
-        self.children = {}
+        self.children = {} # Dictionary 자료구조
         
 class Trie:
     # 초기화 해드를 빈 노드로 설정
@@ -25,7 +25,22 @@ class Trie:
         
         # 문자열을 끝까지 탐색했다면 마지막 노드에 data추가
         current_node.data = string
+        
     
+    # Trie에서 string이 있는지 찾는 함수
+    def search_prefix(self, string):
+        # head노드부터 시작
+        current_node = self.head
+        
+        #문자열의 문자를 하나씩 확인
+        for char in string:
+            current_node = current_node.children[char]
+        
+        if current_node.children:
+            return False
+        else:
+            return True
+        
     # Trie에서 string이 있는지 찾는 함수
     def search(self, string):
         # head노드부터 시작
