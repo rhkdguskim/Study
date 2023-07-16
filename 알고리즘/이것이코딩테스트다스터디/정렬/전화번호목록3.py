@@ -28,7 +28,7 @@ class Trie:
         current_node.data = string
         
     
-    # Trie에서 string이 있는지 찾는 함수
+    # Trie에서 접두사가있는지 찾는 함수
     def search_prefix(self, string):
         # head노드부터 시작
         current_node = self.head
@@ -37,6 +37,7 @@ class Trie:
         for char in string:
             current_node = current_node.children[char]
         
+        # 문자열이 탐색이 끝나면 children이 있는지 확인
         if current_node.children:
             return False
         else:
