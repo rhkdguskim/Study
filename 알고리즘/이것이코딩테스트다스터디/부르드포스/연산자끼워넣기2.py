@@ -10,40 +10,42 @@ divop = list('//' for _ in range(oplen[3]))
 
 maxvalue = int(-10e9)
 minvalue = int(10e9)
+counter = 0
 def dfs(depth, result):
     global maxvalue
     global minvalue
+    global counter
     if len(sumop):
         sumop.pop()
-        result += numlist[depth]
-        dfs(depth+1, result)
+        dfs(depth+1, result + numlist[depth])
         sumop.append('+')
         
     if len(subop):
         subop.pop()
-        result -= numlist[depth]
-        dfs(depth+1, result)
+        dfs(depth+1, result - numlist[depth])
         subop.append('-')
         
     if len(mulop):
         mulop.pop()
-        result *= numlist[depth]
-        dfs(depth+1, result)
+        dfs(depth+1, result * numlist[depth])
         mulop.append('*')
         
     if len(divop):
         divop.pop()
-        result //= numlist[depth]
-        dfs(depth+1, result)
+        if result < 0:
+            temp = (-result) // numlist[depth]
+            dfs(depth+1, -temp)
+        else:
+            dfs(depth+1, result // numlist[depth])
         divop.append('//')
     
-    if depth == N-1:
+    if depth == N:
+        counter+=1
         maxvalue = max(maxvalue, result)
         minvalue = min(minvalue, result)
         return
     
 
 dfs(1,numlist[0])
-
 print(maxvalue)
 print(minvalue)
