@@ -4,8 +4,6 @@ import math
 input = sys.stdin.readline
 
 # 기준은 연료통으로
-
-
 def calc(c1, c2):
     return (c1[0] - c2[0]) ** 2 + (c1[1] - c2[1]) ** 2
 

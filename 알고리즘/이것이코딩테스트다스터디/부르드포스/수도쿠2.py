@@ -34,19 +34,19 @@ def is_vailed(col, row , num):
     return True
 
 def sudoku(table):
-    if not get_vailed(table):
+    if not get_vailed(table): # 모든 스도쿠가 꽉 차면
         return True
     
     col, row = get_vailed(table)
     
     for num in range(1,10):
         if is_vailed(col,row, num):
-            table[col][row] = num
+            table[col][row] = num # 숫자를 넣어본다.
             
             if sudoku(table):
                 return True
 
-            table[col][row] = 0
+            table[col][row] = 0 # 넣은 숫자를 뺀다.
 
 
                 
