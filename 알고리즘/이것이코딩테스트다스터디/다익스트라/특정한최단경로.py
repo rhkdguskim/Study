@@ -1,6 +1,6 @@
 # https://www.acmicpc.net/problem/1504
-# 1) 1-> V1에서 v2최소거리 -> 나머지노드
-# 2) 1-> v2에서 v1최소거리 -> 나머지노드
+# 1) 1-> V1 -> V2 -> 노드 N
+# 2) 1-> V2 -> V1 -> 노드 N
 import heapq
 INF = int(10e9)
 N, M = map(int, input().split()) # N 정점의개수, M 간선의 개수
@@ -13,36 +13,29 @@ for _ in range(M):
     
 v1, v2 = map(int, input().split())
 
-distance = [INF] * (N+1)
-distance2 = [INF] * (N+1)
-distance3 = [INF] * (N+1)
-def dijkstra(start, distance):
+
+def dijkstra(start, end):
+    distance = [INF] * (N+1)
     queue = []
     distance[start] = 0
     heapq.heappush(queue, [distance[start], start])
     
     while queue:
         dis, now  = heapq.heappop(queue)
-        if(distance[now] < dis):
+        if dis > distance[now]: # 방문하고자하는 거리가 이미 최소값인 경우 방문하지 않는다.
             continue
         for i in graph[now]:
             cost = distance[now] + i[1]
-            if distance[i[0]] > cost:
+            if distance[i[0]] > cost: # 자기자신의 가중치를 더하고 방문했을때 이미 최소값인경우 또 한 방문하지 않는다.
                 distance[i[0]] = cost
                 heapq.heappush(queue, [distance[i[0]], i[0]])
+                
+    return distance[end]
 
+path1 = dijkstra(1, v1) + dijkstra(v1, v2) + dijkstra(v2, N)
+path2 = dijkstra(1, v2) + dijkstra(v2, v1) + dijkstra(v1, N)
 
-dijkstra(v1, distance) # V1에서 나머지노드까지 최소거리
-dijkstra(v2, distance2) # v2에서 나머지노드까지 최소거리
-dijkstra(1, distance3) # 1에서 나머지노드까지 최소거리
-
-minvalue = INF
-
-for i in range(N):
-    if i != 1:
-        minvalue = min(minvalue, distance3[v1] + distance[v2] + distance2[i], distance3[v1] + distance2[v2] + distance[i])
-    
-if minvalue == INF:
+if path1 >= INF and path2 >= INF: # 방문 할 수 없는경우
     print(-1)
 else:
-    print(minvalue)
+    print(min(path1, path2))
