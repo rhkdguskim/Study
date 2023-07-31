@@ -57,9 +57,9 @@ def union(v1,v2, parent):
     b = getParent(v2, parent)
     
     if a > b: # 더 작은 노드를 parent값을 선정한다.
-        parent[v1] = b
+        parent[a] = b
     else:
-        parent[v2] = a
+        parent[b] = a
         
 groupList = []
 visited = [[False for _ in range(M)] for _ in range(N)]
