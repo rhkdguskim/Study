@@ -1,4 +1,6 @@
 #https://www.acmicpc.net/problem/11437
+import sys
+sys.setrecursionlimit(int(1e5))
 N = int(input()) # 노드의 개수
 graph = [[] for _ in range(N+1)]
 
@@ -9,36 +11,35 @@ for _ in range(N-1):
     
 M = int(input()) # 쌍의 개수
 
-#print(graph)
-nodepair = []
-for _ in range(M):
-    a, b = map(int, input().split())
-    nodepair.append([a,b])
-    
+d = [0 for _ in range(N+1)]
+c = [False for _ in range(N+1)]
+parent = [0 for _ in range(N+1)]
 
-def dfs(node, v1, v2, rootnode):
-    global v1found
-    global v2found
-    global init
-    # 재귀 종료 조건 방문한 노드가 v1 이거나 v2일경우
-    if node == v1:
-        v1found = True
+def dfs(rootnode, depth):
+    d[rootnode] = depth
+    c[rootnode] = True
+    for childnode in graph[rootnode]:
+        if not c[childnode]:
+            parent[childnode] = rootnode
+            dfs(childnode, depth+1)
+            
+            
+def lca(a,b):
+    # 노드의 깊이를 서로 맞춘다.
+    while d[a] != d[b]: # a가 b보다 깊이가 큰경우
+        if d[a] > d[b]:
+            a = parent[a] # a가 거슬러 올라간다.
+        else:
+            b = parent[b] # b가 거슬로 올라간다.
+            
+    while a != b:
+        a = parent[a]
+        b = parent[b]
         
-    if node == v2:
-        v2found = True
-    
-    for newnode in graph[node]:
-        if newnode != rootnode:
-            rootnode = node
-            dfs(newnode, v1, v2, rootnode)
-            if v1found and v2found and init:
-                init = False
-                print(node)
-                return True
-        
-    
-for v1, v2 in nodepair:
-    v1found = False
-    v2found = False
-    init = True
-    dfs(1, v1, v2, 0)
+    return a
+
+dfs(1,0)
+
+for i in range(M):
+    a, b = map(int, input().split())
+    print(lca(a,b))
