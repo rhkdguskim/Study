@@ -21,7 +21,7 @@ def dfs(rootnode, cost):
     for childnode in graph[rootnode]:
         if not visited[childnode]:
             dp[childnode][0] = rootnode # 제일 가까운 조상초기화
-            dfs(rootnode, cost+1)
+            dfs(childnode, cost+1)
             
                     
 def lca(a,b):
