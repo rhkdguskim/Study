@@ -1,8 +1,6 @@
 # https://www.acmicpc.net/problem/1068
-# 1. 부모노드에서 자식노드로 갈 수 있는 graph를 생성한다.
-# 2. 지운 노드를 기억하여 지운 노드는 방문하지 않는다.
-# 3. 자식노드가 없을경우 Leaf노드로 카운트 증가한다.
-from collections import deque
+# 1. 해당 노드가 leaf노드인지 판별하는 함수 작성
+# 2. 해당 노드가 leaf노드인지 판별하는 방법 - 자식이 0 이면 해당노드는 leaf 노드이다. -> 자식노드의 개수를 return 하는 함수를 만든다.
 N = int(input())
 nodeInput = list(map(int ,input().split()))
 deletedNode = int(input())
@@ -15,20 +13,23 @@ for i in range(len(nodeInput)):
         rootnode = i
     
 cnt = 0
-def bfs():
+
+def leafNode(node):
     global cnt
-    queue = deque()
-    queue.append(rootnode) # 루트노드로 부터 출발
-    
-    while queue:
-        node = queue.popleft()
-        if node != deletedNode: # 지운노드인경우는 자식도 방문하지 않는다.
-            if graph[node]: # 자식이 있는경우
-                for newnode in graph[node]:
-                    queue.append(newnode)
-            else: # 자식이 없는경우 (Leaf 노드인경우)
+    childnode_cnt = len(graph[node]) # 자식노드 개수 init
+    for childnode in graph[node]:
+        if childnode != deletedNode: # 지워진 노드가 아니라면
+            if leafNode(childnode) == 0:
                 cnt += 1
-                
-bfs()
-print(cnt)
-            
+        else: # 지워진 노드라면
+            childnode_cnt -= 1 # 해당노드를 자식에서 지운다.
+    
+    return childnode_cnt
+
+if leafNode(rootnode) == 0:
+    cnt += 1
+
+if rootnode == deletedNode: # 루트노드가 지워진 노드 예외 처리
+    print(0)
+else:
+    print(cnt)
