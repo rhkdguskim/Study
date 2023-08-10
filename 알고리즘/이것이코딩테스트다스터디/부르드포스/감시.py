@@ -45,7 +45,7 @@ def cctvBlindArea(i,j, moves, table): # cctv 감시구역 테이블을 계산한
                 newtable[ny][nx] == '#'
                 
         cost = getBlindSpot(newtable)
-        if cost > minvalue:
+        if minvalue > cost:
             minvalue = cost
             resulttable = copy.deepcopy(newtable)
                     
@@ -55,8 +55,6 @@ tables = []
 move = [[],[[(0,1)],[(0,-1)], [(1,0)], [(-1,0)]], [[(1,0), (-1,0)], [[(0,1), (0,1)]]], [[(-1,0), (0,1)], [(0,1), (1,0)], [(1,0), (0,-1)], [(-1,0), (0,-1)]], [[(0,-1), (0,1), (-1,0)], [(1,0), (0,1), (-1,0)], [(1,0), (0,1), (0,-1)], [(1,0), (-1,0), (0,-1)]], [[(0,1), (1,0), (-1,0), (0,-1)]]]
 for i,j in cctvlist:
     moves = move[int(graph[i][j])] # CCTV 타입에따라 돌려보는 각도를 구한다.
-    print(moves)
     tables.append(cctvBlindArea(i,j,moves, graph))
-
 
 print(sumBilndArea(tables))
