@@ -1,17 +1,8 @@
 # https://www.acmicpc.net/problem/15683
-# CCTV를 하나씩 돌려보면서 최대 개수를 구한다.
-# CCTV는 최대 8개 이므로, 4^8의 경우의 수가 나온다. (65536 가지)
-# 탐색방법은 깊이우선탐색으로 한방향으로 가는 로직이기때문, 벽을 만나면 탐색종료
-# 최소값 초기화조건은 모든 cctv로 구간을 모두 다 탐색했을때
-# 2번과 5번은 중복되는 조건이 있다.
-cctv = [1,2,3,4,5]
-move = []
-move.append([]) # dummy 0번 cctv
-move.append(([(0,1)], [(0,-1)], [(1,0)], [(-1,0)])) # dummy 1번 cctv
-move.append(([(0,1), (0,-1)], [(1,0), (-1,0)])) # dummy 2번 cctv
-move.append(([(0,1), (0,-1)], [(0,-1), (1,0)] , [(0,-1), (1,0)] , [(0,-1), (1,0)])) # dummy 3번 cctv
-move.append(([(0,-1), (-1,0), (0,1)], [(-1,0), (0,1), (1,0)], [(0,1), (1,0), (0,-1)], [(1,0), (0,-1), (-1,0)])) # dummy 4번 cctv
-move.append(([(1,0), (-1,0), (0,1), (0,-1)])) # dummy 5번 cctv
+# CCTV를 하나씩 돌려보면서 최소사각지대 감시구역 테이블을 구한다.
+# 8개의 모든 감시테이블을 구하면 합쳐서 다시 최소사각지대 감시 구역을 계산한다.
+import copy
+cctv = ['1','2','3','4','5']
 N, M = map(int, input().split()) # N은 세로크기, M은 가로크기
 graph = []
 cctvlist = []
@@ -21,31 +12,51 @@ for i in range(N):
         if table[j] in cctv:
             cctvlist.append((i,j))
     graph.append(table)
-    
-print(move)
 
-def dfs(i,j, movetype):
-    if N > i >= 0 and M > j >=0:
-        dy = movetype[0]
-        dx = movetype[1]
-        ny = i + dy
-        nx = j + dx
-        if N > ny >= 0 and M > nx >=0 and graph[ny][nx] == '0': # 빈칸이면 들어가본다.
-            graph[ny][nx] = '#'
-            dfs(ny,nx)
-            graph[ny][nx] = '0'
-        
-    else:
-        return
-
-minvalue = 64
-def cctvArea(depth):
-    global minvalue
-    if len(cctvlist) == depth:
-        minvalue = min(minvalue, graph.count('0'))
-        return
+def sumBilndArea(tables): # 8개 이하의 CCTV의 최소 테이블을 합쳐서 값을 Return 한다.
+    newtable = [['0' for _ in range(M)] for _ in range(N)]
     
-    for cctv in cctvlist:    
-        for moves in move[graph[cctv[0]][cctv[1]]]:
-            for trymove in moves:
-                dfs(cctv[0], cctv[1], trymove)
+    for table in tables:
+        for i in range(N):
+            for j in range(M):
+                if table[i][j] != '0':
+                    newtable[i][j] = '#'
+                    
+    return newtable.count('0')
+
+def getBlindSpot(table): # 사각지대를 return 한다.
+    counter = 0
+    for i in range(N):
+        for j in range(M):
+            if table[i][j] == '0':
+                counter+=1
+                
+    return counter
+
+def cctvBlindArea(i,j, moves, table): # cctv 감시구역 테이블을 계산한뒤 최소값의 테이블을 리턴한다.
+    minvalue = N*M
+    resulttable = []
+    for move in moves:
+        for mov in move:
+            newtable = copy.deepcopy(table)
+            ny = i + mov[0]
+            nx = j + mov[1]
+            if N > ny >=0 and M > nx >=0 and newtable[ny][nx] == '0':
+                newtable[ny][nx] == '#'
+                
+        cost = getBlindSpot(newtable)
+        if cost > minvalue:
+            minvalue = cost
+            resulttable = copy.deepcopy(newtable)
+                    
+    return resulttable
+
+tables = []
+move = [[],[[(0,1)],[(0,-1)], [(1,0)], [(-1,0)]], [[(1,0), (-1,0)], [[(0,1), (0,1)]]], [[(-1,0), (0,1)], [(0,1), (1,0)], [(1,0), (0,-1)], [(-1,0), (0,-1)]], [[(0,-1), (0,1), (-1,0)], [(1,0), (0,1), (-1,0)], [(1,0), (0,1), (0,-1)], [(1,0), (-1,0), (0,-1)]], [[(0,1), (1,0), (-1,0), (0,-1)]]]
+for i,j in cctvlist:
+    moves = move[int(graph[i][j])] # CCTV 타입에따라 돌려보는 각도를 구한다.
+    print(moves)
+    tables.append(cctvBlindArea(i,j,moves, graph))
+
+
+print(sumBilndArea(tables))
