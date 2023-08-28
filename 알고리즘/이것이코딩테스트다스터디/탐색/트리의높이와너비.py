@@ -19,13 +19,18 @@ for _ in range(N):
     rootgraph[left].append(root)
     rootgraph[right].append(root)
     
-def findRoot(node):
-    if not rootgraph[node]:
-        return node
-    
-    return findRoot(rootgraph[node][0])
+def findRoot():
+    rootnode = 0
+    for i in range(1, N+1):
+        if len(rootgraph[i]) == 0:
+            rootnode = i
+            return rootnode
+        
+    return rootnode
 
 distance = 1
+graph[0].append(-1)
+graph[0].append(-1)
 def dfs(node, depth):
     global distance
     
@@ -41,7 +46,7 @@ def dfs(node, depth):
     if rightnode != -1: # 우측 노드가 존재하면 방문
         dfs(rightnode, depth + 1)
 
-dfs(findRoot(1), 1)
+dfs(findRoot(), 1)
 
 maxvalue = 0
 level = 1
