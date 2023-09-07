@@ -9,33 +9,34 @@
 from collections import deque
 N = int(input())
 
-buildtime = [0 for _ in range(N)]
-graph = [[] for _ in range(N)]
-minresult = [100000 * 501 for _ in range(N)]
-table = [0 for _ in range(N)]
+buildtime = [0 for _ in range(N+1)]
+graph = [[] for _ in range(N+1)]
+minresult = [0 for _ in range(N+1)]
+
+in_degree = [0 for _ in range(N+1)]
 
 for i in range(N):
     arr = list(map(int, input().split()))
-    buildtime[i] = arr[0]
-    for temp in range(1, len(arr)):
-        if arr[temp] != -1:
-            table[arr[temp]-1] += 1
-            graph[arr[temp]-1].append(i)
+    buildtime[i+1] = arr[0]
+        
+    for temp in range(1, len(arr)-1):
+        graph[arr[temp]].append(i+1)
+        in_degree[i+1] += 1
 
 queue = deque()
-
 for i in range(N):
-    if table[i] == 0:
-        queue.append((i+1, buildtime[i]))
+    if in_degree[i+1] == 0:
+        minresult[i+1] = buildtime[i+1]
+        queue.append(i+1)
         
 while queue:
-    num, cost = queue.popleft();
-    minresult[num-1] = min(minresult[num-1], cost)
-    print(num)
-    for newnum in graph[num-1]:
-        table[newnum-1] -= 1
-        if table[newnum-1] == 0:
-            queue.append((newnum-1, cost + buildtime[newnum-1]))
+    num = queue.popleft()
     
-for result in minresult:
+    for newnum in graph[num]:
+        in_degree[newnum] -= 1
+        minresult[newnum] = max(minresult[newnum], minresult[num] + buildtime[newnum])
+        if in_degree[newnum] == 0:
+            queue.append(newnum)
+    
+for result in minresult[1:]:
     print(result)
