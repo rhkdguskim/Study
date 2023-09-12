@@ -1,49 +1,45 @@
 # https://www.acmicpc.net/problem/2565
-# 전깃줄을 하나씩 추가해 나아가면서 겹치는 TABLE을 업데이트한다.
-# TABLE에서 가장 큰 값으로 SORTING 을 한뒤, 하나씩 빼가며 전기줄이 교차하는지 확인한다.
-# 교차를 하지 않는다면 종료를하고 전체전깃줄의수 - 총 빼간값을 출력한다.
-
-# 전기줄이 교차하는지 확인하는 로직 ( 핵심 로직 ).
-
-# LIS 알고리즘으료 효과적으로 풀 수 있다. // 결론...
+# LIS 문제 ( 최장 증가하는 부분수열 )
 
 N = int(input())
 
 queue = []
-aqueue = []
-dp = [0 for _ in range(501)]
 for _ in range(N):
     a, b = map(int ,input().split())
-    for x , y in queue:
-        if (a > x and b < y) or (a < x and b > y): # 교차하는 조건
-            dp[a] += 1
-            dp[x] += 1
     
     queue.append((a,b))
-    aqueue.append(a)
+    
+queue.sort()
 
-def isCrossed(queue):
-    for i in range(len(queue)):
-        for j in range(len(queue)):
-            if i != j:
-                a ,b = queue[i]
-                x, y = queue[j]
-                if (a > x and b < y) or (a < x and b > y):
-                    return True
+dp = [0 for _ in range(N)]
+dp[0] = 1
+for i in range(1,len(queue)):
+    dp[i] = 1
+    for j in range(i):
+        if queue[j][1] < queue[i][1]:
+            dp[i] = max(dp[j] + 1, dp[i])
                 
-    return False
+print(N - max(dp))
 
-def removeMax(queue, aqueue):
-    maxidx = dp.index(max(dp))
-    dp[maxidx] = 0
-    idx = aqueue.index(maxidx)
-    queue.pop(idx)
-    aqueue.pop(idx)          
+# 이분탐색으로 코드를 개선한다.
+from bisect import bisect_left
+N = int(input())
+
+queue = []
+for _ in range(N):
+    a, b = map(int ,input().split())
     
-
-while isCrossed(queue):
-    removeMax(queue, aqueue)
+    queue.append((a,b))
     
-print(N - len(queue))
+queue.sort()
 
+temp = []
+temp.append(queue[0][1]) # 첫번째 인자를 넣는다.
+for i in range(1,len(queue)):
+    if queue[i][1] > temp[-1]:
+        temp.append(queue[i][1])
+    else:
+        idx = bisect_left(temp, queue[i][1])
+        temp[idx] = queue[i][1]
 
+print(N - len(temp))
