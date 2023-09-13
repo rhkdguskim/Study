@@ -21,46 +21,47 @@ for _ in range(T):
     for _ in range(k):
         cmd , num = map(str, input().split())
         number = int(num)
-        if cmd == 'I': # 삽입
-            if minqueue:
-                if minqueue[0] >= number:
-                    minqueue.appendleft(number)
-                else:
-                    if maxqueue:
-                        if number >= maxqueue[-1]:
-                            maxqueue.append(number)
-                    else:
-                        maxqueue.append(number)  
-            elif maxqueue:
-                if number >= maxqueue[-1]:
+        if cmd == 'I': # 큐에 삽입
+            if minqueue and minqueue[0] >= number:
+                minqueue.append(number)
+            elif maxqueue and number >= maxqueue[0]:
+                maxqueue.appendleft(number)
+            else:
+                if not minqueue:
+                    minqueue.append(number)
+                elif not maxqueue:
                     maxqueue.append(number)
                 else:
-                    if minqueue:
-                        if minqueue[0] >= number:
-                            minqueue.appendleft(number)
+                    if number > minqueue[0]:
+                        while number > maxqueue[-1]:
+                            movenum = maxqueue.pop()
+                            minqueue.appendleft(movenum)
+                        
+                        maxqueue.append(number)
                     else:
-                        minqueue.appendleft(number)
-            else:
-                minqueue.append(number)
-                maxqueue.append(number)
-            
-        else:# 삭제
-            if number == 1: # 우선순위가 높은 값을 지운다.(숫자가크다)
+                        minqueue.append(number)
+                    
+        else:
+            if number == 1: # 우선순위가 높은 숫자를 삭제
                 if maxqueue:
-                    maxqueue.pop()
-                else:
-                    if minqueue:
-                        minqueue.pop()
-            else: # 우선순위가 낮은 값을 지운다. (숫자가작다)
-                if minqueue:
+                    maxqueue.popleft()
+                elif minqueue:
                     minqueue.popleft()
-                else:
-                    if maxqueue:
-                        maxqueue.popleft()
-
-    queue = list(minqueue + maxqueue)
-    queue.sort()
-    if queue:
-        print(queue[-1], queue[0])
+            else:
+                if minqueue: # 우선순위가 낮은 숫자를 삭제
+                    minqueue.pop()
+                elif maxqueue:
+                    maxqueue.pop()
+                    
+    if minqueue or maxqueue:
+        if maxqueue:
+            print(maxqueue[0], end=' ')
+        else:
+            print(minqueue[0], end=' ')
+            
+        if minqueue:
+            print(minqueue[-1], end =' ')
+        else:
+            print(maxqueue[-1], end=' ')
     else:
         print("EMPTY")
