@@ -1,37 +1,30 @@
 #https://www.acmicpc.net/problem/12919
+# 거꾸로 문제를 해결해 나아가야하는게 문제의 포인트이다.
+
 S = str(input())
 T = str(input())
 
 findFlag = False
-def charReverse(char):
-    newchar = ""
-    
-    length = len(char) // 2
-    arr = list(char)
-    for i in range(length):
-        arr[i], arr[len(arr)-1 - i] = arr[len(arr)-1 - i], arr[i]
-        
-    for c in arr:
-        newchar += c
-        
-    return newchar
-
 
 def AandB(char):
     global findFlag
-    if len(char) == len(T):
-        if char == T:
+    if findFlag:
+        return
+    
+    if len(S) >= len(char):
+        if char == S:
             findFlag = True
         return
                 
             
-    newchar1 = char + "A"
-    newchar2 = char + "B"
-    
-    AandB(newchar1)
-    AandB(charReverse(newchar2))
+    newchar1 = char[:len(char)-1]
+    newchar2 = char[1:][::-1]
+    if char[-1] == 'A':
+        AandB(newchar1)
+    if char[0] == 'B':
+        AandB(newchar2)
             
-AandB(S)            
+AandB(T)            
             
 if findFlag:
     print(1)
