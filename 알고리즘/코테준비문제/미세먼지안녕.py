@@ -42,28 +42,50 @@ def findCleanMachine(graph):
 
 def cleanDust(y1, y2):
     # 위쪽 y1
-    for i in range(y1-1, -1, -1):
-        if graph[i+1][0] != -1:
-            graph[i+1][0] = graph[i][0]
+    for i in range(y1-2, -1, -1):
+        graph[i+1][0] = graph[i][0]
             
-    for i in range(C-1, 0, -1):
-        if graph[0][i-1] != -1:
-            graph[0][i-1] = graph[0][i]
+    for i in range(1, C):
+        graph[0][i-1] = graph[0][i]
+    
+    
+    for i in range(1, y1+1):
+        graph[i-1][C-1] = graph[i][C-1]
             
-    for i in range(y1):
-        graph[y1][0] = graph[y1+1][0]
         
-    for i in range(1,C-1):
-        graph[y1][i+1] = graph[y1][i]
+    for i in range(C-1, 0, -1):
+        if graph[y1][i-1] == -1:
+            graph[y1][i] = 0
+        else:
+            graph[y1][i] = graph[y1][i-1]
         
     # 아래쪽 y2
+    for i in range(y2+2, R-1):
+        graph[i-1][0] = graph[i][0]
+            
+    for i in range(1, C):
+        graph[R-1][i-1] = graph[R-1][i]
+    
+    for i in range(R-2, y2-1, -1):
+        graph[i+1][C-1] = graph[i][C-1] 
+        
+    for i in range(C-1, 0, -1):
+        if graph[y2][i-1] == -1:
+            graph[y2][i] = 0
+        else:
+            graph[y2][i] = graph[y2][i-1]
     
 y1, y2 = findCleanMachine(graph)
 
 for _ in range(T):
     spreadDust(graph)
-    pprint(graph)
     cleanDust(y1, y2)
-    pprint(graph)
+    
+sum = 0
+for i in range(R):
+    for j in range(C):
+        if graph[i][j] != -1:
+            sum += graph[i][j]
 
+print(sum)
     
