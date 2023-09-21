@@ -1,8 +1,6 @@
 # https://www.acmicpc.net/problem/17144
 # 미세먼지의 확산 R*C 시간복잡도 ( 반복문으로 업데이트 테이블 생성후 업데이트 )
 # 공기청청기의 동작 R*C보다 작다. ( BFS로 문제해결 )
-from collections import deque
-from pprint import pprint
 moves = ((0,1), (1,0), (-1,0), (0,-1))
 R, C, T = map(int, input().split())
 
@@ -60,7 +58,7 @@ def cleanDust(y1, y2):
             graph[y1][i] = graph[y1][i-1]
         
     # 아래쪽 y2
-    for i in range(y2+2, R-1):
+    for i in range(y2+2, R):
         graph[i-1][0] = graph[i][0]
             
     for i in range(1, C):
