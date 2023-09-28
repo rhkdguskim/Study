@@ -36,22 +36,19 @@ import sys
 N = int(sys.stdin.readline())
 k = int(sys.stdin.readline())
 
-def findK():
-    index = 1
+start = 1
+end = k
+while start <= end:
+    mid = (start+end) // 2
+    
+    count = 0
     for i in range(1, N+1):
-        temp = i
-        counter = 0
-        for _ in range(1, i*2):
-            if counter == 2:
-                temp *= 2
-                counter = 0
-
-            counter +=1
-
-            if index == k:
-                print(temp)
-                return
-            
-            index += 1
-
-findK()
+        count += min(mid//i, N)
+    
+    if count >= k:
+        end = mid
+    else:
+        start = mid+1
+    
+    
+    
