@@ -1,76 +1,54 @@
 #https://www.acmicpc.net/problem/20055
 from collections import deque
-N, K = map(int, input().split())
 
-def rotate(table, robotvisited, robot):
+N, K = map(int, input().split())
+zerocount = 0
+def rotate(table, robotvisited):
     num = table.pop()
     table.appendleft(num)
     visited = robotvisited.pop()
     robotvisited.appendleft(visited)
     
-    queue = deque()
-    while robot:
-        idx = robot.pop()
-        if idx == 2*N-1: # 마지막위치에 있는 로봇이라면
-            queue.append(0)
-        else:
-            queue.append(idx+1)
-    
-    return queue
-    
-def moverobot(table, robotvisited, robot):
-    queue = deque()
-    while robot:
-        idx = robot.pop()
-        idx = idx + 1 % (2*N)
-        
-        if not robotvisited[idx+1] and table[idx+1] > 0: # 다음에 놓일 조건 만족
-            robotvisited[idx] = False
-            robotvisited[idx+1] = True
-            table[idx+1] -= 1
-            queue.append(idx+1)
-        else:
-            queue.append(idx)
-    
-    if robotvisited[N-1]:
-        robotvisited[N-1] = False
-    
-    queue = [idx for idx in robot if idx != N-1]
-    
-    return queue
-    
+def moverobot(table, robotvisited):
+    global zerocount
+    for i in range(N-1, -1, -1):
+        if table[i+1] > 0 and not robotvisited[i+1] and robotvisited[i]:
+            robotvisited[i] = False
+            table[i+1] -= 1
+            robotvisited[i + 1] = True
+            if table[i+1] == 0:
+                zerocount += 1
                 
-def pushRobot(table, robotvisited, robot):
+def pushRobot(table, robotvisited):
+    global zerocount
     if table[0] > 0: # 내구성이 존재한다면
         robotvisited[0] = True
-        robot.append(0)
         table[0] -= 1
-        
-    return robot
-        
-            
+        if table[0] == 0:
+            zerocount += 1
+
+def popRobot(robotvisited):
+    if robotvisited[N - 1]:
+        robotvisited[N - 1] = False
     
 def vailate(table):
-    if table.count(0) >= K:
+    global zerocount
+    if zerocount >= K:
         return False
     else:
         return True
-    
-
 
 table = deque(map(int, input().split())) # 컨베이어벨트
 robotvisited = deque(False for _ in range(len(table))) # 로봇이 있는지 없는지 확인
-robot = deque() # 로봇큐
 
 answer = 0
 while vailate(table):
     
     answer += 1
-    robot = rotate(table, robotvisited, robot)
-    robot = moverobot(table, robotvisited, robot)
-    robot = pushRobot(table, robotvisited, robot)
-    print(table)
+    rotate(table, robotvisited)
+    popRobot(robotvisited)
+    moverobot(table, robotvisited)
+    popRobot(robotvisited)
+    pushRobot(table, robotvisited)
     
 print(answer)
-    
-    
