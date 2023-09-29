@@ -1,30 +1,21 @@
-# table[a][b][N] = table[a][b+1][N-1] + table[a+1][b][N-1] + table[a][b][1] + table[a+N-1][b+N-1][1] - table[a+1][b+1][N-2]
-import pprint
+from pprint import pprint
 N = int(input())
-
-table = [[[-300001 for _ in range(N)] for _ in range(N)] for _ in range(N+1)]
-
-apple = []
+table = []
+dp = [[0 for _ in range(N+1)] for _ in range(N+1)]
 for _ in range(N):
-    apple.append(list(map(int, input().split())))
-    
-for i in range(N):
-    for j in range(N):
-        table[1][i][j] = apple[i][j]
-        table[0][i][j] = 0
-            
-for n in range(2, N+1):
-    for i in range(N):
-        for j in range(N):
-            if N > i+1 >= 0 and N > j+1 >= 0:
-                table[n][i][j] = table[n-1][i][j+1] + table[n-1][i+1][j] - table[n-2][i+1][j+1] + table[1][i][j] + table[1][n-1][n-1]
-            
-maxvalue = -300001
-for n in range(1, N+1):
-    for i in range(N):
-        for j in range(N):
-            if N > i+1 >= 0 and N > j+1 >= 0:
-                maxvalue = max(table[n][i][j],maxvalue)
+    table.append(list(map(int, input().split())))
 
-pprint.pprint(table)
+for i in range(1, N+1):
+    for j in range(1, N+1):
+        dp[i][j] = dp[i-1][j] + dp[i][j-1] - dp[i-1][j-1] + table[i-1][j-1] # 2차원 배열 구간 합 구하기
+
+# 모든 경우의수를 탐색하여 최대값을 갱신한다.
+maxvalue = -1000 * 300 * 300 - 1
+for n in range(1, N+1):
+    for i in range(n, N+1):
+        for j in range(n, N+1):
+            if N >= i-n >= 0 and N >= j-n >= 0: # 배열의 범위가 넘어가면 안됨
+                temp = dp[i][j] - dp[i-n][j] - dp[i][j-n] + dp[i-n][j-n]
+                maxvalue = max(maxvalue, temp)
+
 print(maxvalue)
