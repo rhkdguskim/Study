@@ -8,30 +8,47 @@ N, M, K = map(int, input().split())
 graph = [[] for _ in range(N+1)]
 for _ in range(M):
     U, V, C = map(int, input().split())
-    heapq.heappush(graph[U], (C, V))
-    heapq.heappush(graph[V], (C, U))
+    graph[V].append((C, U)) # 거꾸로 탐색하기위해 거꾸로 넣는다.
 
 ic = list(map(int, input().split()))
 
 maxidx = 0
 maxdistance = 0
-visited = [[-1 for _ in range(N+1)] for _ in range(N+1)]
+visited = [100000*500000 for _ in range(N+1)]
 queue = []
 
+for init in graph:
+    init.sort()
+
 for k in ic:
-    heapq.heappush(queue, (0, k, k))
-    visited[k][k] = 0
+    heapq.heappush(queue, (0, k))
+    visited[k] = 0
 
+maxvalue = 0
+maxidx = 0
 while queue:
-    cost, source, target = heapq.heappop(queue)
+    cost, target = heapq.heappop(queue)
 
-    while graph[target]:
-        dis, newidx = heapq.heappop(graph[target])
-        if visited[source][newidx] == -1:
-            visited[source][newidx] = cost + dis
-            heapq.heappush(queue, (dis + cost, source, newidx))
+    if cost > visited[target]:
+        continue
 
-pprint(visited)
+    if cost >= maxvalue:
+        if maxvalue == cost and target > maxidx:
+            pass
+        else:
+            maxidx = target
+
+        maxvalue = cost
+
+    for dis, newidx in graph[target]:
+        if visited[newidx] > cost + dis:
+            visited[newidx] = cost + dis
+            heapq.heappush(queue, (dis + cost, newidx))
+
+#pprint(visited)
+print(maxidx)
+print(maxvalue)
+
 
 
 
