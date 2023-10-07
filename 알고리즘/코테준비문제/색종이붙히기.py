@@ -1,55 +1,57 @@
 # https://www.acmicpc.net/problem/17136
-from copy import deepcopy
-from pprint import pprint
+import sys
+sys.setrecursionlimit(10**6)
+
 table = []
-cnt = 0
 for _ in range(10):
     temp = list(map(int, input().split()))
-    for j in range(len(temp)):
-        if temp[j] == 1:
-            cnt += 1
-
     table.append(temp)
 
-# table에 (1x1, 2x2, 3x3, 4x4, 5x5) 순열로 반복해서 붙혀보면서 문제를 해결한다.
-# 1의 개수를 카운팅한다. dfs로 모든 경우의수를 구하고 색종이를 붙혀볼때 1을 카운팅하여 1의 개수가 0이 완성이 된다면 최소값이 된다.
-# dfs 종료조건 1의 개수가 0이 되었을때 혹은 가능한 모든 색종이를 다 붙혀보았을때
-def dfs(table, visited, cnt):
-    total = sumvisited(visited)
-
-    global maxvalue
-    if cnt == 0: # 모든 색종이를 붙혔을때
-        maxvalue = max(total, maxvalue)
-        return
-
-    if total == 25: # 모든 색종이를 사용했음.
-        return
-
-    for i in range(10):
-        for j in range(10):
-            for s in range(1, 6): # 가능한 색종이 (1x1 ... 5x5)
-                newtable = deepcopy(table)
-                result = canattach(s, i, j, newtable)
-                if table[i][j] == 1 and 5 > visited[s] and result > 0:
-                    visited[s] += 1
-                    dfs(newtable, visited, cnt - result)
-                    visited[s] -= 1
-
-
-def canattach(size, i, j, table):
+remain = [5 for _ in range(6)]
+def check(i,j, size):
     for y in range(i, i+size):
         for x in range(j, j+size):
-            if y >= 10 or x >= 10 or table[y][x] == 0:
-                return 0
+            if table[y][x] == 0: # 색종이를 붙힐 수 없음
+                return False
+
+    return True # 색종이를 붙힐 수 있음.
+def visit(i,j, size):
     for y in range(i, i+size):
         for x in range(j, j+size):
             table[y][x] = 0
-    return size * size
 
-def sumvisited(visited):
-    return sum(visited)
+def unvisit(i,j, size):
+    for y in range(i, i+size):
+        for x in range(j, j+size):
+            table[y][x] = 1
 
-visited = [0] * 6
-maxvalue = 0
-dfs(table, visited, cnt)
-print(maxvalue)
+minvalue = 25
+def dfs(i,j, cnt):
+    global minvalue, remain, table
+    if i >= 10: # 모든경우를 탐색했을경우
+        minvalue = min(cnt, minvalue)
+        return
+    if j >= 10: # x의 범위가 10이상으로 넘어가면 다시 y를 +1 하여 탐색한다.
+        dfs(i+1,0, cnt)
+        return
+
+    if table[i][j] == 1: # 색종이를 붙힐 수 있다면
+        for s in range(1,6): # 1~5의 색종이 사이즈를 다 붙혀본다.
+            if remain[s] == 0:
+                continue
+            if i+s > 10 or j+s > 10:
+                continue
+
+            if not check(i,j,s):
+                break
+
+            remain[s] -= 1
+            visit(i, j, s)
+            dfs(i, j+s, cnt+1)
+            remain[s] += 1
+            unvisit(i, j, s)
+    else: # 색종이를 붙힐 수 없다면 다음칸을 탐색해본다.
+        dfs(i ,j+1, cnt)
+
+dfs(0,0,0)
+print(-1 if minvalue == 25 else minvalue)
