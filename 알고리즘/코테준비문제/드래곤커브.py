@@ -65,6 +65,3 @@ print(getsqure())
 
 
 
-
-
-
