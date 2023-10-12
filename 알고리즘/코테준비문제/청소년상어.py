@@ -1,6 +1,11 @@
 # https://www.acmicpc.net/problem/19236
 from pprint import pprint
 import heapq
+
+# 1. 상어가 0,0으로 이동한다. 물고기를 먹어버린다. 물고기 방향으로 바뀐다.
+# 2. 물고기가 작은 순서부터 이동한다.
+# 3.
+
 from copy import deepcopy
 
 N = 4 # 4x4
@@ -14,7 +19,7 @@ for i in range(N):
     j = 0
     for j in range(0,len(temp), 2):
         graph[i][j//2] = [temp[j], temp[j+1]] # 물고기번호, 물고기방향
-        fishqueue.append((temp[j], temp[j+1], i , j)) # 물고기 번호와 방향, 좌표를 갖는 큐를 만든다.
+        fishqueue.append((temp[j], temp[j+1], i , j//2)) # 물고기 번호와 방향, 좌표를 갖는 큐를 만든다.
 
 # 1. 상어가 공간에 들어가 물고기를 먹는다.
 
@@ -51,21 +56,19 @@ def movefish():
     newqueue = []
 
     fishqueue.sort()
-    while fishqueue:
-        num, dir, i, j = fishqueue.pop()
+    for num, dir, i, j in fishqueue:
 
         visited = [False for _ in range(9)]
         visited[0] = True
 
         while True: # 움직일수있는 경우까지 찾는다.
-            print(dir)
             visited[dir] = True
             dy, dx = direction[dir]
             ny, nx = dy +i, dx + j
             #빈칸과 물고기가 있는칸은 이동 할 수 있다.
             if N > ny >=0 and N > nx >=0 and 20 > graph[ny][nx][0]: # 상어는 20으로 표현하겠음.
                 # 탐색할 수 있는경우 물고기의 위치를 바꾼다.
-                temp1, temp2 = graph[ny][nx][0], graph[ny][nx][1]# 물고기 번호, 방향
+                temp1, temp2 = graph[ny][nx][0], graph[ny][nx][1] # 물고기 번호, 방향
 
                 # 물고기 자리를 바꾼다.
                 graph[ny][nx][0] = num
@@ -73,18 +76,14 @@ def movefish():
 
                 graph[i][j][0] = temp1
                 graph[i][j][1] = temp2
+
+                fishqueue[num - 1] = [graph[i][j][0], graph[i][j][1], i, j]
                 break
             elif all(visited):
                 # 45도씩 회전하면서 다 돌았는데 갈 수 없는경우
                 break
             else:
                 dir = rotate(dir) # 방향을 회전시킨다.
-
-    # 새로운 큐를 만든다.
-    for i in range(N):
-        for j in range(N):
-            if graph[i][j][0] != 0 and graph[i][j] != 20:
-                newqueue.append((graph[i][j][0], graph[i][j][1], i ,j))
 
     return newqueue # 새로운 물고기 큐 리턴한다.
 
@@ -104,12 +103,11 @@ def dfs(queue, visitedq):
     graph[i][j][0] = 0 # 물고기를 먹는다.
     newqueue = fishlist(i, j, newdir)
     visitedq.append((i,j))
-    result = max(dfs(newqueue, visitedq), result)
+    dfs(newqueue, visitedq)
     visitedq.pop()
     queue.append((i, j))
     graph[i][j][0] = fishnum
 
-    return result
 
 ans = 0
 while True:
@@ -119,7 +117,7 @@ while True:
 
     fishqueue = movefish() # 물고기가 움직인다.
     maxeat = 0
-
+    pprint(graph)
     queue = fishlist(0, 0, c) # 상어가 먹을 수 있는 물고기 후보들
     visitedqueue = []
 
