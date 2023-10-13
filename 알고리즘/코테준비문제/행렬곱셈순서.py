@@ -1,4 +1,13 @@
 # https://www.acmicpc.net/problem/11049
+# ABCD
+# (ABC)(D)
+# (AB)(CD)
+# (A)(BCD)
+# ABCDE
+# (A)(BCDE)
+# (AB)(CDE)
+# (ABC)(DE)
+# (ABCD)(E)
 import sys
 input = sys.stdin.readline
 
@@ -14,14 +23,17 @@ for i in range(N-1):
 
 for i in range(2, N):
     for j in range(N-i):
-        # 나중에 계산한 결과 (AB)(C)
-        temp1 = dp[j][i+j-1][2] + dp[j][i+j-1][0] * dp[i+j][i+j][0] * dp[i+j][i+j][1]
-        # 먼저 계산한 결과 (A)(BC)
-        temp2 = dp[j][j][0] * dp[j+1][i+j][0] * dp[j+1][i+j][1] + dp[j+1][i+j][2]
+        mincost = int(2**31)
+        for k in range(i):
+            r1, c1, cost1 = dp[j][j+k][0], dp[j][j+k][1], dp[j][j+k][2]
+            r2, c2, cost2 = dp[j+k+1][i+j][0], dp[j+k+1][i+j][1], dp[j+k+1][i+j][2]
 
-        if temp2 > temp1: # 작은 친구를 선택한다.
-            dp[j][i+j] = [dp[j][i+j-1][0], dp[i+j][i+j][1], temp1]
-        else:
-            dp[j][i+j] = [dp[j][j][0], dp[j+1][i+j][1], temp2]
+            temp = cost1 + cost2 + (r1 * c1 * c2)
+            if mincost > temp:
+                mincost = temp
+                n_r1 = r1
+                n_c1 = c2
+
+        dp[j][j+i] = [n_r1, n_c1, mincost]
 
 print(dp[0][N-1][2])
