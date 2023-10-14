@@ -27,7 +27,6 @@ for i in range(1, N+1):
     arr[i] = num
     update(num, i)
 
-
 for _ in range(M+K):
     a, b, c = map(int, input().split())
     if a == 1:

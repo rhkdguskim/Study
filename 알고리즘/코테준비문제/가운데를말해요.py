@@ -22,3 +22,4 @@ for _ in range(N):
         heapq.heappush(leftq, -rightnum)
     
     print(-leftq[0])
+
