@@ -25,6 +25,8 @@ for i in range(N):
                 if N > ny >= 0 and M > nx >= 0: # 정사각형 범위라면
                     if table[i][j] == table[ny][nx]: # 꼭지점이 같다면
                         temp[k] = True
+                else:
+                    break
             if all(temp): # 모든 꼭지점이 같다면
                 cnt = max(cnt, (s+1)*(s+1))
 

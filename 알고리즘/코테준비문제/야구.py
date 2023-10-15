@@ -57,7 +57,7 @@ def dfs(player):
         return score
 
     maxscore = 0
-    for i in range(1, 10):
+    for i in range(1, 10): # 순열임으로 1, 10 까지 모두 탐색한다.
         if i not in player:
             player.append(i)
             maxscore = max(maxscore, dfs(player))

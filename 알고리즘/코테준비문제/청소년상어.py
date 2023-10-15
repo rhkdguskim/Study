@@ -4,10 +4,8 @@ from pprint import pprint
 # 2. 물고기가 작은 순서부터 이동한다.
 # 3.
 from copy import deepcopy
-
 EMPTY = -1
 SHARK = 20
-
 N = 4 # 4x4
 graph = [[[] for _ in range(N)] for _ in range(N)]
 direction = [(-1, 0), (-1, -1), (0, -1), (1, -1), (1, 0), (1, 1), (0, 1), (-1, 1)] # ↑, ↖, ←, ↙, ↓, ↘, →, ↗ 를 의미한다.
@@ -81,9 +79,9 @@ def dfs(i, j, graph, total):
     #pprint(fish_list)
     #pprint(graph)
     if fish_list:
-        for ny_shark, nx_shark in fish_list:
+        for ny_shark, nx_shark in fish_list: # 상어가 먹을 수 있는 모든 경우의 수를 탐색한다.
             dfs(ny_shark, nx_shark, graph, total + graph[ny_shark][nx_shark][0])
-    else:
+    else: # 먹을 수 있는 경우의 수가 없다면 최대값을 갱신해준다.
         ans = max(ans, total)
         return
 

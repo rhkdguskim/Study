@@ -8,7 +8,6 @@ cnt = 0
 def solve(queue, idx):
     global cnt
     if queue:
-        #print(sum(queue), queue)
         if sum(queue) == S:
             cnt += 1
 

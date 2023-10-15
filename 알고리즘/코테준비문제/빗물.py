@@ -16,7 +16,7 @@ for i in range(H):
         if stack: # 스택에 값이 있는경우
             if stack[-1] == 0 and cur == 1: # 바로이전이 빗물이고, 현재 벽을 만난경우
                 cnt = 0
-                while stack: # 벽이 나올때까지 pop 한다
+                while stack: # 스택을 모두 꺼냅니다.
                     t = stack.pop()
                     if t == 1: # 벽이 나온경우 종료하고 cnt를 반영한다.
                         total += cnt
