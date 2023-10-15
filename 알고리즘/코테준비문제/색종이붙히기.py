@@ -15,11 +15,14 @@ def check(i,j, size):
                 return False
 
     return True # 색종이를 붙힐 수 있음.
+
+# 색종이를 붙여봄
 def visit(i,j, size):
     for y in range(i, i+size):
         for x in range(j, j+size):
             table[y][x] = 0
 
+# 붙인 색종이를 땐다
 def unvisit(i,j, size):
     for y in range(i, i+size):
         for x in range(j, j+size):
@@ -42,7 +45,7 @@ def dfs(i,j, cnt):
             if i+s > 10 or j+s > 10:
                 continue
 
-            if not check(i,j,s):
+            if not check(i,j,s): # 특정 사이즈에서 붙일 수 없다면 그 이후의 색종이도 붙일 수 없다.
                 break
 
             remain[s] -= 1

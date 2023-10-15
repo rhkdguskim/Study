@@ -14,7 +14,7 @@ STUDENT = 'S'
 EMPTY = 'X'
 OBSTACLE = 'O'
 
-teacher = []
+teacher = [] # 선생님 정보를 가지고 있는 리스트
 
 for i in range(N):
     temp = list(map(str, input().split()))
@@ -23,6 +23,8 @@ for i in range(N):
             teacher.append((i, j))
 
         table[i][j] = temp[j]
+
+# type은 상하좌우 이다.
 def dfs(i, j, type):
     dy = i + move[type][0]
     dx = j + move[type][1]
@@ -57,14 +59,14 @@ def watch():
         for t in range(4):
             temp2[t] = dfs(teacher[n][0], teacher[n][1], t)  # 상, 하 좌,우 학생이 있는지 확인
 
-        if all(temp2):  # 모든학생이 장해물을 피했음.
+        if all(temp2): # 상하좌우 모두 학생을 탐지하지 못하였음.
             temp1[n] = True
         else:  # 학생들이 선생님한테 걸렸음.
             temp1[n] = False
 
-    if all(temp1):
+    if all(temp1): # 모든 선생님들이 학생을 감시하였으나, 찾지 못함.
         return True
-    else:
+    else: # 어떠한 선생님이 어떠한 학생을 찾음.
         return False
 
 
@@ -79,7 +81,7 @@ def solve(idx, depth):
 
         return
 
-    for i in range(idx, N * N):
+    for i in range(idx, N * N): # 조합을 생성한다. ( 순서가 없음 )
         y = i // N
         x = i % N
         if table[y][x] == EMPTY:
