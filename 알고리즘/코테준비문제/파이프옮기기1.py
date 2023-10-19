@@ -57,10 +57,6 @@ def dfs(i,j, direction):
     else:
         return 0
 
-
-        
-
-
 if graph[N-1][N-1]:
     print(0)
 else:

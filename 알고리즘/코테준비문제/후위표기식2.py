@@ -8,7 +8,7 @@ stack = []
 for i in range(N):
     number[i] = int(input())
     
-print
+
 for char in expression:
     if char.isalpha():
         stack.append(number[ord(char) - ord('A')])
@@ -23,7 +23,7 @@ for char in expression:
             cost = num1 + num2
         elif char == '-':
             cost = num1 - num2
-        
+
         stack.append(cost)
-        
+
 print("{:.2f}".format(stack[0]))

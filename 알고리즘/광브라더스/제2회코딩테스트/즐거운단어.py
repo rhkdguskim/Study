@@ -16,7 +16,7 @@ def dfs(mocnt, jacnt, lcnt, depth):
     if word[depth] == '_':
         # 모음일때
         result += dfs(mocnt+1,0,lcnt, depth+1) * len(mo)
-        # 자음일때
+        # L을 제외한 자음일때
         result += dfs(0,jacnt+1,lcnt, depth+1) * (25 - len(mo))
         # L일때
         result += dfs(0,jacnt+1, lcnt+1, depth+1) * 1
