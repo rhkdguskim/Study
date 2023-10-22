@@ -14,4 +14,3 @@ for _ in range(q):
         queue.popleft()
     if temp[0] == 3: # print front queue
         print(queue[0])
-
