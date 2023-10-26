@@ -19,12 +19,15 @@ def quard_tree(i, j, size):
         result.append(quard_tree((i + dy*cost),(j + dx*cost), (cost)))
     
     temp = result[0]
-    for i in range(1, 4):
-        if temp != result[i]:
-            return '(' + ''.join(result) + ')'
+    if len(temp) == 1:
+        for i in range(1, 4):
+            if temp != result[i]:
+                return '(' + ''.join(result) + ')'
+        
+        return result[0]
+    else:
+        return '(' + ''.join(result)+ ')'
     
-    return result[0]
-
 print(quard_tree(0,0,N))
 
         
