@@ -37,4 +37,4 @@ for i in range(1, N+1):
 
         ans = max(ans, dp[i][j][0], dp[i][j][1])
 #print(dp)
-print(ans)d
+print(ans)
