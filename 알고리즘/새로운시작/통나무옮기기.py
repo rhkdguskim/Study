@@ -35,80 +35,86 @@ def find(char):
 start_y, start_x, start_dir = find('B')
 end_y, end_x, end_dir = find('E')
 
+def can_turn(i, j):
+    # 블록이 회전할 때의 3x3 영역 검사
+    for dy in range(-1, 2):
+        for dx in range(-1, 2):
+            ny = i + dy
+            nx = j + dx
+            # 범위를 벗어나면 회전할 수 없음
+            if ny < 0 or ny >= N or nx < 0 or nx >= N:
+                return False
+            # 장애물이 있으면 회전할 수 없음
+            if graph[ny][nx] == '1':
+                return False
+    # 위 조건들을 모두 통과했다면 회전 가능
+    return True
+
 def check(i, j, dir, t):
-    if dir == H :
+    if t == TURN:
+        return can_turn(i, j)
+    
+    if dir == V:
         if t == UP: # 방향이 수직방향이고 위로 갈수 있다면
-            if i-1 >= 0 and graph[i-1][j] != '1': return True
-            else: return False
+            if i-2 >= 0 and graph[i-1][j] != '1' and graph[i-2][j] != '1':
+                return True
+            else:
+                return False
         
         if t == DOWN:
-            if N > i+1 and graph[i+1][j] != '1': return True
-            else: return True
+            if N > i+2 and graph[i+1][j] != '1' and graph[i+2][j] != '1':
+                return True
+            else:
+                return False
         
         if t == LEFT:
-            if i-1 >= 0 and j-1 >= 0 and N > i+1 and graph[i][j-1] != '1' and graph[i+1][j-1] != '1' and graph[i-1][j-1] != '1': return True
-            else: return False
-            
-        if t == RIGHT:
-            if N > i+1 and N > j+1 and i-1 >= 0 and graph[i][j+1] != '1' and graph[i+1][j+1] != '1' and graph[i-1][j+1] != '1': return True
-            else: return False
-            
-        if t == TURN:
-            y = i - 1
-            x = j - 1
-            if N > y >=0 and N > x >= 0:
-                for ny in range(3):
-                    for nx in range(3):
-                        if N > ny + y >=0 and N > nx + x >=0:
-                            if graph[ny+y][nx+x] == '1':
-                                return False
-                        else:
-                            return False
+            if i-1 >= 0 and j-1 >= 0 and N > i+1 and graph[i][j-1] != '1' and graph[i+1][j-1] != '1' and graph[i-1][j-1] != '1':
+                return True
             else:
                 return False
-                    
-            return True
+            
+        if t == RIGHT:
+            if N > i+1 and N > j+1 and i-1 >= 0 and graph[i][j+1] != '1' and graph[i+1][j+1] != '1' and graph[i-1][j+1] != '1':
+                return True
+            else:
+                return False
+            
+        
     else:
         if t == LEFT: # 방향이 수평방향이고 왼쪽으로 움직인다면
-            if j-1 >= 0 and graph[i][j-1] != '1': return True
-            else: return False
+            if j-2 >= 0 and graph[i][j-1] != '1' and graph[i][j-2] != '1':
+                return True
+            else:
+                return False
         
         if t == RIGHT:
-            if N > j+1 and graph[i][j+1] != '1': return True
-            else: return True
+            if N > j+2 and graph[i][j+1] != '1' and graph[i][j+2] != '1':
+                return True
+            else:
+                return False
         
         if t == UP:
-            if i-1 >= 0 and j-1 >= 0 and N > j+1 and graph[i-1][j] != '1' and graph[i-1][j-1] != '1' and graph[i-1][j+1] != '1': return True
-            else: return False
+            if i-1 >= 0 and j-1 >= 0 and N > j+1 and graph[i-1][j] != '1' and graph[i-1][j-1] != '1' and graph[i-1][j+1] != '1':
+                return True
+            else:
+                return False
             
         if t == DOWN:
-            if N > i+1 and N > j+1 and j-1 >=0 and graph[i+1][j] != '1' and graph[i+1][j-1] != '1' and graph[i+1][j+1] != '1': return True
-            else: return False
-            
-        if t == TURN:
-            y = i - 1
-            x = j - 1
-            if N > y >=0 and N > x >= 0:
-                for ny in range(3):
-                    for nx in range(3):
-                        if N > ny + y >=0 and N > nx + x >=0:
-                            if graph[ny+y][nx+x] == '1':
-                                return False
-                        else:
-                            return False
+            if N > i+1 and N > j+1 and j-1 >=0 and graph[i+1][j] != '1' and graph[i+1][j-1] != '1' and graph[i+1][j+1] != '1':
+                return True
             else:
                 return False
                     
-            return True 
         
 
 queue = deque()
 queue.append((start_y, start_x, start_dir, 0))
 visited = [[[False for _ in range(N)] for _ in range(N)] for _ in range(2)]
+visited[start_dir][start_y][start_x] = True
 ans = 2501
 while queue:
     y, x, dir, cost = queue.popleft()
-    for t in range(5):
+    for t in [UP, DOWN, LEFT, RIGHT, TURN]:
         ny, nx = y, x
         if t != TURN:
             ny, nx = move[t][0] + y, move[t][1] + x
@@ -119,12 +125,12 @@ while queue:
                     newdir = H
                 else:
                     newdir = V
-        if N > ny >=0 and N > nx >=0 and not visited[newdir][ny][nx] and check(y, x, dir, t) and graph[ny][nx] == '0':
+        if N > ny >=0 and N > nx >=0 and not visited[newdir][ny][nx] and check(y, x, dir, t):
             newcost = cost + 1
-            print(ny, nx , newdir, newcost)
+            #print(y, x, ny, nx , newdir, newcost)
             visited[newdir][ny][nx] = True
             queue.append((ny, nx, newdir, newcost))
-            if ny == end_y and nx == end_x and end_dir == dir:
+            if ny == end_y and nx == end_x and end_dir == newdir:
                 ans = min(ans, newcost)
                            
 if ans == 2501:
