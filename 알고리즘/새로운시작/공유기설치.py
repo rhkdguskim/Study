@@ -10,7 +10,7 @@ for _ in range(N):
 home.sort()
 
 start = 0
-end = home[-1] + home[0]
+end = home[-1] + home[0] # 공유기를 놓을 수 있는 최대거리중 중간값
 ans = 0
 while start <= end:
     mid = (start + end) // 2
