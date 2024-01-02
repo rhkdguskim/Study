@@ -66,4 +66,3 @@ for _ in range(M+K):
     else:
         b, c = temp[1:]
         print(query(0, N-1, b-1, c-1, 1))
-            
