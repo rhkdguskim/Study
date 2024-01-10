@@ -4,53 +4,41 @@ input = sys.stdin.readline
 CANDY_CNT = 1000001
 
 N = int(input())
-# candy = [0 for _ in range(CANDY_CNT)]
-tree = [[0, 0] for _ in range(CANDY_CNT * 4)]
+fwt = [0 for _ in range(CANDY_CNT+1)]
 
-def update(start, end, node, idx, value):
-    if start > idx or end < idx:
-        return
+def update(candy, cnt):
+    idx = candy
+    while idx <= CANDY_CNT:
+        fwt[idx] += cnt
+        idx += (idx&-idx)
+
+def query(idx):
+    cnt = 0
+    while idx >= 1:
+        cnt += fwt[idx]
+        idx -= (idx&-idx)
     
-    if start == end:
-        tree[node][0] += value
-        if not tree[node][0]:
-            tree[node][1] = 0
-        else:
-            tree[node][1] = idx
-        return
-        
-    mid = ( start + end ) // 2
-    update(start, mid, node*2, idx, value)
-    update(mid+1, end, node*2+1, idx, value)
-    tree[node][0] = tree[node*2][0] + tree[node*2+1][0]
-    tree[node][1] = max(tree[node*2][1], tree[node*2+1][1])
+    return cnt
 
-
-def query(start, end, node, cnt):
-    if start == end:
-        return tree[node]
-    else:
-        mid = ( start + end ) // 2
-        l_q = query(start, mid, node*2, cnt)
-        
-        if l_q[0] >= cnt:
-            return l_q
+def find(cnt):
+    start = 1
+    end = CANDY_CNT
+    while start < end:
+        mid = (start+end) // 2
+        rank = query(mid)
+        if rank >= cnt:
+            end = mid
         else:
-            return query(mid+1, end, node*2+1, cnt)
-    
+            start = mid + 1
+    return end
 
 for _ in range(N):
     temp = list(map(int, input().split()))
     if temp[0] == 2:
         B, C = temp[1:]
-        update(1, CANDY_CNT, 1, B, C)
-        # candy[B] += C
+        update(B, C)
     else:
         B = temp[-1]
-        r = query(1, CANDY_CNT, 1, B)
-        update(1, CANDY_CNT, 1, r[1], -1)
-        # candy[r[1]] -= 1
-        print(r[1])
-    
-    #print("candy", candy[:10])
-
+        candy = find(B)
+        print(candy)
+        update(candy, -1)
