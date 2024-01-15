@@ -1,8 +1,4 @@
 # https://www.acmicpc.net/problem/5557
-# 현재위치의 숫자값이 있다면 그것에 가중치를 더하면 된다.
-
-# 11
-# 8 3 2 4 8 7 2 4 0 8 8
 
 import sys
 input = sys.stdin.readline
