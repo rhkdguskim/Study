@@ -1,0 +1,31 @@
+# https://www.acmicpc.net/problem/11000
+# 1. 시작시간을 오름차순으로 정렬한다.
+# 2. 순서대로 순회하면서 (시작시간, 종료시간)을 강이실에 추가하거나, 이어 붙힌다.( 단, 가장 종료시간이 작은 강의실에 먼저 배정해야한다. )
+# 3. 순회하면서 강의실리스트에 종료시간이 자기자신 시작시간보다 작거나 같을경우 해당 강의실에 붙힐 수 있다.
+# 4. 강의실에 붙힐 수 있다면, 붙히고, 종료시간을 업데이트 해준다.
+# 5. 강의실에 붙힐 수 없다면, 강의실을 하나 만든다.
+
+import sys
+import heapq
+input = sys.stdin.readline
+N = int(input())
+
+course = []
+for _ in range(N):
+    s, t = map(int, input().split())
+    course.append((s, t))
+
+course.sort(key=lambda x:x[0]) # 시작시간으로 정렬한다.
+
+# ? 우선순위 큐를 사용한 이유 : 강의가 끝나는시간이 오름차순으로 정렬되어있을때, 끝나는 시간의 첫번째 인덱스가 s보다 크다면 나머지 뒤에 강의는 볼 필요가 없기때문.
+room = []
+for s, t in course:
+    if room: # 강의실 정보가 존재한다면,
+        if s >= room[0]: # 끝나는 시간이 가장 작은시간이 s보다 작을경우 뒤에 수업이 가능하다.
+            heapq.heappop(room)
+            
+        heapq.heappush(room, t)
+    else:
+        heapq.heappush(room, t)
+
+print(len(room))
