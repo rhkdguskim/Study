@@ -14,15 +14,11 @@ temp.sort()
 
 diff = []
 for i in range(1, N):
-    diff.append((temp[i][0] - temp[i-1][0], i-1, i))
+    diff.append(temp[i][0] - temp[i-1][0])
     
 diff.sort()
+
 for _ in range(K-1):
-    value, start, end = diff.pop()
-    
-visited = [False for _ in range(N)]
-        
+    diff.pop()
 
-
-
-    
+print(sum(diff))
