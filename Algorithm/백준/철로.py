@@ -8,7 +8,7 @@ road = []
 for _ in range(n):
     road.append((sorted(list(map(int, input().split())))))
     
-road.sort(key=lambda x:x[0])
+road.sort(key=lambda x:(x[0], x[1]))
 
 d = int(input())
 
@@ -27,9 +27,9 @@ while end >= start:
         elif s > x1 and e > x2:
             right += 1
         else:
-            if abs(x1 - s) >= abs(e - x2):
+            if abs(x1 - s) > abs(e - x2):
                 left += 1
-            else:
+            elif abs(x1 - s) < abs(e - x2):
                 right += 1
             
     ans = max(count, ans)
@@ -37,5 +37,5 @@ while end >= start:
         end = mid - 1
     else:
         start = mid + 1
-
+        
 print(ans)
