@@ -1,6 +1,6 @@
 # https://www.acmicpc.net/problem/2014
 import sys
-import bisect
+import heapq
 
 input = sys.stdin.readline
 
@@ -10,27 +10,17 @@ prime = list(map(int, input().split()))
 
 queue = []
 
-for i, p in enumerate(prime):
-    queue.append(p)
-
-cnt = 0
-is_founded = False
-while True:
-    if is_founded:
-        break
+for p in prime:
+    heapq.heappush(queue, p)
     
-    for n in queue:
-        for p in prime:
-            idx = bisect.bisect_left(queue, n*p)
-            if idx == len(queue):
-                queue.append(n*p)
-            else:
-                if queue[idx] == n*p:
-                    continue
-                else:
-                    queue.insert(idx, n*p)
-        if len(queue) >= N:
-            is_founded = True
+for _ in range(N):
+    num = heapq.heappop(queue)
+    
+    for i in range(K):
+        data = num * prime[i]
+        heapq.heappush(queue, data)
+        
+        if num % prime[i] == 0:
             break
-    
-print(queue[N-1])
+
+print(num)
