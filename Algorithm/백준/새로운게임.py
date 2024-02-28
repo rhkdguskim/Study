@@ -4,7 +4,6 @@
 # 채스말을 하나씩 순회하면서 문제를 해결하자
 
 import sys
-from collections import defaultdict
 moves = [(0, 1), (0, -1), (-1, 0), (1, 0)]
 WHITE = 0
 RED = 1
@@ -13,70 +12,71 @@ BLUE = 2
 input = sys.stdin.readline
 N, K = map(int, input().split())
 
-hourse_table = defaultdict(list)
-hourse = [[[0, 0], 0, 0] for _ in range(K)]
-
+chess = [[[] for _ in range(N)] for _ in range(N)]
+horse = []
 table = [list(map(int, input().split())) for _ in range(N)]
 
+def chage_direction(dir):
+    if dir in [0, 2]:
+        return dir + 1
+
+    if dir in [1, 3]:
+        return dir - 1
+
+def solve(i):
+    y, x , dir = horse[i]
+    dy, dx = moves[dir]
+    ny, nx = dy + y, dx + x
+    if nx >= N or nx < 0 or ny >=N or ny < 0 or table[ny][nx] == BLUE:
+        dir = chage_direction(dir)
+        horse[i][2] = dir
+        dy, dx = moves[dir]
+        ny, nx = dy + y, dx + x
+        if nx >= N or nx < 0 or ny >=N or ny < 0 or table[ny][nx] == BLUE:
+            return False
+    
+    horse_up = []
+    for idx, num in enumerate(chess[y][x]):
+        if num == i:
+            horse_up.extend(chess[y][x][idx:])
+            chess[y][x] = chess[y][x][:idx]
+            break
+    
+    if table[ny][nx] == RED:
+        horse_up = horse_up[-1::-1]
+    
+    for num in horse_up:
+        horse[num][0], horse[num][1] = ny, nx
+        chess[ny][nx].append(num)
+    
+    if len(chess[ny][nx]) >= 4:
+        return True
+    else:
+        return False
+    
+    
 for i in range(K):
     y, x, d = map(int, input().split())
     y -= 1
     x -= 1
     d -= 1
-    
-    hourse[i][0] = [y, x]
-    hourse[i][1] = d
-    hourse[i][2] = 0
-    hourse_table[(y, x)].append(i)
-    
-def is_range(y, x):
-    return N > y >=0 and N > x >=0
+    chess[y][x].append(i)
+    horse.append([y, x, d])
 
-def change_direction(dir):
-    if dir == 0:
-        return 1
-    
-    if dir == 1:
-        return 0
-    
-    if dir == 2:
-        return 3
-    
-    if dir == 4:
-        return 3
-    
-def move(hourse):
-    pos, direction, h = hourse
-    y, x = pos[0], pos[1]
-    dy, dx = move[direction]
-    ny, nx = dy + y, dx + x
-    if is_range(ny, nx):
-        if table[ny][nx] == WHITE:
-            for child in hourse_table[(y, x)][h:]:
-                hourse_table[(ny, nx)].append(child)
-                
-            hourse_table[(y, x)] = hourse_table[(y, x)][:h]
-        elif table[ny][nx] == RED:
-            for child in reversed(hourse_table[(y, x)][h:]):
-                hourse_table[(ny, nx)].append(child)
-                
-            hourse_table[(y, x)] = hourse_table[(y, x)][:h]
-        elif table[ny][nx] == BLUE:
-            direction = change_direction(direction)
-            dy, dx = move[direction]
-            ny, nx = dy + y, dx + x
-            if is_range(ny, nx):
-                if table[ny][nx] != BLUE:
-                    y, x = ny, nx
-    
-    return y, x, direction, h
-
-def popchild(i):
-    y, x = hourse[i][0]
-    hourse_table
-    
-    
+is_finished = False
+time = 0
 while True:
+    if time > 1000:
+        print(-1)
+        break
+    
     for i in range(K):
-        move(hourse[i])
+        if solve(i):
+            is_finished = True
+            break
         
+    time += 1    
+    if is_finished:
+        print(time)
+        break
+    
