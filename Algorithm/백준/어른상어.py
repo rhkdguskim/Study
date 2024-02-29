@@ -13,7 +13,6 @@
 
 # 위, 아래, 왼, 우
 import sys
-from collections import defaultdict
 input = sys.stdin.readline
 
 N, M, k = map(int, input().split())
