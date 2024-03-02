@@ -6,7 +6,6 @@
 # 0은호수, 1은 배양액을 뿌릴 수 없는 땅, 2는 배양액을 뿌릴수 있는땅
 import sys
 input = sys.stdin.readline
-
 from itertools import combinations
 from collections import deque
 
@@ -15,15 +14,20 @@ def BFS():
     while queue:
         y,x,ylast,xlast,time,color = queue.popleft()
             
+        # 꽃이 피었기때문에 탐색을 중지한다.
         if visited[ylast][xlast] == 1:
             continue
         
         if visited[y][x]:
-            if visited[y][x] == (time,-color):
+            # 반대색이 이미 방문한 이력이 있다면
+            if visited[y][x] == (time, -color):
                 visited[y][x] = 1
                 flower += 1
+            
+            # 탐색을 중지한다.
             continue
-
+        
+        # 해당색상으로 방문을 표시한다.
         visited[y][x] = (time,color)
         
         for dy, dx in [(0, 1), (0, -1), (1, 0), (-1, 0)]:
@@ -54,14 +58,14 @@ for GRlist in combinations(spread, G+R):
         
         for y,x in Glist:
             visited[y][x] = 1
-            queue.append((y,x,y,x,1,1)) # green
+            queue.append((y,x,y,x,1,1)) # 초록색 씨앗
             
         for y,x in GRlist:
             if visited[y][x]:
                 continue
-            queue.append((y,x,y,x,1,-1)) # red
+            queue.append((y,x,y,x,1,-1)) # 빨간색 씨앗
       
     visited = [[0]*M for _ in range(N)]
-    result = max(result,BFS())
+    result = max(result, BFS())
 
 print(result)
