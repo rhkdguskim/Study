@@ -4,31 +4,25 @@ from collections import deque
 input = sys.stdin.readline
 
 N, K = map(int, input().split())
+vistied = [-1] * 100001
 
 queue = deque()
-queue.append((N, 0))
-INF = 100001
+queue.append((N))
+vistied[N] = 0
 ans = 0
 
-max_cost = sys.maxsize
 while queue:
-    cur, cost = queue.popleft()
-    #print(cur, cost, max_cost)
-    if cost > max_cost:
-        continue
+    cur = queue.popleft()
     
     if cur == K:
-        max_cost = cost
         ans += 1
+        continue
     
-    queue.append((cur * 2, cost + 1))
-    queue.append((cur + 1, cost + 1))
-    
-    if cur - 1 > 0:
-        queue.append((cur - 1, cost + 1))    
-    
-    
-    
-print(max_cost)
+    for next in (cur*2, cur + 1, cur - 1):
+        if 100001 > next >=0 and (vistied[next] == vistied[cur] + 1 or vistied[next] == -1):
+            vistied[next] = vistied[cur] + 1
+            queue.append((next))    
+            
+print(vistied[K])
 print(ans)
         
