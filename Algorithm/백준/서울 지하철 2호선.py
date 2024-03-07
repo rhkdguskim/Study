@@ -5,7 +5,7 @@
 
 import sys
 input = sys.stdin.readline
-
+sys.setrecursionlimit(int(1e4))
 N = int(input())
 edge = [[] for _ in range(N+1)]
 
@@ -13,30 +13,43 @@ for _ in range(N):
     start, end = map(int, input().split())
     edge[end].append(start)
     edge[start].append(end)
-    
+
 cycled = [False for _ in range(N+1)]
 
-def dfs(node, nodes:set, cur):
-    if len(nodes) > 2 and cur == node:
-        for v in nodes:
-            cycled[v] = True
-        return
+def dfs(start, node, visited:set):
+    for next in edge[node]:
+        if next not in visited:
+            visited.add(next)
+            dfs(start, next, visited)
+            visited.remove(next)
+        elif len(visited) >= 3 and start == next:
+            for v in visited:
+                cycled[v] = True
+            return
     
-    for child in edge[node]:
-        new_node = child
-        if visited[node][new_node] == False:
-            visited[node][new_node] = True
-            visited[new_node][node] = True
-            nodes.add(new_node)
-            dfs(new_node, nodes, cur)
-            nodes.remove(new_node)
-            visited[node][new_node] = False
-            visited[new_node][node] = False
-
 
 for i in range(1, N+1):
-    visited = [[False for _ in range(N+1)] for _ in range(N+1)]
     if not cycled[i]:
-        dfs(i, set([i]), i)
+        dfs(i, i, set([i]))
 
-print(cycled)
+def find(node, visited:set):
+    if cycled[node]:
+        return len(visited) - 1
+            
+    min_result = N+1
+    for next in edge[node]:
+        if next not in visited:
+            visited.add(next)
+            min_result = min(find(next, visited), min_result)
+            visited.remove(next)
+            
+    return min_result        
+
+ans = []
+for node in range(1, len(cycled)):
+    if cycled[node]:
+        ans.append(0)
+    else:
+        ans.append(find(node, set([node])))
+        
+print(*ans)
