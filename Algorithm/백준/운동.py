@@ -1,3 +1,4 @@
+# https://www.acmicpc.net/problem/1956
 import sys
 
 V, E = map(int, input().split())
