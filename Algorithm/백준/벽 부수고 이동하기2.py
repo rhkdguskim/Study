@@ -13,27 +13,26 @@ for _ in range(N):
 def bfs():
     queue = deque()
     visited = [[[INF]*(K+1) for _ in range(M)] for _ in range(N)]
-    queue.append((0, 0, K, 0))
+    queue.append((0, 0, K))
     for i in range(K+1):
-        visited[0][0][i] = 0
+        visited[0][0][i] = 1
     
     while queue:
-        y, x, wall, cost = queue.popleft()
-        #print(y, x, wall, cost)
+        y, x, wall = queue.popleft()
         for dy, dx in [(0, 1), (0, -1), (1, 0), (-1, 0)]:
             ny, nx = dy + y, dx + x
             if N > ny >=0 and M > nx >=0:
-                new_cost = cost + 1
+                new_cost = visited[y][x][wall] + 1
                 # 그냥 이동하는경우
                 if graph[ny][nx] == 0:
                     if visited[ny][nx][wall] > new_cost:
                         visited[ny][nx][wall] = new_cost
-                        queue.append((ny, nx, wall, new_cost))
+                        queue.append((ny, nx, wall))
                 # 벽을 부수고 이동하는경우
                 else:
                     if visited[ny][nx][wall-1] > new_cost and wall > 0:
                         visited[ny][nx][wall-1] = new_cost
-                        queue.append((ny, nx, wall-1, new_cost))
+                        queue.append((ny, nx, wall-1))
 
     return min(visited[N-1][M-1])
 
@@ -41,4 +40,4 @@ ans = bfs()
 if ans == INF:
     print(-1)
 else:
-    print(ans+1)
+    print(ans)
