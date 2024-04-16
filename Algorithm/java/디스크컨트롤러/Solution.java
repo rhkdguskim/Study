@@ -1,12 +1,8 @@
 package Algorithm.java.디스크컨트롤러;
 
-
-import java.util.Comparator;
 import java.util.PriorityQueue;
 
-// 끝나는 시점에서 요청부터 종료까지 가장 짧은 시간을 계속 고른다.
-// 작업 시간이 가장 짧은 것부터 수행한다. (시작시간, 끝나는시간)
-// 시작시간이 끝나는시간보다 크거나 같아야한다.
+// 작업큐와 work 큐를 분리하여 구현
 class Solution {
     public static void main(String[] argv)
     {
@@ -16,95 +12,35 @@ class Solution {
     }
 
     public int solution(int[][] jobs) {
-        DiskSchedule schedule = new DiskSchedule(jobs);
+        PriorityQueue<int[]> timeQueue = new PriorityQueue<>((w1, w2) -> (w1[0] - w2[0]));
+        PriorityQueue<int[]> workQueue = new PriorityQueue<>((w1, w2) -> (w1[1] - w2[1]));
         int currentTime = 0;
-        while(!schedule.isEmpty())
+        int workingTime = 0;
+        for(int[] job : jobs)
         {
-            Work work = schedule.popNextWork(currentTime);
-            currentTime += work.workTime;
+            timeQueue.add(job);
         }
 
-        return schedule.getAverage();
-    }
-
-    public static class DiskSchedule
-    {
-        private final PriorityQueue<Work> queue = new PriorityQueue<>();
-        private final PriorityQueue<WaitWork> delayedWorks = new PriorityQueue<>();
-        int workCnt;
-        int workTime;
-        DiskSchedule(int[][] jobs)
+        while(!timeQueue.isEmpty() || !workQueue.isEmpty())
         {
-            for(int[] job : jobs) {
-                queue.add(new Work(job[0], job[1]));
-            }
-            workCnt = queue.size();
-        }
-
-        boolean isEmpty()
-        {
-            return queue.isEmpty();
-        }
-
-        Work popNextWork(int currentTime)
-        {
-            while(!queue.isEmpty())
+            // 1. 현지시간에서 작업할 수 있는 일들을 workQueue에 추가하는데 작업시간이 가장 짧은 순으로 넣는다.
+            while(!timeQueue.isEmpty() && currentTime >= timeQueue.peek()[0])
             {
-                Work work = queue.poll();
-                int waitTime = work.workTime;
-                waitTime += Math.abs(currentTime - work.start);
-                delayedWorks.add(new WaitWork(waitTime, work));
+                workQueue.add(timeQueue.poll());
             }
 
-            WaitWork waitWork = delayedWorks.poll();
-            workTime += waitWork.waitTime;
-
-            while(!delayedWorks.isEmpty())
-            {
-                queue.add(delayedWorks.poll().work);
+            // 2. WorkQueue에서 하나를 꺼내어 시간을 계산한다.
+            // 만약 일을 할 수 있는게 하나도 없다면 timeQueue의 시작시간을 현재시간으로 맞춘다.
+            if(workQueue.isEmpty()) {
+                currentTime = timeQueue.peek()[0];
             }
-
-            return waitWork.work;
-        };
-
-        int getAverage()
-        {
-            return workTime/workCnt;
+            else {
+                int[] job = workQueue.poll();
+                workingTime += (currentTime - job[0] + job[1]);
+                currentTime += job[1];
+            }
         }
-
-    }
-
-    public static class WaitWork implements Comparable<WaitWork>
-    {
-        int waitTime;
-        Work work;
-
-        WaitWork(int waitTime, Work work)
-        {
-            this.waitTime = waitTime;
-            this.work = work;
-        }
-
-        @Override
-        public int compareTo(WaitWork o) {
-            return Integer.compare(this.waitTime, o.waitTime);
-        }
-    }
-
-    public static class Work implements Comparable<Work>
-    {
-        int start;
-        int workTime;
-
-        Work(int start, int workTime)
-        {
-            this.start = start;
-            this.workTime = workTime;
-        }
-
-        @Override
-        public int compareTo(Work o) {
-            return Integer.compare(this.start, o.start);
-        }
+        workingTime /= jobs.length;
+        return workingTime;
     }
 }
