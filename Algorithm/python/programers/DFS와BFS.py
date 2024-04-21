@@ -12,7 +12,7 @@ def makeGraph(N, M, arr):
         for j in range(M): # 간선정보를 순회한다.
             if(i in arr[j]): # 간선에 자기자신이 포함되어있다면
                 for data in arr[j]: # 해당 간선정보를 불러온다.
-                    if(data != i and data not in graph[i - 1]): # 자기자신이 아닌값을 추가한다.
+                    if data != i and data not in graph[i - 1]: # 자기자신이 아닌값을 추가한다.
                         graph[i - 1].append(data)
     for i in range(len(graph)):
         graph[i].sort()
