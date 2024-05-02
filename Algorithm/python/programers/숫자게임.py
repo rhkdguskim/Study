@@ -13,9 +13,8 @@ def solution(A, B):
         if idx == len(B):
             continue
         
-        if B[idx] >= a:
-            answer += 1
-            B.pop(idx)
+        answer += 1
+        B.pop(idx)
             
     return answer
 
