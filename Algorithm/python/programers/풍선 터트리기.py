@@ -8,8 +8,20 @@
 # 3. 왼 : 큼, 우 : 작 -> 살아남음
 # 4. 왼: 작, 우 : 작 -> 살아남지 못함.
 
-# 양끝에 있는 풍선은 무조건 터지지 않는다.
-# 
+# [-16,27,65,-2,58,-92,-71,-68,-61,-33]
+# [9,-1,-5]
+import sys
+
 def solution(a):
-    answer = 0
-    return answer
+    min_value = sys.maxsize
+    answer = []
+
+    for n in a:
+        while len(answer) > 1 and answer[-1] > min_value and answer[-1] > n:
+            answer.pop()
+
+        min_value = min(n, min_value)
+        answer.append(n)
+
+
+    return len(answer)
