@@ -6,40 +6,23 @@
 # [5, 2, 3, 3, 5, 3]
 # [5, 2, 3, 3, 5] 를 예를 들어 보자
 # [5, 2, 3, 3], [2, 3, 3, 5], [5, 3, 3, 5], [5, 2, 3, 5], [5, 2, 3, 5]
-
+# 특정 구간을 담는 교집합 원소
+# 특정 구간의 스타수열의 최대 길이
+from collections import defaultdict
 def solution(a):
     n = len(a)
-    def is_star(start, end):
-        pair = {}
-        for i in range(start, end, 2):
-            if a[i] == a[i+1]:
-                return set()
-            else:
-                pair[i] = {a[i], a[i + 1]}
+    a = [a[0]] + a + [a[-1]]
+    chk = [-1] * (n+2)
+    cnt = defaultdict(int)
+    answer = 0
+    for i in range(1, n+1):
+        if a[i-1] != a[i] and chk[i-1] != a[i]:
+            chk[i-1] = a[i]
+            cnt[a[i]] += 1
+        elif a[i+1] != a[i] and chk[i+1] != a[i]:
+            chk[i+1] = a[i]
+            cnt[a[i]] += 1
 
-        temp = set(a[start:end+1])
-        for key in pair.keys():
-            temp &= pair[key]
+        answer = max(answer, cnt[a[i]]*2)
 
-        #print(temp)
-        return temp
-
-    dp = [[0] * n for _ in range(n)]
-    for i in range(0, n-1):
-        dp[i][i+1] = is_star(i, i + 1)
-
-    for k in range(3, n):
-        for i in range(n-k):
-            temp = is_star(i + k - 1, i + k) & is_star(i, i + k - 2)
-            if len(temp):
-                dp[i][i+k] = temp
-            else:
-                dp[i][i+k] = dp[i][i+k-1]
-
-    print(dp)
-    answer = -1
     return answer
-
-#solution([5,2,3,3,5,3])
-solution([0,3,3,0,7,2,0,2,2,0])
-#solution([0])
