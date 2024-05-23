@@ -1,61 +1,26 @@
 # https://school.programmers.co.kr/learn/courses/30/lessons/72413
 
-# 데이크스트라를 한뒤 역추적한다.
-# a와 b로 가는 경로를 거꾸로 역추적 한다.
-# a와 b의 공통 길을 한번 빼준다.
+# 플로이드 워셜로 각 모든 구간의 최단거리를 구한다.
+# 그런다음 s -> i(특정노드) 에서 각각 a, b 로 모든 경우의 수중에서 최소값을 고르면 끝
 import sys
-import heapq
 
 def solution(n, s, a, b, fares):
-    # 거리 테이블 초기화
-    distance = [sys.maxsize] * (n+1)
+    distance = [[sys.maxsize] * (n+1) for _ in range(n+1)]
     
-    edge =[[] for _ in range(n+1)]
-    
+    for i in range(1, n+1):
+        distance[i][i] = 0
+        
     for c, d, f in fares:
-        edge[c].append((d, f))
-        edge[d].append((c, f))
+        distance[c][d] = f
+        distance[d][c] = f
+        
+    for k in range(1, n+1):
+        for i in range(1, n+1):
+            for j in range(1, n+1):
+                distance[i][j] = min(distance[i][k]+distance[k][j], distance[i][j])
     
-    queue = []
-    heapq.heappush(queue, (0, s))
-    distance[s] = 0
-    
-    while queue:
-        cost, node = heapq.heappop(queue)
-
-        if cost > distance[node]:
-            continue
+    answer = distance[s][a] + distance[s][b]
+    for i in range(1, n+1):
+        answer = min(answer, distance[s][i] + distance[i][a] + distance[i][b])
         
-        distance[node] = cost
-        
-        for next, next_cost in edge[node]:
-            new_cost = next_cost + cost
-            if distance[next] > new_cost:
-                distance[next] = new_cost
-                queue.append((new_cost, next))
-        
-        
-    path_a = []
-    cur_node = a
-    while cur_node != s:
-        
-        for next, cost in edge[cur_node]:
-            if distance[cur_node] - cost == distance[next]:
-                cur_node = next
-                path_a.append(next)
-                break
-    
-    path_b = []
-    cur_node = b
-    while cur_node != s:
-        for next, cost in edge[cur_node]:
-            if distance[cur_node] - cost == distance[next]:
-                cur_node = next
-                path_b.append(next)
-                break
-            
-    print(path_a)
-    print(path_b)
-    return 0
-
-solution(6,4,6,2,[[4, 1, 10], [3, 5, 24], [5, 6, 2], [3, 1, 41], [5, 1, 24], [4, 6, 50], [2, 4, 66], [2, 3, 22], [1, 6, 25]])
+    return answer
