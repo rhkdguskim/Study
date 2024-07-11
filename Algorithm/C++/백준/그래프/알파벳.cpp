@@ -5,31 +5,30 @@
 #include <unordered_set>
 using namespace std;
 int R, C;
+constexpr int ALPHA = 'A';
 vector<vector<char>> graph;
-vector<vector<vector<pair<unordered_set<char>, int>>>> dp;
+vector<vector<bool>> v;
+vector<bool> color_v;
+int answer = 1;
 int dy[4] = {0, 0, -1, 1};
 int dx[4] = {-1, 1, 0, 0};
 
-void copy(unordered_set<char> &src, unordered_set<char> &dst)
-{    
-    for(auto &v : dst)
-    {
-        src.insert(v);
-    }
-}
-
-void dfs(int i, int j, int dir, unordered_set<char> current)
+void dfs(int i, int j, int cnt)
 {
-    copy(dp[i][j][dir].first, current);
-    dp[i][j][dir].second = current.size();
+    answer = max(cnt, answer);
 
     for(int k = 0; k < 4; k ++)
     {
         size_t ny = dy[k] + i;
         size_t nx = dx[k] + j;
+        
+        if(ny >= R || nx >= C || v[ny][nx] || color_v[graph[ny][nx]-ALPHA]) continue;
 
-
-        dfs(ny, nx, dir, current);
+        v[ny][nx] = true;
+        color_v[graph[ny][nx]-ALPHA] = true;
+        dfs(ny, nx, cnt + 1);
+        v[ny][nx] = false;
+        color_v[graph[ny][nx]-ALPHA] = false;
     }
 }
 
@@ -41,22 +40,22 @@ int main()
 
     cin >> R >> C;
 
+
     graph.resize(R, vector<char>(C));
-    dp.resize(R, vector<vector<pair<unordered_set<char>, int>>>(C, vector<pair<unordered_set<char>, int>>(4)));
-    
+    v.resize(R, vector<bool>(C, false));
+    color_v.resize(26, false);
+    string temp;
     for(int i = 0; i < R; i ++)
     {
-        string temp;
         cin >> temp;
         for(int j = 0; j < C; j ++)
         {
             graph[i][j] = temp[j];
-            for(int k = 0; k < 4; k ++)
-            {
-                dp[i][j][k].second = 1;
-                dp[i][j][k].first.insert(temp[j]);
-            }
-            
         }
     }
+
+    color_v[graph[0][0]-ALPHA] = true;
+    dfs(0, 0, 1);
+
+    cout << answer;
 }
