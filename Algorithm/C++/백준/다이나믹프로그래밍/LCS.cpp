@@ -1,3 +1,5 @@
+// https://www.acmicpc.net/problem/9251
+
 #include <iostream>
 #include <vector>
 #include <string>
@@ -8,25 +10,28 @@ using namespace std;
 
 string word1;
 string word2;
-map<tuple<int, int, int, int>, int> dp;
+vector<vector<int>> cache;
+int s1, s2;
 
-int solve(int s1, int e1, int s2, int e2) {
-    if (s1 > e1 || s2 > e2)
+int solve(int s1, int s2) {
+    if (0 > s1  || 0 > s2)
         return 0;
 
-    if (dp.find({s1, e1, s2, e2}) != dp.end())
-        return dp[{s1, e1, s2, e2}];
+    if(cache[s1][s2] != -1) return cache[s1][s2];
 
-    int &temp = dp[{s1, e1, s2, e2}] = 0;
+    cache[s1][s2] = 0;
 
     if (word1[s1] == word2[s2])
-        temp = max(temp, solve(s1 + 1, e1, s2 + 1, e2) + 1);
+    {
+        cache[s1][s2] = max(cache[s1][s2], solve(s1 - 1, s2 - 1) + 1);
+    }
+    else 
+    {
+        cache[s1][s2] = max(cache[s1][s2], solve(s1 - 1, s2));
+        cache[s1][s2] = max(cache[s1][s2], solve(s1, s2 - 1));
+    }
 
-    // 일치하지 않을 경우 다음 문자로 넘어감
-    temp = max(temp, solve(s1 + 1, e1, s2, e2));
-    temp = max(temp, solve(s1, e1, s2 + 1, e2));
-
-    return temp;
+    return cache[s1][s2];
 }
 
 
@@ -38,10 +43,11 @@ int main() {
     cin >> word1;
     cin >> word2;
 
-    int s1 = 0;
-    int e1 = word1.size() - 1;
-    int s2 = 0;
-    int e2 = word2.size() - 1;
+    s1 = word1.size() - 1;
+    s2 = word2.size() - 1;
 
-    cout << solve(s1, e1, s2, e2);
+    cache.resize(word1.size(), vector<int>(word2.size(), -1));
+    
+
+    cout << solve(s1, s2);
 }
