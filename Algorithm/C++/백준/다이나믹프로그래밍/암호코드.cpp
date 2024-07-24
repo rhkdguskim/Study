@@ -7,48 +7,52 @@ using namespace std;
 
 string word;
 int N;
-vector<unordered_map<string, int>> dp;
-unordered_map<int, char> alpha;
+vector<int> dp;
 
-int dfs(int index, string cur)
-{
-    // 더이상 암호할 수 없는경우
-    if(index >= N-1) return 1;
+constexpr int DIV = 1000000;
+int dfs(int index) {
+    // 암호를 끝까지 해석한 경우
+    if (index == N) {
+        return 1;
+    }
 
-    if(dp[index].find(cur) != dp[index].end()) return dp[index][cur];
+    // 이미 계산한 값이 있는 경우
+    if (dp[index] != -1) return dp[index];
 
     int cnt = 0;
-    if(index + 1 >= N-1)
-    {
-        auto new_word = word.substr(index, index + 2);
-        int num = stoi(new_word);
-        if(26 >= num)
-        {
-            cnt += dfs(index + 2, cur + new_word);
+    if (index < N - 1) {  // 다음 두 자리를 확인할 수 있는 경우
+        int num = (word[index] - '0') * 10 + (word[index + 1] - '0');
+        // 10 또는 20인 경우
+        if (num == 10 || num == 20) {
+            cnt = (cnt + dfs(index + 2)) % DIV;
+        }
+        // 11부터 26 사이인 경우
+        else if (num >= 11 && num <= 26) {
+            cnt = (cnt + dfs(index + 2)) % DIV;
         }
     }
 
-    auto new_word = word.substr(index, index + 1);
+    if (word[index] != '0') {  // 한 자리 수 확인 (0으로 시작할 수 없음)
+        cnt = (cnt + dfs(index + 1)) % DIV;
+    }
 
-    cnt += dfs(index + 1, cur + new_word);
-    dp[index][cur] = cnt;
+    dp[index] = cnt;
     return cnt;
 }
 
-int main()
-{
+
+int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(0);
     cout.tie(0);
     cin >> word;
-    N = word.size();
-    dp.resize(N);
 
-    char temp = 'A';
-    for(int i = 1; i <= 26; i ++)
-    {
-        alpha[i] = temp + i-1;
+    if (word[0] == '0') {  // '0'으로 시작하는 경우
+        cout << 0;
+        return 0;
     }
 
-    cout << dfs(0, "");
+    N = word.size();
+    dp.resize(N, -1);
+    cout << dfs(0);
 }
