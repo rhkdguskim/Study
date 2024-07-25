@@ -110,10 +110,10 @@
         <mxCell id="PbC5Yc8THwEYSNEz2fW4-46" value="Implement" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="30" y="688" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="PbC5Yc8THwEYSNEz2fW4-53" value="Receive" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;fontStyle=1" parent="1" vertex="1">
+        <mxCell id="PbC5Yc8THwEYSNEz2fW4-53" value="Send" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="15" y="658" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="PbC5Yc8THwEYSNEz2fW4-54" value="Send" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;fontStyle=1" parent="1" vertex="1">
+        <mxCell id="PbC5Yc8THwEYSNEz2fW4-54" value="Recv" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="10" y="24" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
