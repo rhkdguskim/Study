@@ -28,8 +28,8 @@
         <mxCell id="YajSy7RYpYL-Cwf7EdQ--53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="2" source="10" target="7">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="40" y="430" />
-              <mxPoint x="40" y="135" />
+              <mxPoint x="36" y="430" />
+              <mxPoint x="36" y="135" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -280,6 +280,12 @@
         </mxCell>
         <mxCell id="YajSy7RYpYL-Cwf7EdQ--237" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="YajSy7RYpYL-Cwf7EdQ--189" target="YajSy7RYpYL-Cwf7EdQ--191">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YajSy7RYpYL-Cwf7EdQ--238" value="개선이전" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="164" y="90" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YajSy7RYpYL-Cwf7EdQ--239" value="개선이후" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="164" y="590" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
