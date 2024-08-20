@@ -167,10 +167,10 @@
         <mxCell id="4sfNlxtwUgQUHQA9xHfZ-64" value="MI - VICS&lt;br&gt;Server" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1100" y="738.7" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4sfNlxtwUgQUHQA9xHfZ-67" value="Http &amp;amp;&amp;amp; Web Socket" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="840" y="460" width="90" height="30" as="geometry" />
+        <mxCell id="4sfNlxtwUgQUHQA9xHfZ-67" value="Http &amp;amp;&amp;amp; Web Socket&lt;br&gt;Video Data" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="790" y="497.4" width="140" height="56.3" as="geometry" />
         </mxCell>
-        <mxCell id="4sfNlxtwUgQUHQA9xHfZ-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.7;entryDx=0;entryDy=0;" edge="1" parent="1" source="4sfNlxtwUgQUHQA9xHfZ-68" target="4sfNlxtwUgQUHQA9xHfZ-16">
+        <mxCell id="4sfNlxtwUgQUHQA9xHfZ-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.7;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="4sfNlxtwUgQUHQA9xHfZ-68" target="4sfNlxtwUgQUHQA9xHfZ-16">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="4sfNlxtwUgQUHQA9xHfZ-68" value="Hibernate&lt;div&gt;(JPQL)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -180,10 +180,10 @@
           <mxGeometry x="1010" y="315.5" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="4sfNlxtwUgQUHQA9xHfZ-74" value="HTML / JavaScript" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="240" y="285.5" width="110" height="30" as="geometry" />
+          <mxGeometry x="280" y="285.5" width="110" height="30" as="geometry" />
         </mxCell>
         <mxCell id="4sfNlxtwUgQUHQA9xHfZ-75" value="DB Access" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="240" y="239.75" width="110" height="30" as="geometry" />
+          <mxGeometry x="280" y="239.75" width="110" height="30" as="geometry" />
         </mxCell>
         <mxCell id="4sfNlxtwUgQUHQA9xHfZ-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="4sfNlxtwUgQUHQA9xHfZ-82" target="4sfNlxtwUgQUHQA9xHfZ-9">
           <mxGeometry relative="1" as="geometry">
