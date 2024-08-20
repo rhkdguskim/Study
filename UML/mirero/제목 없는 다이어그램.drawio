@@ -58,7 +58,7 @@
           <mxGeometry x="459.76" y="157.25" width="434.15" height="250" as="geometry" />
         </mxCell>
         <mxCell id="4sfNlxtwUgQUHQA9xHfZ-15" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://d1.awsstatic.com/acs/characters/Logos/Docker-Logo_Horizontel_279x131.b8a5c41e56b77706656d61080f6a0217a3ba356d.png;" vertex="1" parent="1">
-          <mxGeometry x="450" y="117.25" width="106.49" height="50" as="geometry" />
+          <mxGeometry x="459.75" y="100" width="106.49" height="50" as="geometry" />
         </mxCell>
         <mxCell id="4sfNlxtwUgQUHQA9xHfZ-16" value="DB" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1410" y="245.25" width="80" height="75" as="geometry" />
@@ -73,7 +73,7 @@
           <mxGeometry x="1010" y="150" width="106.49" height="50" as="geometry" />
         </mxCell>
         <mxCell id="4sfNlxtwUgQUHQA9xHfZ-22" value="Data Read / Write" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="1220" y="192.25" width="130" height="30" as="geometry" />
+          <mxGeometry x="1220" y="304.63" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="4sfNlxtwUgQUHQA9xHfZ-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1" source="4sfNlxtwUgQUHQA9xHfZ-25">
           <mxGeometry relative="1" as="geometry">
@@ -84,7 +84,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="4sfNlxtwUgQUHQA9xHfZ-25" value="Static&lt;br&gt;(HTML, JavaScript)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="450" y="177.25" width="126" height="60" as="geometry" />
+          <mxGeometry x="450" y="157.25" width="126" height="60" as="geometry" />
         </mxCell>
         <mxCell id="4sfNlxtwUgQUHQA9xHfZ-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="4sfNlxtwUgQUHQA9xHfZ-36" target="4sfNlxtwUgQUHQA9xHfZ-39">
           <mxGeometry relative="1" as="geometry" />
@@ -167,8 +167,8 @@
         <mxCell id="4sfNlxtwUgQUHQA9xHfZ-64" value="MI - VICS&lt;br&gt;Server" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1100" y="738.7" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4sfNlxtwUgQUHQA9xHfZ-67" value="Web Socket" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="840" y="450" width="100" height="30" as="geometry" />
+        <mxCell id="4sfNlxtwUgQUHQA9xHfZ-67" value="Http &amp;amp;&amp;amp; Web Socket" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="840" y="460" width="90" height="30" as="geometry" />
         </mxCell>
         <mxCell id="4sfNlxtwUgQUHQA9xHfZ-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.7;entryDx=0;entryDy=0;" edge="1" parent="1" source="4sfNlxtwUgQUHQA9xHfZ-68" target="4sfNlxtwUgQUHQA9xHfZ-16">
           <mxGeometry relative="1" as="geometry" />
