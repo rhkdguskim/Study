@@ -4,6 +4,33 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="4sfNlxtwUgQUHQA9xHfZ-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="4sfNlxtwUgQUHQA9xHfZ-6" target="4sfNlxtwUgQUHQA9xHfZ-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4sfNlxtwUgQUHQA9xHfZ-6" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.computer;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="190" width="50" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="4sfNlxtwUgQUHQA9xHfZ-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="4sfNlxtwUgQUHQA9xHfZ-7" target="4sfNlxtwUgQUHQA9xHfZ-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4sfNlxtwUgQUHQA9xHfZ-7" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.computer;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="259.63" width="50" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="4sfNlxtwUgQUHQA9xHfZ-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="4sfNlxtwUgQUHQA9xHfZ-8" target="4sfNlxtwUgQUHQA9xHfZ-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4sfNlxtwUgQUHQA9xHfZ-8" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.computer;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="331" width="50" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="4sfNlxtwUgQUHQA9xHfZ-9" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://blog.kakaocdn.net/dn/k9XzT/btqCMnyJfA4/BOB5x2OnIXDpGPCepCS141/img.png;" vertex="1" parent="1">
+          <mxGeometry x="450" y="190" width="320" height="184.27" as="geometry" />
+        </mxCell>
+        <mxCell id="4sfNlxtwUgQUHQA9xHfZ-14" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;dashPattern=8 8;" vertex="1" parent="1">
+          <mxGeometry x="225" y="120" width="825" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="4sfNlxtwUgQUHQA9xHfZ-15" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://d1.awsstatic.com/acs/characters/Logos/Docker-Logo_Horizontel_279x131.b8a5c41e56b77706656d61080f6a0217a3ba356d.png;" vertex="1" parent="1">
+          <mxGeometry x="450" y="150" width="106.49" height="50" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
