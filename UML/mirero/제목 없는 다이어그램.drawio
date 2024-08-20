@@ -191,7 +191,7 @@
         <mxCell id="4sfNlxtwUgQUHQA9xHfZ-75" value="DB Access Request" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="272.5" y="236" width="155" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="4sfNlxtwUgQUHQA9xHfZ-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=16;startArrow=openThin;startFill=0;" edge="1" parent="1" source="4sfNlxtwUgQUHQA9xHfZ-82" target="4sfNlxtwUgQUHQA9xHfZ-9">
+        <mxCell id="4sfNlxtwUgQUHQA9xHfZ-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=16;startArrow=blockThin;startFill=1;" edge="1" parent="1" source="4sfNlxtwUgQUHQA9xHfZ-82" target="4sfNlxtwUgQUHQA9xHfZ-9">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="340" y="284" />
