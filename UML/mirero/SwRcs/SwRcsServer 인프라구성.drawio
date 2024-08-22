@@ -1,11 +1,11 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" version="24.7.7">
   <diagram name="페이지-1" id="aYkcMglg1YJWnqUuMOKL">
-    <mxGraphModel dx="1195" dy="622" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1687" dy="878" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="6frfkOKpwrEAERGv8wDV-29" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;strokeColor=#6c8ebf;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="733" y="260" width="146" height="140" as="geometry" />
+          <mxGeometry x="850" y="250" width="146" height="140" as="geometry" />
         </mxCell>
         <mxCell id="6frfkOKpwrEAERGv8wDV-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="6frfkOKpwrEAERGv8wDV-2" target="6frfkOKpwrEAERGv8wDV-5">
           <mxGeometry relative="1" as="geometry" />
@@ -68,13 +68,13 @@
           <mxGeometry x="625" y="286" width="45.6" height="61.800000000000004" as="geometry" />
         </mxCell>
         <mxCell id="6frfkOKpwrEAERGv8wDV-24" value="" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Personal_Computer.svg;" vertex="1" parent="1">
-          <mxGeometry x="807" y="260" width="51.6" height="61.800000000000004" as="geometry" />
+          <mxGeometry x="924" y="250" width="51.6" height="61.800000000000004" as="geometry" />
         </mxCell>
         <mxCell id="6frfkOKpwrEAERGv8wDV-25" value="" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Personal_Computer.svg;" vertex="1" parent="1">
-          <mxGeometry x="807" y="330" width="51.6" height="61.800000000000004" as="geometry" />
+          <mxGeometry x="924" y="320" width="51.6" height="61.800000000000004" as="geometry" />
         </mxCell>
         <mxCell id="6frfkOKpwrEAERGv8wDV-30" value="Sw-RCS PortProxy Server" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF4517;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="733" y="230" width="170" height="30" as="geometry" />
+          <mxGeometry x="850" y="220" width="170" height="30" as="geometry" />
         </mxCell>
         <mxCell id="6frfkOKpwrEAERGv8wDV-32" value="Sw-RCS Server" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF4517;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="570" y="70" width="140" height="30" as="geometry" />
@@ -99,6 +99,9 @@
         </mxCell>
         <mxCell id="6frfkOKpwrEAERGv8wDV-39" value="Sw-RCS Client" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#150DFF;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="40" y="260" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6frfkOKpwrEAERGv8wDV-40" value="" style="image;html=1;image=img/lib/clip_art/networking/Switch_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="700" y="280" width="80" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
