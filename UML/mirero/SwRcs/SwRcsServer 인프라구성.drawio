@@ -73,9 +73,6 @@
         <mxCell id="6frfkOKpwrEAERGv8wDV-25" value="" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Personal_Computer.svg;" vertex="1" parent="1">
           <mxGeometry x="924" y="320" width="51.6" height="61.800000000000004" as="geometry" />
         </mxCell>
-        <mxCell id="6frfkOKpwrEAERGv8wDV-30" value="Sw-RCS PortProxy Server" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF4517;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="850" y="220" width="170" height="30" as="geometry" />
-        </mxCell>
         <mxCell id="6frfkOKpwrEAERGv8wDV-32" value="Sw-RCS Server" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF4517;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="570" y="70" width="140" height="30" as="geometry" />
         </mxCell>
@@ -88,8 +85,8 @@
         <mxCell id="6frfkOKpwrEAERGv8wDV-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.033;entryY=0.482;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="6frfkOKpwrEAERGv8wDV-22" target="6frfkOKpwrEAERGv8wDV-25">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="6frfkOKpwrEAERGv8wDV-36" value="Sw-RCS Server" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF4517;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="570" y="260" width="140" height="30" as="geometry" />
+        <mxCell id="6frfkOKpwrEAERGv8wDV-36" value="Sw-RCS Server &amp;amp;&amp;amp; Proxy" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF4517;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="570" y="260" width="200" height="30" as="geometry" />
         </mxCell>
         <mxCell id="6frfkOKpwrEAERGv8wDV-37" value="Sw-RCS Client" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#150DFF;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="45" y="79" width="140" height="30" as="geometry" />
