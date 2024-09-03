@@ -19,7 +19,7 @@
         <mxCell id="NyMIy-wFPWEmBJXdMe4p-4" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/wiring_hub.svg;" vertex="1" parent="1">
           <mxGeometry x="520.5" y="130" width="102.94" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="NyMIy-wFPWEmBJXdMe4p-7" value="Private 망" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="NyMIy-wFPWEmBJXdMe4p-7" value="PLC 내부 망" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="523.44" y="98" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="NyMIy-wFPWEmBJXdMe4p-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="NyMIy-wFPWEmBJXdMe4p-8" target="NyMIy-wFPWEmBJXdMe4p-4">
