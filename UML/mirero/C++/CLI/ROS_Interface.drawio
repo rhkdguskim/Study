@@ -91,7 +91,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="lRpp7das8P99_BeM9evT-62" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;SwRcsServerManager&lt;/font&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=15;" parent="1" vertex="1">
-          <mxGeometry x="394" y="875" width="172" height="100" as="geometry" />
+          <mxGeometry x="-86" y="920" width="172" height="100" as="geometry" />
         </mxCell>
         <mxCell id="lRpp7das8P99_BeM9evT-115" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;endArrow=open;endFill=0;fontSize=15;" parent="1" source="lRpp7das8P99_BeM9evT-97" target="lRpp7das8P99_BeM9evT-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
