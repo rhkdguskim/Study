@@ -177,8 +177,8 @@
             <Array as="points">
               <mxPoint x="660" y="498" />
               <mxPoint x="660" y="1050" />
-              <mxPoint x="120" y="1050" />
-              <mxPoint x="120" y="1400" />
+              <mxPoint x="110" y="1050" />
+              <mxPoint x="110" y="1400" />
               <mxPoint x="61" y="1400" />
             </Array>
           </mxGeometry>
@@ -220,8 +220,8 @@
             <Array as="points">
               <mxPoint x="660" y="498" />
               <mxPoint x="660" y="1050" />
-              <mxPoint x="-120" y="1050" />
-              <mxPoint x="-120" y="1400" />
+              <mxPoint x="-130" y="1050" />
+              <mxPoint x="-130" y="1400" />
               <mxPoint x="-179" y="1400" />
             </Array>
           </mxGeometry>
@@ -230,8 +230,8 @@
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="660" y="498" />
-              <mxPoint x="660" y="1020" />
-              <mxPoint x="-370" y="1020" />
+              <mxPoint x="660" y="1050" />
+              <mxPoint x="-370" y="1050" />
               <mxPoint x="-370" y="1400" />
               <mxPoint x="-419" y="1400" />
             </Array>
