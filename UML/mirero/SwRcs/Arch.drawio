@@ -41,6 +41,9 @@
             </Array>
           </mxGeometry>
         </mxCell>
+        <mxCell id="KPSD_x9DPpmhUbZZ9yAU-1" value="Version Check" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="120" y="110" width="560" height="100" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
