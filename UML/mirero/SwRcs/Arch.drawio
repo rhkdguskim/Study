@@ -7,7 +7,7 @@
         <mxCell id="KPSD_x9DPpmhUbZZ9yAU-24" value="RFB HandShake" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
           <mxGeometry x="70" y="110" width="660" height="570" as="geometry" />
         </mxCell>
-        <mxCell id="KPSD_x9DPpmhUbZZ9yAU-1" value="Protocol Version" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
+        <mxCell id="KPSD_x9DPpmhUbZZ9yAU-1" value="1. Protocol Version" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
           <mxGeometry x="120" y="148" width="560" height="100" as="geometry" />
         </mxCell>
         <mxCell id="8FCmaWCUZ1RdT127gi2X-4" value="Server" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
@@ -44,7 +44,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="KPSD_x9DPpmhUbZZ9yAU-3" value="Security" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
+        <mxCell id="KPSD_x9DPpmhUbZZ9yAU-3" value="2. Security" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
           <mxGeometry x="120" y="283" width="560" height="100" as="geometry" />
         </mxCell>
         <mxCell id="KPSD_x9DPpmhUbZZ9yAU-4" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
@@ -69,7 +69,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="KPSD_x9DPpmhUbZZ9yAU-13" value="Authentication" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
+        <mxCell id="KPSD_x9DPpmhUbZZ9yAU-13" value="3. Authentication" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
           <mxGeometry x="120" y="413" width="560" height="100" as="geometry" />
         </mxCell>
         <mxCell id="KPSD_x9DPpmhUbZZ9yAU-14" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
@@ -94,7 +94,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="KPSD_x9DPpmhUbZZ9yAU-18" value="Initalization" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
+        <mxCell id="KPSD_x9DPpmhUbZZ9yAU-18" value="4. Initalization" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
           <mxGeometry x="120" y="553" width="560" height="100" as="geometry" />
         </mxCell>
         <mxCell id="KPSD_x9DPpmhUbZZ9yAU-19" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
