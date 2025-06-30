@@ -4,6 +4,9 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="KPSD_x9DPpmhUbZZ9yAU-1" value="Version Check" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="120" y="110" width="560" height="100" as="geometry" />
+        </mxCell>
         <mxCell id="8FCmaWCUZ1RdT127gi2X-4" value="Server" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
           <mxGeometry x="110" y="40" width="100" height="690" as="geometry" />
         </mxCell>
@@ -25,13 +28,13 @@
         <mxCell id="sWM0tMhOnT5Zf9Z6tHfr-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="8FCmaWCUZ1RdT127gi2X-11">
           <mxGeometry x="40" y="90" width="10" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="sWM0tMhOnT5Zf9Z6tHfr-5" value="RFB 3.8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+        <mxCell id="sWM0tMhOnT5Zf9Z6tHfr-5" value="RFB 3.x" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="170" y="151" as="sourcePoint" />
             <mxPoint x="650" y="151" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="sWM0tMhOnT5Zf9Z6tHfr-10" value="RFB 3.8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.242;entryY=0.71;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+        <mxCell id="sWM0tMhOnT5Zf9Z6tHfr-10" value="RFB 3.x" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.242;entryY=0.71;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="650" y="164" as="sourcePoint" />
             <mxPoint x="172.42000000000007" y="163.60000000000002" as="targetPoint" />
@@ -40,9 +43,6 @@
               <mxPoint x="530" y="164" />
             </Array>
           </mxGeometry>
-        </mxCell>
-        <mxCell id="KPSD_x9DPpmhUbZZ9yAU-1" value="Version Check" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
-          <mxGeometry x="120" y="110" width="560" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
