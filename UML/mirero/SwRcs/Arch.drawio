@@ -1,5 +1,5 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.2.0" pages="4">
-  <diagram id="OJiDylZDKc62zz5DHtTa" name="Protocol">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.2.0" pages="5">
+  <diagram id="OJiDylZDKc62zz5DHtTa" name="RFB_Protocol">
     <mxGraphModel dx="1426" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -7,7 +7,15 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram name="Screen I/F" id="r6Kb4BBWpulR1Wia2MeO">
+  <diagram id="futHeiRAGk7LEK9us22i" name="Optional_Protocol">
+    <mxGraphModel dx="1426" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Screen" id="r6Kb4BBWpulR1Wia2MeO">
     <mxGraphModel dx="2610" dy="2169" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -475,7 +483,7 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="2koKSC2r8LjdX4cQJeCK" name="K/M I/F">
+  <diagram id="2koKSC2r8LjdX4cQJeCK" name="Keyboard_Mouse">
     <mxGraphModel dx="1426" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
