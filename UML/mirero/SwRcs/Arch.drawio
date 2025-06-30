@@ -109,7 +109,7 @@
             <mxPoint x="650" y="613" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="KPSD_x9DPpmhUbZZ9yAU-22" value="Client Init ( Shared Session )" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.242;entryY=0.71;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+        <mxCell id="KPSD_x9DPpmhUbZZ9yAU-22" value="Client Init ( Decoder Options... )" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.242;entryY=0.71;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="647.5799999999999" y="583.4" as="sourcePoint" />
             <mxPoint x="170.0000000000001" y="583" as="targetPoint" />
