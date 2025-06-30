@@ -25,19 +25,19 @@
         <mxCell id="sWM0tMhOnT5Zf9Z6tHfr-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="8FCmaWCUZ1RdT127gi2X-11">
           <mxGeometry x="40" y="90" width="10" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="sWM0tMhOnT5Zf9Z6tHfr-5" value="Protocol Version Response ( RFB 3.x )" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+        <mxCell id="sWM0tMhOnT5Zf9Z6tHfr-5" value="ProtocolVersion ( RFB 3.x )" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="170" y="151" as="sourcePoint" />
-            <mxPoint x="650" y="151" as="targetPoint" />
+            <mxPoint x="170" y="145" as="sourcePoint" />
+            <mxPoint x="650" y="145" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="sWM0tMhOnT5Zf9Z6tHfr-10" value="RFB 3.x" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.242;entryY=0.71;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+        <mxCell id="sWM0tMhOnT5Zf9Z6tHfr-10" value="ProtocolVersion Response ( RFB 3.x )" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.242;entryY=0.71;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="650" y="164" as="sourcePoint" />
-            <mxPoint x="172.42000000000007" y="163.60000000000002" as="targetPoint" />
+            <mxPoint x="650" y="174" as="sourcePoint" />
+            <mxPoint x="172.42000000000007" y="173.60000000000002" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="530" y="164" />
-              <mxPoint x="530" y="164" />
+              <mxPoint x="530" y="174" />
+              <mxPoint x="530" y="174" />
             </Array>
           </mxGeometry>
         </mxCell>
