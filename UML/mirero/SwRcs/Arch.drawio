@@ -840,7 +840,7 @@
         <mxCell id="llXMtwTAjWM8G-PWb1IN-48" value="Dirty Rect" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=none;strokeColor=#d79b00;" vertex="1" parent="1">
           <mxGeometry x="560" y="794.5" width="60" height="51" as="geometry" />
         </mxCell>
-        <mxCell id="llXMtwTAjWM8G-PWb1IN-54" value="Before Split" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="1">
+        <mxCell id="llXMtwTAjWM8G-PWb1IN-54" value="After Split" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="1">
           <mxGeometry x="700" y="739" width="180" height="151" as="geometry" />
         </mxCell>
         <mxCell id="llXMtwTAjWM8G-PWb1IN-68" value="" style="group;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" connectable="0" parent="1">
