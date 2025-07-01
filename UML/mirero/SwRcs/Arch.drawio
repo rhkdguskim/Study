@@ -770,8 +770,24 @@
         <mxCell id="llXMtwTAjWM8G-PWb1IN-20" value="Split Dirty Rect" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="620" y="570" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="llXMtwTAjWM8G-PWb1IN-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="llXMtwTAjWM8G-PWb1IN-24" target="llXMtwTAjWM8G-PWb1IN-87">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1200" y="600" />
+              <mxPoint x="1200" y="470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="llXMtwTAjWM8G-PWb1IN-24" value="Tight Encode&lt;br&gt;(Zlib + JPEG&lt;br&gt;Compression)" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="827" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="llXMtwTAjWM8G-PWb1IN-88" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="llXMtwTAjWM8G-PWb1IN-27" target="llXMtwTAjWM8G-PWb1IN-87">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1200" y="350" />
+              <mxPoint x="1200" y="470" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="llXMtwTAjWM8G-PWb1IN-27" value="H.246 Encode" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1027" y="320" width="120" height="60" as="geometry" />
@@ -874,6 +890,9 @@
         </mxCell>
         <mxCell id="llXMtwTAjWM8G-PWb1IN-86" value="Tile" style="rounded=0;whiteSpace=wrap;html=1;container=0;" vertex="1" parent="llXMtwTAjWM8G-PWb1IN-82">
           <mxGeometry x="30" y="30" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="llXMtwTAjWM8G-PWb1IN-87" value="Send FrameBuffer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1241" y="440" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
