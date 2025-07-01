@@ -704,7 +704,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="2koKSC2r8LjdX4cQJeCK" name="Tight vs H.264">
-    <mxGraphModel dx="3113" dy="2947" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2547" dy="2624" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1015,7 +1015,7 @@
         <mxCell id="llXMtwTAjWM8G-PWb1IN-136" value="Tile" style="rounded=0;whiteSpace=wrap;html=1;container=0;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
           <mxGeometry x="1747.5" y="670" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="llXMtwTAjWM8G-PWb1IN-137" value="I-Frame or P-Frame" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+        <mxCell id="llXMtwTAjWM8G-PWb1IN-137" value="Bouned Rect" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
           <mxGeometry x="1557.5" y="200" width="142.5" height="110" as="geometry" />
         </mxCell>
       </root>
