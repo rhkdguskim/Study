@@ -770,7 +770,7 @@
         <mxCell id="llXMtwTAjWM8G-PWb1IN-20" value="Split Dirty Rect" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="620" y="570" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="llXMtwTAjWM8G-PWb1IN-24" value="Zlib + JPEG&lt;br&gt;Compression" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+        <mxCell id="llXMtwTAjWM8G-PWb1IN-24" value="Tight Encode&lt;br&gt;(Zlib + JPEG&lt;br&gt;Compression)" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="827" y="570" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="llXMtwTAjWM8G-PWb1IN-27" value="H.246 Encode" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
