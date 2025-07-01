@@ -780,7 +780,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="llXMtwTAjWM8G-PWb1IN-32" value="Before Split" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="1">
-          <mxGeometry x="460" y="40" width="180" height="140" as="geometry" />
+          <mxGeometry x="460" y="40" width="180" height="150" as="geometry" />
         </mxCell>
         <mxCell id="llXMtwTAjWM8G-PWb1IN-33" value="Dirty Rect" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="477.5" y="50" width="70" height="50" as="geometry" />
@@ -792,7 +792,7 @@
           <mxGeometry x="560" y="90" width="60" height="40" as="geometry" />
         </mxCell>
         <mxCell id="llXMtwTAjWM8G-PWb1IN-36" value="After Split" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="1">
-          <mxGeometry x="700" y="40" width="180" height="140" as="geometry" />
+          <mxGeometry x="700" y="40" width="180" height="150" as="geometry" />
         </mxCell>
         <mxCell id="llXMtwTAjWM8G-PWb1IN-39" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#d79b00;dashed=1;" vertex="1" parent="1">
           <mxGeometry x="477.5" y="50" width="142.5" height="110" as="geometry" />
