@@ -955,7 +955,7 @@
         <mxCell id="llXMtwTAjWM8G-PWb1IN-105" value="YUV420 -&amp;gt; BGRA" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="2120" y="320" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="llXMtwTAjWM8G-PWb1IN-111" value="Update Frame" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+        <mxCell id="llXMtwTAjWM8G-PWb1IN-111" value="Update Frame&lt;br&gt;(Dirty Rects)" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="2310" y="430" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
