@@ -709,7 +709,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="llXMtwTAjWM8G-PWb1IN-95" value="Client" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=none;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;fontSize=17;" vertex="1" parent="1">
-          <mxGeometry x="1440" y="10" width="1380" height="970" as="geometry" />
+          <mxGeometry x="1440" y="10" width="1020" height="970" as="geometry" />
         </mxCell>
         <mxCell id="llXMtwTAjWM8G-PWb1IN-94" value="Server" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=none;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;fontSize=17;" vertex="1" parent="1">
           <mxGeometry x="10" y="10" width="1380" height="970" as="geometry" />
