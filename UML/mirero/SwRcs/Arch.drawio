@@ -708,6 +708,9 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="llXMtwTAjWM8G-PWb1IN-30" value="" style="whiteSpace=wrap;html=1;rounded=0;fillColor=none;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="20" width="480" height="200" as="geometry" />
+        </mxCell>
         <mxCell id="llXMtwTAjWM8G-PWb1IN-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wDUvSXQ6kGNSKf8gGa9q-1" target="llXMtwTAjWM8G-PWb1IN-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -746,8 +749,14 @@
         <mxCell id="llXMtwTAjWM8G-PWb1IN-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="llXMtwTAjWM8G-PWb1IN-13" target="llXMtwTAjWM8G-PWb1IN-18">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="llXMtwTAjWM8G-PWb1IN-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1" source="llXMtwTAjWM8G-PWb1IN-13" target="llXMtwTAjWM8G-PWb1IN-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="llXMtwTAjWM8G-PWb1IN-13" value="Split Dirty Rect" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="620" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="llXMtwTAjWM8G-PWb1IN-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="llXMtwTAjWM8G-PWb1IN-18" target="llXMtwTAjWM8G-PWb1IN-27">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="llXMtwTAjWM8G-PWb1IN-18" value="BGRA -&amp;gt; YUV420" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="827" y="320" width="120" height="60" as="geometry" />
@@ -758,8 +767,11 @@
         <mxCell id="llXMtwTAjWM8G-PWb1IN-20" value="Split Dirty Rect" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="620" y="570" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="llXMtwTAjWM8G-PWb1IN-24" value="Send FrameBuffer" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="820" y="570" width="120" height="60" as="geometry" />
+        <mxCell id="llXMtwTAjWM8G-PWb1IN-24" value="Zlib + JPEG&lt;br&gt;Compression" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="827" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="llXMtwTAjWM8G-PWb1IN-27" value="I-Frame&lt;br&gt;P-Frame" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1027" y="320" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
