@@ -743,13 +743,13 @@
         <mxCell id="llXMtwTAjWM8G-PWb1IN-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="llXMtwTAjWM8G-PWb1IN-5" target="llXMtwTAjWM8G-PWb1IN-13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="llXMtwTAjWM8G-PWb1IN-5" value="H.264" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+        <mxCell id="llXMtwTAjWM8G-PWb1IN-5" value="H.264 Encoder" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="420" y="320" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="llXMtwTAjWM8G-PWb1IN-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="llXMtwTAjWM8G-PWb1IN-9" target="llXMtwTAjWM8G-PWb1IN-20">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="llXMtwTAjWM8G-PWb1IN-9" value="Tight" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+        <mxCell id="llXMtwTAjWM8G-PWb1IN-9" value="Tight Encoder" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="420" y="570" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="llXMtwTAjWM8G-PWb1IN-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="llXMtwTAjWM8G-PWb1IN-13" target="llXMtwTAjWM8G-PWb1IN-18">
@@ -915,11 +915,17 @@
         <mxCell id="llXMtwTAjWM8G-PWb1IN-96" value="Decoder Store" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1710" y="440" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="llXMtwTAjWM8G-PWb1IN-97" value="H.264" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+        <mxCell id="llXMtwTAjWM8G-PWb1IN-104" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="llXMtwTAjWM8G-PWb1IN-97" target="llXMtwTAjWM8G-PWb1IN-103">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="llXMtwTAjWM8G-PWb1IN-97" value="H.264 Decoder" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1900" y="320" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="llXMtwTAjWM8G-PWb1IN-98" value="Tight" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+        <mxCell id="llXMtwTAjWM8G-PWb1IN-98" value="Tight Decoder" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1900" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="llXMtwTAjWM8G-PWb1IN-103" value="Decode" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2120" y="320" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
