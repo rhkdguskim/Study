@@ -964,7 +964,7 @@
         <mxCell id="llXMtwTAjWM8G-PWb1IN-160" value="f" style="group" vertex="1" connectable="0" parent="1">
           <mxGeometry x="2270" y="660" width="180" height="151" as="geometry" />
         </mxCell>
-        <mxCell id="llXMtwTAjWM8G-PWb1IN-141" value="Update Area" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="llXMtwTAjWM8G-PWb1IN-160">
+        <mxCell id="llXMtwTAjWM8G-PWb1IN-141" value="Update Area ( Tight )" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="llXMtwTAjWM8G-PWb1IN-160">
           <mxGeometry width="180" height="151" as="geometry" />
         </mxCell>
         <mxCell id="llXMtwTAjWM8G-PWb1IN-142" value="" style="group;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" connectable="0" parent="llXMtwTAjWM8G-PWb1IN-160">
@@ -1024,7 +1024,7 @@
         <mxCell id="llXMtwTAjWM8G-PWb1IN-163" value="" style="group" vertex="1" connectable="0" parent="1">
           <mxGeometry x="2270" y="150" width="180" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="llXMtwTAjWM8G-PWb1IN-161" value="Update Area" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="llXMtwTAjWM8G-PWb1IN-163">
+        <mxCell id="llXMtwTAjWM8G-PWb1IN-161" value="Update Area ( H.264 )" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="llXMtwTAjWM8G-PWb1IN-163">
           <mxGeometry width="180" height="150" as="geometry" />
         </mxCell>
         <mxCell id="llXMtwTAjWM8G-PWb1IN-162" value="Bounded Rect" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="llXMtwTAjWM8G-PWb1IN-163">
