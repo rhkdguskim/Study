@@ -825,13 +825,13 @@
         <mxCell id="llXMtwTAjWM8G-PWb1IN-45" value="Before Split" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="1">
           <mxGeometry x="460" y="739" width="180" height="151" as="geometry" />
         </mxCell>
-        <mxCell id="llXMtwTAjWM8G-PWb1IN-46" value="Dirty Rect" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="llXMtwTAjWM8G-PWb1IN-46" value="Dirty Rect" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=none;strokeColor=#d79b00;" vertex="1" parent="1">
           <mxGeometry x="477.5" y="749" width="70" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="llXMtwTAjWM8G-PWb1IN-47" value="Dirty Rect" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="llXMtwTAjWM8G-PWb1IN-47" value="Dirty Rect" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=none;strokeColor=#d79b00;" vertex="1" parent="1">
           <mxGeometry x="485" y="819" width="55" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="llXMtwTAjWM8G-PWb1IN-48" value="Dirty Rect" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="llXMtwTAjWM8G-PWb1IN-48" value="Dirty Rect" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=none;strokeColor=#d79b00;" vertex="1" parent="1">
           <mxGeometry x="560" y="789" width="60" height="40" as="geometry" />
         </mxCell>
         <mxCell id="llXMtwTAjWM8G-PWb1IN-54" value="Before Split" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="1">
