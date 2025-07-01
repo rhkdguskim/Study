@@ -909,6 +909,11 @@
         <mxCell id="llXMtwTAjWM8G-PWb1IN-100" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="llXMtwTAjWM8G-PWb1IN-96" target="llXMtwTAjWM8G-PWb1IN-97">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="llXMtwTAjWM8G-PWb1IN-109" value="I-Frame&lt;br&gt;P-Frame" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="llXMtwTAjWM8G-PWb1IN-100">
+          <mxGeometry x="0.6505" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="llXMtwTAjWM8G-PWb1IN-101" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="llXMtwTAjWM8G-PWb1IN-96" target="llXMtwTAjWM8G-PWb1IN-98">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -926,7 +931,7 @@
         <mxCell id="llXMtwTAjWM8G-PWb1IN-98" value="Tight Decoder" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1900" y="570" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="llXMtwTAjWM8G-PWb1IN-105" value="YUV420 -&amp;gt; BGRA" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+        <mxCell id="llXMtwTAjWM8G-PWb1IN-105" value="I-Frame&lt;br&gt;P-Frame" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="2120" y="320" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
