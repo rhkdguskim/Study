@@ -244,7 +244,7 @@
           <mxGeometry x="42.86" y="-1101.5" width="717.14" height="610" as="geometry" />
         </mxCell>
         <mxCell id="QIp_asUdpDxzrUBA6vSg-42" value="&lt;span style=&quot;font-size: 11px; white-space: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;Anonymous Pipe&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="50" y="-959" width="90" height="60" as="geometry" />
+          <mxGeometry x="80" y="-959" width="90" height="60" as="geometry" />
         </mxCell>
         <mxCell id="QIp_asUdpDxzrUBA6vSg-43" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="490" y="-1074" width="210" height="550" as="geometry" />
