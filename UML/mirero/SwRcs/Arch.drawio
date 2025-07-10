@@ -324,14 +324,6 @@
         <mxCell id="QIp_asUdpDxzrUBA6vSg-45" value="&lt;h3 style=&quot;&quot;&gt;SwRCS Service&lt;/h3&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" parent="1" vertex="1">
           <mxGeometry x="-790" y="-1110" width="670" height="610" as="geometry" />
         </mxCell>
-        <mxCell id="QIp_asUdpDxzrUBA6vSg-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;dashed=1;" parent="1" source="QIp_asUdpDxzrUBA6vSg-46" target="QIp_asUdpDxzrUBA6vSg-42" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="CKzfEF5wY8msQlQhG68M-1" value="Anonymous Pipe" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="QIp_asUdpDxzrUBA6vSg-47">
-          <mxGeometry x="0.0241" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="QIp_asUdpDxzrUBA6vSg-48" value="RFB Client" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" parent="1" vertex="1">
           <mxGeometry x="-750" y="-790" width="160" height="120" as="geometry" />
         </mxCell>
@@ -681,18 +673,42 @@
         <mxCell id="l4cAjevxtA63TaPh4Kpv-80" value="+ decode" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="l4cAjevxtA63TaPh4Kpv-79" vertex="1">
           <mxGeometry y="26" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="CKzfEF5wY8msQlQhG68M-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="QIp_asUdpDxzrUBA6vSg-46" target="CKzfEF5wY8msQlQhG68M-6">
+        <mxCell id="CKzfEF5wY8msQlQhG68M-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=classic;startFill=1;dashed=1;" edge="1" parent="1" source="CKzfEF5wY8msQlQhG68M-6" target="QIp_asUdpDxzrUBA6vSg-85">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="-230" y="-945" />
+              <mxPoint x="-450" y="-836" />
+              <mxPoint x="-280" y="-836" />
+              <mxPoint x="-280" y="-640" />
+              <mxPoint x="-480" y="-640" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="QIp_asUdpDxzrUBA6vSg-46" value="&lt;span style=&quot;font-size: 11px; white-space: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;Anonymous Pipe x 2&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="-290" y="-840" width="120" height="60" as="geometry" />
+        <mxCell id="CKzfEF5wY8msQlQhG68M-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=classic;startFill=1;dashed=1;" edge="1" parent="1" source="CKzfEF5wY8msQlQhG68M-6" target="QIp_asUdpDxzrUBA6vSg-51">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-450" y="-860" />
+              <mxPoint x="-260" y="-860" />
+              <mxPoint x="-260" y="-620" />
+              <mxPoint x="-670" y="-620" />
+            </Array>
+          </mxGeometry>
         </mxCell>
-        <mxCell id="CKzfEF5wY8msQlQhG68M-6" value="&lt;span style=&quot;font-size: 11px; text-wrap-mode: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;DesktopServerImpl&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-490" y="-970" width="100" height="50" as="geometry" />
+        <mxCell id="CKzfEF5wY8msQlQhG68M-6" value="&lt;span style=&quot;font-size: 11px; text-wrap-mode: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;DesktopServerImpl&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 11px; text-wrap-mode: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;font-size: 11px; white-space: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;Anonymous Pipe x 2&lt;/span&gt;&lt;span style=&quot;font-size: 11px; white-space: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;)&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-510" y="-970" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QIp_asUdpDxzrUBA6vSg-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="CKzfEF5wY8msQlQhG68M-6" target="QIp_asUdpDxzrUBA6vSg-42" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-170" y="-810" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint y="-940" />
+              <mxPoint y="-810" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CKzfEF5wY8msQlQhG68M-9" value="Anonymous Pipe" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="QIp_asUdpDxzrUBA6vSg-47">
+          <mxGeometry x="0.1794" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
