@@ -448,7 +448,7 @@
         <mxCell id="CKzfEF5wY8msQlQhG68M-18" value="&lt;div&gt;Windows 2000 ~ Windows 11&lt;/div&gt;&lt;div&gt;&lt;b&gt;Win32 GDI Capture&lt;/b&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="CKzfEF5wY8msQlQhG68M-17">
           <mxGeometry x="10" y="27.5" width="210" height="42.5" as="geometry" />
         </mxCell>
-        <mxCell id="5yQD_KuRIzDHV4EHMwtv-1" value="Shared Memory&lt;div&gt;FrameBuffer&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="5yQD_KuRIzDHV4EHMwtv-1" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Shared Memory&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#bac8d3;strokeColor=#23445d;" vertex="1" parent="1">
           <mxGeometry x="-170" y="-812.5" width="340" height="160" as="geometry" />
         </mxCell>
         <mxCell id="5yQD_KuRIzDHV4EHMwtv-4" value="1. Update FrameBuffer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fillColor=#d5e8d4;strokeColor=#82b366;dashed=1;" edge="1" parent="1" source="QIp_asUdpDxzrUBA6vSg-26" target="5yQD_KuRIzDHV4EHMwtv-1">
