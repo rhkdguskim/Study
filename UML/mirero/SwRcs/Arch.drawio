@@ -266,7 +266,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="QIp_asUdpDxzrUBA6vSg-31" value="Win8 Desktop Duplication" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="QIp_asUdpDxzrUBA6vSg-43" vertex="1">
+        <mxCell id="QIp_asUdpDxzrUBA6vSg-31" value="Win8 Desktop Duplication" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="QIp_asUdpDxzrUBA6vSg-43" vertex="1">
           <mxGeometry x="40" y="189" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="QIp_asUdpDxzrUBA6vSg-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="QIp_asUdpDxzrUBA6vSg-43" source="QIp_asUdpDxzrUBA6vSg-34" target="QIp_asUdpDxzrUBA6vSg-35" edge="1">
@@ -277,10 +277,10 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="QIp_asUdpDxzrUBA6vSg-34" value="Mirage Screen Driver" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="QIp_asUdpDxzrUBA6vSg-43" vertex="1">
+        <mxCell id="QIp_asUdpDxzrUBA6vSg-34" value="Mirage Screen Driver" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="QIp_asUdpDxzrUBA6vSg-43" vertex="1">
           <mxGeometry x="40" y="372" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="QIp_asUdpDxzrUBA6vSg-35" value="Win32(GDI) Capture" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="QIp_asUdpDxzrUBA6vSg-43" vertex="1">
+        <mxCell id="QIp_asUdpDxzrUBA6vSg-35" value="Win32(GDI) Capture" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="QIp_asUdpDxzrUBA6vSg-43" vertex="1">
           <mxGeometry x="40" y="470" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="QIp_asUdpDxzrUBA6vSg-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="QIp_asUdpDxzrUBA6vSg-43" source="QIp_asUdpDxzrUBA6vSg-38" target="QIp_asUdpDxzrUBA6vSg-34" edge="1">
@@ -334,6 +334,10 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="182.86" y="-809.5" as="sourcePoint" />
             <mxPoint x="402.86" y="-809.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="210" y="-940" />
+              <mxPoint x="210" y="-810" />
+            </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="QIp_asUdpDxzrUBA6vSg-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;startArrow=classic;startFill=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" source="QIp_asUdpDxzrUBA6vSg-71" target="QIp_asUdpDxzrUBA6vSg-26" edge="1">
@@ -708,6 +712,24 @@
           <mxGeometry x="0.1794" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="CKzfEF5wY8msQlQhG68M-13" value="Win8 Desktop Duplication" style="swimlane;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="720" y="-1112.5" width="220" height="72.5" as="geometry" />
+        </mxCell>
+        <mxCell id="CKzfEF5wY8msQlQhG68M-14" value="&lt;div&gt;Windows 8 ~ Windows 11&lt;br&gt;&lt;/div&gt;&lt;div&gt;Monitor Connected&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="CKzfEF5wY8msQlQhG68M-13">
+          <mxGeometry x="10" y="27.5" width="180" height="42.5" as="geometry" />
+        </mxCell>
+        <mxCell id="CKzfEF5wY8msQlQhG68M-15" value="Mirage Screen Driver" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="720" y="-1020" width="220" height="72.5" as="geometry" />
+        </mxCell>
+        <mxCell id="CKzfEF5wY8msQlQhG68M-16" value="Windows 2000 ~ Windows 7&lt;div&gt;Driver Level GDI Capture Optimized&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="CKzfEF5wY8msQlQhG68M-15">
+          <mxGeometry x="10" y="27.5" width="200" height="42.5" as="geometry" />
+        </mxCell>
+        <mxCell id="CKzfEF5wY8msQlQhG68M-17" value="GDI Capture" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="720" y="-930" width="220" height="72.5" as="geometry" />
+        </mxCell>
+        <mxCell id="CKzfEF5wY8msQlQhG68M-18" value="&lt;div&gt;Windows 2000 ~ Windows 11&lt;/div&gt;&lt;div&gt;Win32 GDI Capture&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="CKzfEF5wY8msQlQhG68M-17">
+          <mxGeometry x="10" y="27.5" width="210" height="42.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
