@@ -236,12 +236,12 @@
     </mxGraphModel>
   </diagram>
   <diagram name="Screen" id="r6Kb4BBWpulR1Wia2MeO">
-    <mxGraphModel dx="3174" dy="2514" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2838" dy="2322" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="QIp_asUdpDxzrUBA6vSg-23" value="&lt;h3 style=&quot;&quot;&gt;Desktop Server&lt;/h3&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" parent="1" vertex="1">
-          <mxGeometry x="42.86" y="-1112.5" width="657.14" height="610" as="geometry" />
+          <mxGeometry x="42.86" y="-1112.5" width="717.14" height="610" as="geometry" />
         </mxCell>
         <mxCell id="QIp_asUdpDxzrUBA6vSg-42" value="&lt;span style=&quot;font-size: 11px; white-space: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;Anonymous Pipe x 2&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="70" y="-970" width="120" height="60" as="geometry" />
@@ -322,7 +322,7 @@
           <mxGeometry x="58.75" y="99" width="82.5" height="60" as="geometry" />
         </mxCell>
         <mxCell id="QIp_asUdpDxzrUBA6vSg-45" value="&lt;h3 style=&quot;&quot;&gt;SwRCS Service&lt;/h3&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" parent="1" vertex="1">
-          <mxGeometry x="-790" y="-1110" width="670" height="610" as="geometry" />
+          <mxGeometry x="-790" y="-1110" width="730" height="610" as="geometry" />
         </mxCell>
         <mxCell id="QIp_asUdpDxzrUBA6vSg-48" value="RFB Client" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" parent="1" vertex="1">
           <mxGeometry x="-750" y="-790" width="160" height="120" as="geometry" />
@@ -419,19 +419,19 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="CKzfEF5wY8msQlQhG68M-13" value="Win8 Desktop Duplication" style="swimlane;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="720" y="-1112.5" width="220" height="102.5" as="geometry" />
+          <mxGeometry x="42.860000000000014" y="-480" width="220" height="102.5" as="geometry" />
         </mxCell>
         <mxCell id="CKzfEF5wY8msQlQhG68M-14" value="&lt;div&gt;OS : Windows 8 ~ Windows 11&lt;/div&gt;&lt;div&gt;Win8 Dekstop Duplication API&lt;/div&gt;&lt;div&gt;Virtual Monitor Supported&lt;/div&gt;&lt;div&gt;&lt;b&gt;Monitor Should Connected&lt;/b&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="CKzfEF5wY8msQlQhG68M-13">
           <mxGeometry x="10" y="27.5" width="180" height="72.5" as="geometry" />
         </mxCell>
         <mxCell id="CKzfEF5wY8msQlQhG68M-15" value="Mirage Screen Driver" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="720" y="-1000" width="220" height="72.5" as="geometry" />
+          <mxGeometry x="290" y="-480" width="220" height="72.5" as="geometry" />
         </mxCell>
         <mxCell id="CKzfEF5wY8msQlQhG68M-16" value="OS : Windows 2000 ~ Windows 7&lt;div&gt;&lt;b&gt;Driver Level Capture Optimized&lt;/b&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="CKzfEF5wY8msQlQhG68M-15">
           <mxGeometry x="10" y="27.5" width="200" height="42.5" as="geometry" />
         </mxCell>
         <mxCell id="CKzfEF5wY8msQlQhG68M-17" value="GDI Capture" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="720" y="-912.5" width="220" height="72.5" as="geometry" />
+          <mxGeometry x="540" y="-480" width="220" height="72.5" as="geometry" />
         </mxCell>
         <mxCell id="CKzfEF5wY8msQlQhG68M-18" value="&lt;div&gt;Windows 2000 ~ Windows 11&lt;/div&gt;&lt;div&gt;&lt;b&gt;Win32 GDI Capture&lt;/b&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="CKzfEF5wY8msQlQhG68M-17">
           <mxGeometry x="10" y="27.5" width="210" height="42.5" as="geometry" />
