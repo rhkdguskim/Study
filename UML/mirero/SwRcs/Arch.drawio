@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.2.0" pages="5">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15" version="27.2.0" pages="5">
   <diagram id="OJiDylZDKc62zz5DHtTa" name="RFB_Protocol">
     <mxGraphModel dx="1188" dy="667" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -236,14 +236,14 @@
     </mxGraphModel>
   </diagram>
   <diagram name="Screen" id="r6Kb4BBWpulR1Wia2MeO">
-    <mxGraphModel dx="2828" dy="2312" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2015" dy="1862" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="QIp_asUdpDxzrUBA6vSg-23" value="&lt;h3 style=&quot;&quot;&gt;Desktop Server&lt;/h3&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" parent="1" vertex="1">
           <mxGeometry x="42.86" y="-1112.5" width="657.14" height="610" as="geometry" />
         </mxCell>
-        <mxCell id="QIp_asUdpDxzrUBA6vSg-42" value="Pipe Server" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="QIp_asUdpDxzrUBA6vSg-42" value="&lt;span style=&quot;font-size: 11px; white-space: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;Anonymous Pipe x 2&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="62.86" y="-840" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="QIp_asUdpDxzrUBA6vSg-43" value="" style="group" parent="1" vertex="1" connectable="0">
@@ -299,7 +299,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="QIp_asUdpDxzrUBA6vSg-38" value="MirrorDriver" style="rhombus;whiteSpace=wrap;html=1;" parent="QIp_asUdpDxzrUBA6vSg-43" vertex="1">
+        <mxCell id="QIp_asUdpDxzrUBA6vSg-38" value="Mirror Driver" style="rhombus;whiteSpace=wrap;html=1;" parent="QIp_asUdpDxzrUBA6vSg-43" vertex="1">
           <mxGeometry x="58.75" y="282" width="82.5" height="60" as="geometry" />
         </mxCell>
         <mxCell id="QIp_asUdpDxzrUBA6vSg-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="QIp_asUdpDxzrUBA6vSg-43" source="QIp_asUdpDxzrUBA6vSg-41" target="QIp_asUdpDxzrUBA6vSg-31" edge="1">
@@ -318,7 +318,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="QIp_asUdpDxzrUBA6vSg-41" value="D3D" style="rhombus;whiteSpace=wrap;html=1;" parent="QIp_asUdpDxzrUBA6vSg-43" vertex="1">
+        <mxCell id="QIp_asUdpDxzrUBA6vSg-41" value="D3D Driver" style="rhombus;whiteSpace=wrap;html=1;" parent="QIp_asUdpDxzrUBA6vSg-43" vertex="1">
           <mxGeometry x="58.75" y="99" width="82.5" height="60" as="geometry" />
         </mxCell>
         <mxCell id="QIp_asUdpDxzrUBA6vSg-45" value="&lt;h3 style=&quot;&quot;&gt;SwRCS Service&lt;/h3&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" parent="1" vertex="1">
@@ -327,13 +327,10 @@
         <mxCell id="QIp_asUdpDxzrUBA6vSg-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;dashed=1;" parent="1" source="QIp_asUdpDxzrUBA6vSg-46" target="QIp_asUdpDxzrUBA6vSg-42" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="l4cAjevxtA63TaPh4Kpv-82" value="Windows Pipe" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="QIp_asUdpDxzrUBA6vSg-47" vertex="1" connectable="0">
-          <mxGeometry x="0.0109" y="1" relative="1" as="geometry">
+        <mxCell id="CKzfEF5wY8msQlQhG68M-1" value="Anonymous Pipe" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="QIp_asUdpDxzrUBA6vSg-47">
+          <mxGeometry x="0.0241" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="QIp_asUdpDxzrUBA6vSg-46" value="Pipe Client" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="-290" y="-837.5" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="QIp_asUdpDxzrUBA6vSg-48" value="RFB Client" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" parent="1" vertex="1">
           <mxGeometry x="-750" y="-790" width="160" height="120" as="geometry" />
@@ -362,7 +359,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="QIp_asUdpDxzrUBA6vSg-82" value="RFB Server(TCP/IP)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="-560" y="-1082.5" width="120" height="57.5" as="geometry" />
+          <mxGeometry x="-560" y="-1090" width="120" height="57.5" as="geometry" />
         </mxCell>
         <mxCell id="QIp_asUdpDxzrUBA6vSg-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="QIp_asUdpDxzrUBA6vSg-83" target="QIp_asUdpDxzrUBA6vSg-48" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -380,30 +377,14 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="QIp_asUdpDxzrUBA6vSg-83" value="RFB Manager" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="-560" y="-985" width="120" height="60" as="geometry" />
+        <mxCell id="QIp_asUdpDxzrUBA6vSg-83" value="RFB Manager" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" parent="1" vertex="1">
+          <mxGeometry x="-620" y="-985" width="240" height="105" as="geometry" />
         </mxCell>
         <mxCell id="QIp_asUdpDxzrUBA6vSg-84" value="RFB Client" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" parent="1" vertex="1">
           <mxGeometry x="-560" y="-790" width="160" height="120" as="geometry" />
         </mxCell>
         <mxCell id="QIp_asUdpDxzrUBA6vSg-85" value="UpdateSender" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="-540" y="-762.5" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="XQ-2oeP14VWHkz70t2Wv-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;" parent="1" source="QIp_asUdpDxzrUBA6vSg-46" target="QIp_asUdpDxzrUBA6vSg-51" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="-230" y="-545" />
-              <mxPoint x="-670" y="-545" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="3igPh88ZHLzASPxVfQm4-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;startArrow=classic;startFill=1;" parent="1" source="QIp_asUdpDxzrUBA6vSg-46" target="QIp_asUdpDxzrUBA6vSg-85" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="-230" y="-545" />
-              <mxPoint x="-480" y="-545" />
-            </Array>
-          </mxGeometry>
         </mxCell>
         <mxCell id="l4cAjevxtA63TaPh4Kpv-1" value="Update Sender ( Server )" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="-585" y="-450" width="465" height="380" as="geometry" />
@@ -699,6 +680,19 @@
         </mxCell>
         <mxCell id="l4cAjevxtA63TaPh4Kpv-80" value="+ decode" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="l4cAjevxtA63TaPh4Kpv-79" vertex="1">
           <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="CKzfEF5wY8msQlQhG68M-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="QIp_asUdpDxzrUBA6vSg-46" target="CKzfEF5wY8msQlQhG68M-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-230" y="-945" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QIp_asUdpDxzrUBA6vSg-46" value="&lt;span style=&quot;font-size: 11px; white-space: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;Anonymous Pipe x 2&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-290" y="-840" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CKzfEF5wY8msQlQhG68M-6" value="&lt;span style=&quot;font-size: 11px; text-wrap-mode: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;DesktopServerImpl&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-490" y="-970" width="100" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
