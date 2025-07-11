@@ -22,7 +22,7 @@
         <mxCell id="UsfD8vVUkFi7ll9GRyOD-1" value="Control Application (GUI)" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
           <mxGeometry x="70" y="485" width="150" height="65" as="geometry" />
         </mxCell>
-        <mxCell id="UsfD8vVUkFi7ll9GRyOD-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;startArrow=none;startFill=0;" edge="1" parent="1" source="UsfD8vVUkFi7ll9GRyOD-9" target="UsfD8vVUkFi7ll9GRyOD-25">
+        <mxCell id="UsfD8vVUkFi7ll9GRyOD-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="UsfD8vVUkFi7ll9GRyOD-9" target="UsfD8vVUkFi7ll9GRyOD-25">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="130" y="770" />
@@ -79,8 +79,8 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="UsfD8vVUkFi7ll9GRyOD-25" value="Update Application" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
-          <mxGeometry x="40" y="810" width="180" height="80" as="geometry" />
+        <mxCell id="UsfD8vVUkFi7ll9GRyOD-25" value="Update Application" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="770" width="180" height="80" as="geometry" />
         </mxCell>
         <mxCell id="UsfD8vVUkFi7ll9GRyOD-27" value="Windows Name Pipe" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=classic;startFill=1;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="UsfD8vVUkFi7ll9GRyOD-1" target="UsfD8vVUkFi7ll9GRyOD-17">
           <mxGeometry relative="1" as="geometry">
