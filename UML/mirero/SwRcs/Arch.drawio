@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15" version="27.2.0" pages="8">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15" version="27.2.0" pages="7">
   <diagram id="6QKkKlz9LigfEvh21TcO" name="Project Dependency">
     <mxGraphModel dx="1426" dy="807" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -312,7 +312,7 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="OJiDylZDKc62zz5DHtTa" name="RFB_Protocol">
+  <diagram id="OJiDylZDKc62zz5DHtTa" name="Protocol">
     <mxGraphModel dx="1188" dy="673" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -523,54 +523,6 @@
             <mxPoint x="510" y="410" as="sourcePoint" />
             <mxPoint x="560" y="360" as="targetPoint" />
           </mxGeometry>
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-  <diagram id="futHeiRAGk7LEK9us22i" name="Optional_Protocol">
-    <mxGraphModel dx="1426" dy="807" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="eBBeRTxccKXBJznM1rE3-1" value="Viewer Core" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
-          <mxGeometry x="50" y="170" width="150" height="160" as="geometry" />
-        </mxCell>
-        <mxCell id="eBBeRTxccKXBJznM1rE3-2" value="RFB Dispatcher" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="50" y="380" width="150" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="t8bn0967jNll7Zxq3JM5-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t8bn0967jNll7Zxq3JM5-1" target="eBBeRTxccKXBJznM1rE3-2">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="t8bn0967jNll7Zxq3JM5-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t8bn0967jNll7Zxq3JM5-1" target="t8bn0967jNll7Zxq3JM5-6">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="125" y="350" />
-              <mxPoint x="305" y="350" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="t8bn0967jNll7Zxq3JM5-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t8bn0967jNll7Zxq3JM5-1" target="t8bn0967jNll7Zxq3JM5-7">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="125" y="350" />
-              <mxPoint x="489" y="350" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="t8bn0967jNll7Zxq3JM5-1" value="Dispatcher" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="70" y="240" width="110" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="t8bn0967jNll7Zxq3JM5-3" value="Binary Buffer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t8bn0967jNll7Zxq3JM5-2" target="eBBeRTxccKXBJznM1rE3-1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="t8bn0967jNll7Zxq3JM5-2" value="Socket IPv4" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="50" y="10" width="150" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="t8bn0967jNll7Zxq3JM5-6" value="FileTransfer Dispatcher" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="230" y="380" width="150" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="t8bn0967jNll7Zxq3JM5-7" value="Optional Dispatcher" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="413.5" y="380" width="150" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
