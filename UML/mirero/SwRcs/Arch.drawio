@@ -56,16 +56,16 @@
           <mxGeometry x="381" y="219.5" width="70" height="35" as="geometry" />
         </mxCell>
         <mxCell id="M6b2aTm2xZEj82NS5oD8-21" value="file-lib" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="389" y="364" width="70" height="35" as="geometry" />
+          <mxGeometry x="471" y="411.5" width="70" height="35" as="geometry" />
         </mxCell>
         <mxCell id="M6b2aTm2xZEj82NS5oD8-22" value="ft-client-lib" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="480" y="364" width="70" height="35" as="geometry" />
+          <mxGeometry x="470" y="361.5" width="70" height="35" as="geometry" />
         </mxCell>
         <mxCell id="M6b2aTm2xZEj82NS5oD8-23" value="ft-common" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="390" y="411.5" width="70" height="35" as="geometry" />
         </mxCell>
         <mxCell id="M6b2aTm2xZEj82NS5oD8-24" value="ft-server-lib" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="480" y="411.5" width="70" height="35" as="geometry" />
+          <mxGeometry x="390" y="361.5" width="70" height="35" as="geometry" />
         </mxCell>
         <mxCell id="M6b2aTm2xZEj82NS5oD8-25" value="gui" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="200" y="80" width="70" height="35" as="geometry" />
@@ -133,9 +133,6 @@
         <mxCell id="M6b2aTm2xZEj82NS5oD8-59" value="Network" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=none;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
           <mxGeometry x="180" y="344" width="180" height="105" as="geometry" />
         </mxCell>
-        <mxCell id="M6b2aTm2xZEj82NS5oD8-60" value="File IO" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=none;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
-          <mxGeometry x="381" y="344" width="180" height="105" as="geometry" />
-        </mxCell>
         <mxCell id="M6b2aTm2xZEj82NS5oD8-61" value="Window System" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=none;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
           <mxGeometry x="600" y="344" width="180" height="106" as="geometry" />
         </mxCell>
@@ -144,6 +141,9 @@
         </mxCell>
         <mxCell id="M6b2aTm2xZEj82NS5oD8-66" value="RFB" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=none;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
           <mxGeometry x="185" y="152" width="280" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="M6b2aTm2xZEj82NS5oD8-67" value="File IO" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=none;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="371" y="344" width="180" height="105" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
