@@ -145,6 +145,9 @@
         <mxCell id="M6b2aTm2xZEj82NS5oD8-67" value="File IO" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=none;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
           <mxGeometry x="371" y="344" width="180" height="105" as="geometry" />
         </mxCell>
+        <mxCell id="M6b2aTm2xZEj82NS5oD8-68" value="Configuration" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=none;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="185" y="487.5" width="180" height="105" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
