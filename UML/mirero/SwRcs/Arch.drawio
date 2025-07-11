@@ -4,6 +4,18 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="M6b2aTm2xZEj82NS5oD8-2" value="Utility" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="120" y="400" width="500" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="M6b2aTm2xZEj82NS5oD8-3" value="Service" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="120" y="250" width="500" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="M6b2aTm2xZEj82NS5oD8-4" value="Controller" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="120" y="160" width="500" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="M6b2aTm2xZEj82NS5oD8-5" value="Application" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="120" y="70" width="500" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
