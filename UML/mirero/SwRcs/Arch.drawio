@@ -136,8 +136,8 @@
         <mxCell id="M6b2aTm2xZEj82NS5oD8-60" value="File IO" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=none;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
           <mxGeometry x="381" y="344" width="180" height="105" as="geometry" />
         </mxCell>
-        <mxCell id="M6b2aTm2xZEj82NS5oD8-61" value="Windows System" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=none;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
-          <mxGeometry x="600" y="344" width="180" height="105" as="geometry" />
+        <mxCell id="M6b2aTm2xZEj82NS5oD8-61" value="Window System" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=none;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="600" y="344" width="180" height="106" as="geometry" />
         </mxCell>
         <mxCell id="M6b2aTm2xZEj82NS5oD8-64" value="Image Processing" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=none;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
           <mxGeometry x="600" y="490" width="180" height="100" as="geometry" />
