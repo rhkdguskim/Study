@@ -16,7 +16,7 @@
           <mxGeometry x="660" y="50" width="400" height="300" as="geometry" />
         </mxCell>
         <mxCell id="Jv90dzYF-x8rAAyQ6jZ8-3" value="DesktopServer" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
-          <mxGeometry x="710" y="140" width="130" height="130" as="geometry" />
+          <mxGeometry x="710" y="150" width="130" height="120" as="geometry" />
         </mxCell>
         <mxCell id="Iv0SBjlh1--z4rjAcG8h-1" value="RCS Service" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
           <mxGeometry x="40" y="50" width="420" height="300" as="geometry" />
@@ -24,10 +24,11 @@
         <mxCell id="Iv0SBjlh1--z4rjAcG8h-4" value="Anonymous Pipe" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="Jv90dzYF-x8rAAyQ6jZ8-7" target="Jv90dzYF-x8rAAyQ6jZ8-3">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
+              <mxPoint x="370" y="270" />
               <mxPoint x="390" y="270" />
               <mxPoint x="390" y="230" />
               <mxPoint x="690" y="230" />
-              <mxPoint x="690" y="205" />
+              <mxPoint x="690" y="210" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -135,7 +136,7 @@
           <mxGeometry x="725" y="225" width="95" height="35" as="geometry" />
         </mxCell>
         <mxCell id="Jv90dzYF-x8rAAyQ6jZ8-7" value="DesktopClient" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
-          <mxGeometry x="240" y="205" width="130" height="130" as="geometry" />
+          <mxGeometry x="240" y="210" width="130" height="125" as="geometry" />
         </mxCell>
         <mxCell id="Jv90dzYF-x8rAAyQ6jZ8-8" value="Anonymous Pipe" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="255" y="235" width="95" height="35" as="geometry" />
