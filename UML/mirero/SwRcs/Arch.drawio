@@ -1170,7 +1170,7 @@
         <mxCell id="UrHc99s3OX-5HhGSX5rL-22" value="Client2" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=none;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
           <mxGeometry x="310" y="40" width="260" height="460" as="geometry" />
         </mxCell>
-        <mxCell id="ql_jY92sfnvVMWxtyf_E-1" value="Decoding" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#ffe6cc;strokeColor=#d79b00;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;" vertex="1" parent="1">
+        <mxCell id="ql_jY92sfnvVMWxtyf_E-1" value="Decoded" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#ffe6cc;strokeColor=#d79b00;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;" vertex="1" parent="1">
           <mxGeometry x="75" y="110" width="10" height="40" as="geometry" />
         </mxCell>
         <mxCell id="TbbrXiGsE-RcAC-Tg2B8-1" value="Notify" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;" vertex="1" parent="1">
