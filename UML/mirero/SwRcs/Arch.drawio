@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15" version="27.2.0" pages="7">
   <diagram id="5DkmvBxYGieu-68tYmN1" name="Application">
-    <mxGraphModel dx="983" dy="557" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2253" dy="807" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -25,8 +25,8 @@
         <mxCell id="UsfD8vVUkFi7ll9GRyOD-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;startArrow=none;startFill=0;" edge="1" parent="1" source="UsfD8vVUkFi7ll9GRyOD-9" target="UsfD8vVUkFi7ll9GRyOD-25">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="165" y="760" />
-              <mxPoint x="240" y="760" />
+              <mxPoint x="165" y="790" />
+              <mxPoint x="165" y="790" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -63,8 +63,24 @@
         <mxCell id="UsfD8vVUkFi7ll9GRyOD-23" value="Messenger" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="147.5" y="495" width="62.5" height="40" as="geometry" />
         </mxCell>
+        <mxCell id="UsfD8vVUkFi7ll9GRyOD-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="UsfD8vVUkFi7ll9GRyOD-25" target="Iv0SBjlh1--z4rjAcG8h-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="20" y="860" />
+              <mxPoint x="20" y="495" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UsfD8vVUkFi7ll9GRyOD-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="UsfD8vVUkFi7ll9GRyOD-25" target="Iv0SBjlh1--z4rjAcG8h-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint y="860" />
+              <mxPoint y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="UsfD8vVUkFi7ll9GRyOD-25" value="Update Application" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
-          <mxGeometry x="40" y="830" width="400" height="300" as="geometry" />
+          <mxGeometry x="75" y="820" width="180" height="80" as="geometry" />
         </mxCell>
         <mxCell id="UsfD8vVUkFi7ll9GRyOD-27" value="Windows Name Pipe" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=classic;startFill=1;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="UsfD8vVUkFi7ll9GRyOD-1" target="UsfD8vVUkFi7ll9GRyOD-17">
           <mxGeometry relative="1" as="geometry">
