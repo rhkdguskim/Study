@@ -24,8 +24,7 @@
         <mxCell id="Iv0SBjlh1--z4rjAcG8h-4" value="Anonymous Pipe" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="Jv90dzYF-x8rAAyQ6jZ8-7" target="Jv90dzYF-x8rAAyQ6jZ8-3">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="370" y="270" />
-              <mxPoint x="390" y="270" />
+              <mxPoint x="390" y="273" />
               <mxPoint x="390" y="230" />
               <mxPoint x="690" y="230" />
               <mxPoint x="690" y="210" />
