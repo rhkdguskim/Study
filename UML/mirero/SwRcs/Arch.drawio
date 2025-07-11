@@ -11,7 +11,7 @@
           <mxGeometry x="40" y="50" width="400" height="300" as="geometry" />
         </mxCell>
         <mxCell id="Iv0SBjlh1--z4rjAcG8h-2" value="Desktop Application" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
-          <mxGeometry x="620" y="50" width="400" height="300" as="geometry" />
+          <mxGeometry x="560" y="50" width="400" height="300" as="geometry" />
         </mxCell>
         <mxCell id="Iv0SBjlh1--z4rjAcG8h-3" value="Agent Service" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
           <mxGeometry x="40" y="420" width="400" height="300" as="geometry" />
