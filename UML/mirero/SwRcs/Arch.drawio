@@ -1139,12 +1139,49 @@
     </mxGraphModel>
   </diagram>
   <diagram id="7RqA_CEPuLz2NOGgvlI3" name="Rendering">
-    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2253" dy="1976" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="PM0iL8AR6L6vt_kNbHkY-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="70" y="70" width="120" height="60" as="geometry" />
+        <mxCell id="UrHc99s3OX-5HhGSX5rL-17" value="Client1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=none;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="10" y="40" width="260" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="PM0iL8AR6L6vt_kNbHkY-1" value="As Is" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;labelBackgroundColor=none;fillColor=none;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="-30" y="10" width="820" height="510" as="geometry" />
+        </mxCell>
+        <mxCell id="UrHc99s3OX-5HhGSX5rL-1" value="Viewer Core" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="30" y="50" width="100" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="UrHc99s3OX-5HhGSX5rL-4" value="Fb Notifier" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="150" y="50" width="100" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="UrHc99s3OX-5HhGSX5rL-7" value="Window Proc&lt;div&gt;(Single Thead)&lt;/div&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="670" y="50" width="100" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="UrHc99s3OX-5HhGSX5rL-20" value="Viewer Core" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="330" y="50" width="100" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="UrHc99s3OX-5HhGSX5rL-21" value="Fb Notifier" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="450" y="50" width="100" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="UrHc99s3OX-5HhGSX5rL-22" value="Client2" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=none;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="310" y="40" width="260" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="ql_jY92sfnvVMWxtyf_E-1" value="Decoding" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#ffe6cc;strokeColor=#d79b00;labelPosition=center;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="75" y="110" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TbbrXiGsE-RcAC-Tg2B8-1" value="Notify" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#dae8fc;strokeColor=#6c8ebf;align=right;" vertex="1" parent="1">
+          <mxGeometry x="195" y="170" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TbbrXiGsE-RcAC-Tg2B8-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=-0.017;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ql_jY92sfnvVMWxtyf_E-1" target="TbbrXiGsE-RcAC-Tg2B8-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="80" y="180" />
+              <mxPoint x="140" y="180" />
+              <mxPoint x="140" y="110" />
+              <mxPoint x="200" y="110" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
