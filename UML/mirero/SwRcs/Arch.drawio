@@ -10,7 +10,7 @@
         <mxCell id="Iv0SBjlh1--z4rjAcG8h-4" value="Anonymous Pipe" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;dashed=1;" edge="1" parent="1" source="Iv0SBjlh1--z4rjAcG8h-1" target="Iv0SBjlh1--z4rjAcG8h-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Iv0SBjlh1--z4rjAcG8h-2" value="Desktop Application" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
+        <mxCell id="Iv0SBjlh1--z4rjAcG8h-2" value="Desktop Application (GUI)" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
           <mxGeometry x="560" y="50" width="400" height="300" as="geometry" />
         </mxCell>
         <mxCell id="Iv0SBjlh1--z4rjAcG8h-3" value="Agent Service" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
@@ -19,7 +19,7 @@
         <mxCell id="UsfD8vVUkFi7ll9GRyOD-4" value="Process Auto Restarter Service" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="60" y="460" width="210" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="UsfD8vVUkFi7ll9GRyOD-1" value="Control Application" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
+        <mxCell id="UsfD8vVUkFi7ll9GRyOD-1" value="Control Application (GUI)" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
           <mxGeometry x="70" y="485" width="150" height="65" as="geometry" />
         </mxCell>
         <mxCell id="UsfD8vVUkFi7ll9GRyOD-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;startArrow=none;startFill=0;" edge="1" parent="1" source="UsfD8vVUkFi7ll9GRyOD-9" target="UsfD8vVUkFi7ll9GRyOD-25">
