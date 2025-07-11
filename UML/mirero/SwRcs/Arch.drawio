@@ -9,16 +9,16 @@
             <mxPoint x="490" y="182" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="M6b2aTm2xZEj82NS5oD8-53" value="Presentation Layer&lt;br&gt;&lt;div&gt;( User Interaction )&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;fontStyle=1" vertex="1" parent="1">
+        <mxCell id="M6b2aTm2xZEj82NS5oD8-53" value="Presentation Layer" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="191" y="10" width="600" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="M6b2aTm2xZEj82NS5oD8-2" value="Shared Layer&lt;div&gt;(util, config, log)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#b85450;fontStyle=1" vertex="1" parent="1">
+        <mxCell id="M6b2aTm2xZEj82NS5oD8-2" value="Shared Layer" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#b85450;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="191" y="486" width="599" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="M6b2aTm2xZEj82NS5oD8-3" value="Infrastructure Layer&lt;div&gt;( System I/F )&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;fontStyle=1" vertex="1" parent="1">
+        <mxCell id="M6b2aTm2xZEj82NS5oD8-3" value="Infrastructure Layer" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="191" y="346" width="599" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="M6b2aTm2xZEj82NS5oD8-4" value="Domain Layer&lt;div&gt;( Service )&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;fillColor=#ffcd28;gradientColor=#ffa500;strokeColor=#d79b00;fontStyle=1" vertex="1" parent="1">
+        <mxCell id="M6b2aTm2xZEj82NS5oD8-4" value="Domain Layer" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;fillColor=#ffcd28;gradientColor=#ffa500;strokeColor=#d79b00;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="191" y="162" width="600" height="150" as="geometry" />
         </mxCell>
         <mxCell id="M6b2aTm2xZEj82NS5oD8-7" value="log-writer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
