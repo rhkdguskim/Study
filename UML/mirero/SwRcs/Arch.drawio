@@ -333,6 +333,9 @@
         <mxCell id="KM2MgEZzQkmA2IUi9ary-2" value="GateKickHandler" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
           <mxGeometry x="890" y="320" width="90" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="KM2MgEZzQkmA2IUi9ary-7" value="SessionChange Watcher" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="710" y="320" width="90" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
