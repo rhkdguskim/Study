@@ -11,7 +11,7 @@
           <mxGeometry x="110" y="370" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Dtxo02y-Q6GTN7Kiz66H-3" value="H264FrameQueue&lt;br&gt;(P/C Pattern)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="501" y="370" width="120" height="60" as="geometry" />
+          <mxGeometry x="581" y="360" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Dtxo02y-Q6GTN7Kiz66H-4" value="VNC Server" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="430" y="130" width="120" height="60" as="geometry" />
@@ -20,25 +20,25 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Dtxo02y-Q6GTN7Kiz66H-5" value="VNC Viewer Proxy" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="701" y="370" width="120" height="60" as="geometry" />
+          <mxGeometry x="781" y="360" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Dtxo02y-Q6GTN7Kiz66H-12" value="Push H.264(AnnexB)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="Dtxo02y-Q6GTN7Kiz66H-7" target="Dtxo02y-Q6GTN7Kiz66H-3">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="390" y="615" />
-              <mxPoint x="390" y="490" />
-              <mxPoint x="561" y="490" />
+              <mxPoint x="470" y="605" />
+              <mxPoint x="470" y="480" />
+              <mxPoint x="641" y="480" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="Dtxo02y-Q6GTN7Kiz66H-7" value="H264RtspEncoder" style="rounded=0;whiteSpace=wrap;html=1;align=center;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;" vertex="1" parent="1">
-          <mxGeometry x="430" y="560" width="301" height="110" as="geometry" />
+          <mxGeometry x="510" y="550" width="301" height="110" as="geometry" />
         </mxCell>
         <mxCell id="Dtxo02y-Q6GTN7Kiz66H-8" value="H264 AutoEncoder" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="450" y="580" width="120" height="60" as="geometry" />
+          <mxGeometry x="530" y="570" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Dtxo02y-Q6GTN7Kiz66H-9" value="H264 Parser" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="590" y="580" width="120" height="60" as="geometry" />
+          <mxGeometry x="670" y="570" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
