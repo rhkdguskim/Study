@@ -42,7 +42,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-7" value="H264RtspEncoder" style="rounded=0;whiteSpace=wrap;html=1;align=center;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;" vertex="1" parent="1">
+        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-7" value="H264RtspEncoder" style="rounded=0;whiteSpace=wrap;html=1;align=center;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
           <mxGeometry x="400" y="550" width="301" height="110" as="geometry" />
         </mxCell>
         <mxCell id="Dtxo02y-Q6GTN7Kiz66H-8" value="H264 AutoEncoder" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -57,18 +57,18 @@
             <mxPoint x="330" y="470" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-15" value="Rtsp Client" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-15" value="Rtsp Client" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="90" y="220" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-17" value="Rtsp Client" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-17" value="Rtsp Client" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="240" y="220" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Dtxo02y-Q6GTN7Kiz66H-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="Dtxo02y-Q6GTN7Kiz66H-18" target="Dtxo02y-Q6GTN7Kiz66H-15">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="40" y="502" />
-              <mxPoint x="40" y="347" />
-              <mxPoint x="150" y="347" />
+              <mxPoint x="40" y="310" />
+              <mxPoint x="150" y="310" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -76,12 +76,12 @@
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="40" y="502" />
-              <mxPoint x="40" y="347" />
-              <mxPoint x="300" y="347" />
+              <mxPoint x="40" y="310" />
+              <mxPoint x="300" y="310" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-18" value="H264ProxySubsession(main)&lt;br&gt;(ServerMediaSubsession)" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="1">
+        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-18" value="H264ProxySubsession(main)&lt;br&gt;(ServerMediaSubsession)" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="60" y="413.75" width="230" height="176.25" as="geometry" />
         </mxCell>
         <mxCell id="Dtxo02y-Q6GTN7Kiz66H-24" value="StreamReplicator" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="1">
@@ -105,7 +105,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-32" value="H264RtspEncoder" style="rounded=0;whiteSpace=wrap;html=1;align=center;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;" vertex="1" parent="1">
+        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-32" value="H264RtspEncoder" style="rounded=0;whiteSpace=wrap;html=1;align=center;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
           <mxGeometry x="400" y="880" width="301" height="110" as="geometry" />
         </mxCell>
         <mxCell id="Dtxo02y-Q6GTN7Kiz66H-33" value="H264 AutoEncoder" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -135,8 +135,8 @@
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="40" y="792" />
-              <mxPoint x="40" y="965" />
-              <mxPoint x="155" y="965" />
+              <mxPoint x="40" y="1020" />
+              <mxPoint x="155" y="1020" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -144,12 +144,12 @@
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="40" y="792" />
-              <mxPoint x="40" y="965" />
-              <mxPoint x="305" y="965" />
+              <mxPoint x="40" y="1020" />
+              <mxPoint x="305" y="1020" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-39" value="H264ProxySubsession(main)&lt;br&gt;(ServerMediaSubsession)" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="1">
+        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-39" value="H264ProxySubsession(main)&lt;br&gt;(ServerMediaSubsession)" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="60" y="703.75" width="230" height="176.25" as="geometry" />
         </mxCell>
         <mxCell id="Dtxo02y-Q6GTN7Kiz66H-40" value="StreamReplicator" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="1">
@@ -158,10 +158,10 @@
         <mxCell id="Dtxo02y-Q6GTN7Kiz66H-41" value="QueueH264Source" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="95" y="740" width="155" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-42" value="Rtsp Client" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-42" value="Rtsp Client" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="95" y="1055" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-43" value="Rtsp Client" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-43" value="Rtsp Client" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="245" y="1055" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Dtxo02y-Q6GTN7Kiz66H-25" value="Pop&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;H.264 Frame&lt;/span&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="Dtxo02y-Q6GTN7Kiz66H-26" target="Dtxo02y-Q6GTN7Kiz66H-41">
@@ -172,8 +172,8 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-46" value="&lt;b&gt;&lt;font style=&quot;color: rgb(0, 0, 255);&quot;&gt;Live555&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;strokeColor=#0000FF;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="1">
-          <mxGeometry x="40" y="380" width="270" height="540" as="geometry" />
+        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-48" value="&lt;b&gt;&lt;font style=&quot;color: rgb(0, 0, 255);&quot;&gt;Live555&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;strokeColor=#0000FF;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="50" y="380" width="250" height="530" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
