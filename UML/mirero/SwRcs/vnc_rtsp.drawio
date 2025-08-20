@@ -5,56 +5,56 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="Dtxo02y-Q6GTN7Kiz66H-6" value="Vnc2RtspServer" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="1">
-          <mxGeometry x="90" y="330" width="1020" height="380" as="geometry" />
+          <mxGeometry y="330" width="1110" height="670" as="geometry" />
         </mxCell>
         <mxCell id="Dtxo02y-Q6GTN7Kiz66H-2" value="RtspServer" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="1">
-          <mxGeometry x="110" y="370" width="330" height="260" as="geometry" />
-        </mxCell>
-        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-20" value="Pop&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;H.264 Frame&lt;/span&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="Dtxo02y-Q6GTN7Kiz66H-3" target="Dtxo02y-Q6GTN7Kiz66H-19">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="480" y="390" />
-              <mxPoint x="480" y="475" />
-            </Array>
-          </mxGeometry>
+          <mxGeometry x="30" y="370" width="290" height="600" as="geometry" />
         </mxCell>
         <mxCell id="Dtxo02y-Q6GTN7Kiz66H-3" value="H264FrameQueue&lt;br&gt;(P/C Pattern)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="581" y="360" width="120" height="60" as="geometry" />
+          <mxGeometry x="471" y="360" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Dtxo02y-Q6GTN7Kiz66H-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Dtxo02y-Q6GTN7Kiz66H-4" target="Dtxo02y-Q6GTN7Kiz66H-5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Dtxo02y-Q6GTN7Kiz66H-4" target="Dtxo02y-Q6GTN7Kiz66H-30">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="826" y="390" />
+              <mxPoint x="826" y="720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="Dtxo02y-Q6GTN7Kiz66H-4" value="VNC Server" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="970" y="360" width="120" height="60" as="geometry" />
+          <mxGeometry x="860" y="360" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Dtxo02y-Q6GTN7Kiz66H-10" value="Update FrameBuffer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="Dtxo02y-Q6GTN7Kiz66H-5" target="Dtxo02y-Q6GTN7Kiz66H-7">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Dtxo02y-Q6GTN7Kiz66H-5" value="VNC Viewer Proxy" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="781" y="360" width="120" height="60" as="geometry" />
+          <mxGeometry x="671" y="360" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Dtxo02y-Q6GTN7Kiz66H-12" value="Push H.264 Frame" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="Dtxo02y-Q6GTN7Kiz66H-7" target="Dtxo02y-Q6GTN7Kiz66H-3">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="470" y="605" />
-              <mxPoint x="470" y="510" />
-              <mxPoint x="641" y="510" />
+              <mxPoint x="360" y="605" />
+              <mxPoint x="360" y="520" />
+              <mxPoint x="531" y="520" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="Dtxo02y-Q6GTN7Kiz66H-7" value="H264RtspEncoder" style="rounded=0;whiteSpace=wrap;html=1;align=center;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;" vertex="1" parent="1">
-          <mxGeometry x="510" y="550" width="301" height="110" as="geometry" />
+          <mxGeometry x="400" y="550" width="301" height="110" as="geometry" />
         </mxCell>
         <mxCell id="Dtxo02y-Q6GTN7Kiz66H-8" value="H264 AutoEncoder" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="670" y="575" width="120" height="60" as="geometry" />
+          <mxGeometry x="560" y="575" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Dtxo02y-Q6GTN7Kiz66H-9" value="H264 Parser&lt;br&gt;(AnnexB, SPS, PPS)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="530" y="575" width="120" height="60" as="geometry" />
+          <mxGeometry x="420" y="575" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Dtxo02y-Q6GTN7Kiz66H-14" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endFill=1;dashed=1;" edge="1" parent="1" source="Dtxo02y-Q6GTN7Kiz66H-8" target="Dtxo02y-Q6GTN7Kiz66H-9">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="390" y="520" as="sourcePoint" />
-            <mxPoint x="440" y="470" as="targetPoint" />
+            <mxPoint x="280" y="520" as="sourcePoint" />
+            <mxPoint x="330" y="470" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Dtxo02y-Q6GTN7Kiz66H-15" value="Rtsp Client" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -63,11 +63,102 @@
         <mxCell id="Dtxo02y-Q6GTN7Kiz66H-17" value="Rtsp Client" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="240" y="220" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-18" value="OnDemandServer&lt;br&gt;MediaSubSession" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="130" y="440" width="130" height="70" as="geometry" />
+        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="Dtxo02y-Q6GTN7Kiz66H-18" target="Dtxo02y-Q6GTN7Kiz66H-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="40" y="502" />
+              <mxPoint x="40" y="347" />
+              <mxPoint x="150" y="347" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="Dtxo02y-Q6GTN7Kiz66H-18" target="Dtxo02y-Q6GTN7Kiz66H-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="40" y="502" />
+              <mxPoint x="40" y="347" />
+              <mxPoint x="300" y="347" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-18" value="H264ProxySubsession(main)&lt;br&gt;(ServerMediaSubsession)" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="60" y="413.75" width="230" height="176.25" as="geometry" />
+        </mxCell>
+        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-24" value="StreamReplicator" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="80" y="440" width="190" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-26" value="H264FrameQueue&lt;br&gt;(P/C Pattern)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="471" y="690" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-29" value="Update FrameBuffer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="Dtxo02y-Q6GTN7Kiz66H-30" target="Dtxo02y-Q6GTN7Kiz66H-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-30" value="VNC Viewer Proxy" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="671" y="690" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-31" value="Push H.264 Frame" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="Dtxo02y-Q6GTN7Kiz66H-32" target="Dtxo02y-Q6GTN7Kiz66H-26">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="360" y="935" />
+              <mxPoint x="360" y="840" />
+              <mxPoint x="531" y="840" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-32" value="H264RtspEncoder" style="rounded=0;whiteSpace=wrap;html=1;align=center;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="400" y="880" width="301" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-33" value="H264 AutoEncoder" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="905" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-34" value="H264 Parser&lt;br&gt;(AnnexB, SPS, PPS)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="905" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-35" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endFill=1;dashed=1;" edge="1" parent="1" source="Dtxo02y-Q6GTN7Kiz66H-33" target="Dtxo02y-Q6GTN7Kiz66H-34">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="850" as="sourcePoint" />
+            <mxPoint x="330" y="800" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="Dtxo02y-Q6GTN7Kiz66H-19" value="QueueH264Source" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="280" y="440" width="110" height="70" as="geometry" />
+          <mxGeometry x="95" y="450" width="155" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-20" value="Pop&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;H.264 Frame&lt;/span&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="Dtxo02y-Q6GTN7Kiz66H-3" target="Dtxo02y-Q6GTN7Kiz66H-19">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="370" y="390" />
+              <mxPoint x="370" y="505" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="Dtxo02y-Q6GTN7Kiz66H-39" target="Dtxo02y-Q6GTN7Kiz66H-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="Dtxo02y-Q6GTN7Kiz66H-39" target="Dtxo02y-Q6GTN7Kiz66H-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-39" value="H264ProxySubsession(main)&lt;br&gt;(ServerMediaSubsession)" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="60" y="703.75" width="230" height="176.25" as="geometry" />
+        </mxCell>
+        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-40" value="StreamReplicator" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="80" y="730" width="190" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-41" value="QueueH264Source" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="95" y="740" width="155" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-42" value="Rtsp Client" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="1040" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-43" value="Rtsp Client" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="1040" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-25" value="Pop&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;H.264 Frame&lt;/span&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="Dtxo02y-Q6GTN7Kiz66H-26" target="Dtxo02y-Q6GTN7Kiz66H-41">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="805" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="490" y="795" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
