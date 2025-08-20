@@ -159,10 +159,10 @@
           <mxGeometry x="95" y="740" width="155" height="110" as="geometry" />
         </mxCell>
         <mxCell id="Dtxo02y-Q6GTN7Kiz66H-42" value="Rtsp Client" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="95" y="1055" width="120" height="60" as="geometry" />
+          <mxGeometry x="90" y="1055" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Dtxo02y-Q6GTN7Kiz66H-43" value="Rtsp Client" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="245" y="1055" width="120" height="60" as="geometry" />
+          <mxGeometry x="240" y="1055" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Dtxo02y-Q6GTN7Kiz66H-25" value="Pop&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;H.264 Frame&lt;/span&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="Dtxo02y-Q6GTN7Kiz66H-26" target="Dtxo02y-Q6GTN7Kiz66H-41">
           <mxGeometry relative="1" as="geometry">
