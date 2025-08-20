@@ -10,7 +10,7 @@
         <mxCell id="Dtxo02y-Q6GTN7Kiz66H-2" value="RtspServer" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="1">
           <mxGeometry x="110" y="370" width="300" height="260" as="geometry" />
         </mxCell>
-        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-20" value="Pop H.264 Frame" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="Dtxo02y-Q6GTN7Kiz66H-3" target="Dtxo02y-Q6GTN7Kiz66H-19">
+        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-20" value="Pop&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;H.264 Frame&lt;/span&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="Dtxo02y-Q6GTN7Kiz66H-3" target="Dtxo02y-Q6GTN7Kiz66H-19">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="480" y="390" />
