@@ -37,7 +37,7 @@
         <mxCell id="Dtxo02y-Q6GTN7Kiz66H-7" value="H264RtspEncoder" style="rounded=0;whiteSpace=wrap;html=1;align=center;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;" vertex="1" parent="1">
           <mxGeometry x="510" y="550" width="301" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-8" value="H264RtspEncoder" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-8" value="H264 AutoEncoder" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="670" y="575" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Dtxo02y-Q6GTN7Kiz66H-9" value="H264 Parser&lt;br&gt;(AnnexB, SPS, PPS)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
