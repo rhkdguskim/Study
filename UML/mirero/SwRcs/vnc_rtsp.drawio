@@ -10,7 +10,7 @@
         <mxCell id="Dtxo02y-Q6GTN7Kiz66H-2" value="RtspServer" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="1">
           <mxGeometry x="20" y="360" width="300" height="610" as="geometry" />
         </mxCell>
-        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-3" value="H264FrameQueue&lt;br&gt;(P/C Pattern)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-3" value="H264FrameQueue&lt;br&gt;(P/C Pattern)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="471" y="360" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Dtxo02y-Q6GTN7Kiz66H-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Dtxo02y-Q6GTN7Kiz66H-4" target="Dtxo02y-Q6GTN7Kiz66H-5">
@@ -87,7 +87,7 @@
         <mxCell id="Dtxo02y-Q6GTN7Kiz66H-24" value="StreamReplicator" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="1">
           <mxGeometry x="80" y="440" width="190" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-26" value="H264FrameQueue&lt;br&gt;(P/C Pattern)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Dtxo02y-Q6GTN7Kiz66H-26" value="H264FrameQueue&lt;br&gt;(P/C Pattern)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="471" y="690" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Dtxo02y-Q6GTN7Kiz66H-29" value="Update FrameBuffer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="Dtxo02y-Q6GTN7Kiz66H-30" target="Dtxo02y-Q6GTN7Kiz66H-32">
