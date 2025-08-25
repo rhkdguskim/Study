@@ -884,6 +884,15 @@
         <mxCell id="4iE3k_zBD8ycZyWjxG6n-23" value="&lt;h3&gt;SwRCS Service&lt;/h3&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;fontSize=15;" vertex="1" parent="4iE3k_zBD8ycZyWjxG6n-1">
           <mxGeometry x="-790" y="-1099" width="730" height="610" as="geometry" />
         </mxCell>
+        <mxCell id="q_5_3p-bIicEiEsexxTl-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="4iE3k_zBD8ycZyWjxG6n-1" source="4iE3k_zBD8ycZyWjxG6n-24" target="4iE3k_zBD8ycZyWjxG6n-49">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-570" y="-719" />
+              <mxPoint x="-570" y="-600" />
+              <mxPoint x="-170" y="-600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="4iE3k_zBD8ycZyWjxG6n-24" value="RFB Client" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="4iE3k_zBD8ycZyWjxG6n-1">
           <mxGeometry x="-750" y="-779" width="160" height="120" as="geometry" />
         </mxCell>
@@ -928,6 +937,9 @@
         <mxCell id="4iE3k_zBD8ycZyWjxG6n-33" value="RFB Manager" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="4iE3k_zBD8ycZyWjxG6n-1">
           <mxGeometry x="-560" y="-974" width="160" height="105" as="geometry" />
         </mxCell>
+        <mxCell id="q_5_3p-bIicEiEsexxTl-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="4iE3k_zBD8ycZyWjxG6n-1" source="4iE3k_zBD8ycZyWjxG6n-34" target="4iE3k_zBD8ycZyWjxG6n-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="4iE3k_zBD8ycZyWjxG6n-34" value="RFB Client" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="4iE3k_zBD8ycZyWjxG6n-1">
           <mxGeometry x="-560" y="-779" width="160" height="120" as="geometry" />
         </mxCell>
@@ -959,7 +971,7 @@
           <mxGeometry x="10" y="27.5" width="210" height="42.5" as="geometry" />
         </mxCell>
         <mxCell id="4iE3k_zBD8ycZyWjxG6n-49" value="&lt;b&gt;&lt;font&gt;Shared Memory&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#bac8d3;strokeColor=#23445d;fontSize=14;" vertex="1" parent="4iE3k_zBD8ycZyWjxG6n-1">
-          <mxGeometry x="-170" y="-801.5" width="340" height="160" as="geometry" />
+          <mxGeometry x="-150" y="-798.5" width="340" height="160" as="geometry" />
         </mxCell>
         <mxCell id="4iE3k_zBD8ycZyWjxG6n-50" value="1. Update FrameBuffer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fillColor=#d5e8d4;strokeColor=#82b366;dashed=1;" edge="1" parent="4iE3k_zBD8ycZyWjxG6n-1" source="4iE3k_zBD8ycZyWjxG6n-5" target="4iE3k_zBD8ycZyWjxG6n-49">
           <mxGeometry relative="1" as="geometry">
