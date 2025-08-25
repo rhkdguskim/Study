@@ -835,7 +835,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="q_5_3p-bIicEiEsexxTl-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="4iE3k_zBD8ycZyWjxG6n-1" source="4iE3k_zBD8ycZyWjxG6n-28" target="q_5_3p-bIicEiEsexxTl-17">
+        <mxCell id="V__KQ0Z_7pbuDDu9RxOI-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="4iE3k_zBD8ycZyWjxG6n-1" source="4iE3k_zBD8ycZyWjxG6n-28" target="V__KQ0Z_7pbuDDu9RxOI-0">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="4iE3k_zBD8ycZyWjxG6n-28" value="Dispatcher" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="4iE3k_zBD8ycZyWjxG6n-1">
@@ -902,8 +902,11 @@
         <mxCell id="8lL-F7x_wBtCCG8AUqVu-1" value="" style="fontColor=#0066CC;verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.pc;" vertex="1" parent="4iE3k_zBD8ycZyWjxG6n-1">
           <mxGeometry x="-530" y="-439" width="100" height="70" as="geometry" />
         </mxCell>
+        <mxCell id="V__KQ0Z_7pbuDDu9RxOI-0" value="UserInputServer" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="4iE3k_zBD8ycZyWjxG6n-1">
+          <mxGeometry x="440" y="-1069" width="250" height="429" as="geometry" />
+        </mxCell>
         <mxCell id="q_5_3p-bIicEiEsexxTl-17" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Windows UserInput&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ setMouseEvent():&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ setNewClipbarod():&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ setKeyboardEvent():&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getCurrentUserInfo():&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getDisplayNumberCoords():&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getDisplayNumberCoords():&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getDisplaysCoords():&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getNormalizedRect():&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getWindowCoords():&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getWindowHandleByName():&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getApplicationRegion():&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ isApplicationInFocus():&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ initKeyFlag():&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="4iE3k_zBD8ycZyWjxG6n-1">
-          <mxGeometry x="460" y="-1043.5" width="190" height="229" as="geometry" />
+          <mxGeometry x="470" y="-1052.5" width="190" height="229" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
