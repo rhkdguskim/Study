@@ -924,12 +924,48 @@
     </mxGraphModel>
   </diagram>
   <diagram id="viqjntm8W3Yq4gX7jfZi" name="Hooking">
-    <mxGraphModel dx="1412" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1177" dy="643" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="mp6vCe0vgNCAc35s27sp-3" value="ViewerWindow" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
           <mxGeometry x="70" y="30" width="100" height="970" as="geometry" />
+        </mxCell>
+        <mxCell id="63xjVE3ow9QbzUFlOzSv-1" value="ViewerCreated" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#ffe6cc;strokeColor=#d79b00;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="mp6vCe0vgNCAc35s27sp-3">
+          <mxGeometry x="45" y="80" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cI0WLSKy5Dd5EQOQfzj1-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="mp6vCe0vgNCAc35s27sp-3" source="63xjVE3ow9QbzUFlOzSv-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="56" y="130" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="75" y="90" />
+              <mxPoint x="75" y="130" />
+              <mxPoint x="56" y="130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cI0WLSKy5Dd5EQOQfzj1-2" value="&lt;div&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Hook Window Message&lt;/span&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="cI0WLSKy5Dd5EQOQfzj1-1">
+          <mxGeometry x="-0.1003" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cI0WLSKy5Dd5EQOQfzj1-3" value="ViewerClosed" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#ffe6cc;strokeColor=#d79b00;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="mp6vCe0vgNCAc35s27sp-3">
+          <mxGeometry x="45" y="890" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cI0WLSKy5Dd5EQOQfzj1-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="mp6vCe0vgNCAc35s27sp-3" source="cI0WLSKy5Dd5EQOQfzj1-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="56" y="940" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="75" y="900" />
+              <mxPoint x="75" y="940" />
+              <mxPoint x="56" y="940" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cI0WLSKy5Dd5EQOQfzj1-5" value="&lt;div&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;UnHook Window Message&lt;/span&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="cI0WLSKy5Dd5EQOQfzj1-4">
+          <mxGeometry x="-0.1003" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="mp6vCe0vgNCAc35s27sp-6" value="WinHook" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="221" y="30" width="100" height="970" as="geometry" />
