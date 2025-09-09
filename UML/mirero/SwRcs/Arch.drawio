@@ -985,11 +985,11 @@
         <mxCell id="cI0WLSKy5Dd5EQOQfzj1-25" value="Stop Hook" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#dae8fc;strokeColor=#6c8ebf;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="mp6vCe0vgNCAc35s27sp-6">
           <mxGeometry x="45" y="815" width="10" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="cI0WLSKy5Dd5EQOQfzj1-34" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#dae8fc;strokeColor=#6c8ebf;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="mp6vCe0vgNCAc35s27sp-6">
-          <mxGeometry x="45" y="240" width="10" height="40" as="geometry" />
-        </mxCell>
         <mxCell id="rxfQjxZo8IX__7zrFzP1-1" value="DesktopWindow" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="522" y="30" width="100" height="970" as="geometry" />
+        </mxCell>
+        <mxCell id="cI0WLSKy5Dd5EQOQfzj1-34" value="Parsing RFB&lt;br&gt;Key System" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#d5e8d4;strokeColor=#82b366;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="rxfQjxZo8IX__7zrFzP1-1">
+          <mxGeometry x="45" y="240" width="10" height="40" as="geometry" />
         </mxCell>
         <mxCell id="rxfQjxZo8IX__7zrFzP1-3" value="RemoteViewerCore" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="670" y="30" width="106" height="970" as="geometry" />
@@ -1021,6 +1021,12 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="cI0WLSKy5Dd5EQOQfzj1-29" value="Stop&amp;nbsp;&lt;div&gt;Hook Request&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.167;entryY=0.494;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" edge="1" parent="1" source="cI0WLSKy5Dd5EQOQfzj1-24" target="cI0WLSKy5Dd5EQOQfzj1-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cI0WLSKy5Dd5EQOQfzj1-35" value="WM_MOUSE" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.2;entryY=0.483;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" edge="1" parent="1" source="cI0WLSKy5Dd5EQOQfzj1-32" target="cI0WLSKy5Dd5EQOQfzj1-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cI0WLSKy5Dd5EQOQfzj1-37" value="Mouse Event" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.133;entryY=0.483;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" edge="1" parent="1" source="cI0WLSKy5Dd5EQOQfzj1-33" target="cI0WLSKy5Dd5EQOQfzj1-34">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
