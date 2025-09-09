@@ -923,6 +923,56 @@
       </root>
     </mxGraphModel>
   </diagram>
+  <diagram id="viqjntm8W3Yq4gX7jfZi" name="Hooking">
+    <mxGraphModel dx="1412" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="mp6vCe0vgNCAc35s27sp-3" value="SessionChange&lt;br&gt;Watcher" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="70" y="30" width="100" height="970" as="geometry" />
+        </mxCell>
+        <mxCell id="mp6vCe0vgNCAc35s27sp-4" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="mp6vCe0vgNCAc35s27sp-3" vertex="1">
+          <mxGeometry x="45" y="120" width="10" height="630" as="geometry" />
+        </mxCell>
+        <mxCell id="mp6vCe0vgNCAc35s27sp-5" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="mp6vCe0vgNCAc35s27sp-3" vertex="1">
+          <mxGeometry x="50" y="128" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mp6vCe0vgNCAc35s27sp-6" value="Win8 Dupulication" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="230" y="30" width="100" height="970" as="geometry" />
+        </mxCell>
+        <mxCell id="mp6vCe0vgNCAc35s27sp-7" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="mp6vCe0vgNCAc35s27sp-6" vertex="1">
+          <mxGeometry x="45" y="120" width="10" height="630" as="geometry" />
+        </mxCell>
+        <mxCell id="mp6vCe0vgNCAc35s27sp-8" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="mp6vCe0vgNCAc35s27sp-6" vertex="1">
+          <mxGeometry x="40" y="128" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mp6vCe0vgNCAc35s27sp-13" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="mp6vCe0vgNCAc35s27sp-6" vertex="1">
+          <mxGeometry x="50" y="263" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mp6vCe0vgNCAc35s27sp-28" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="mp6vCe0vgNCAc35s27sp-6" vertex="1">
+          <mxGeometry x="50" y="390" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mp6vCe0vgNCAc35s27sp-23" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="mp6vCe0vgNCAc35s27sp-6" vertex="1">
+          <mxGeometry x="50" y="530" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mp6vCe0vgNCAc35s27sp-18" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="mp6vCe0vgNCAc35s27sp-6" vertex="1">
+          <mxGeometry x="50" y="660" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mp6vCe0vgNCAc35s27sp-12" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="120" y="293" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mp6vCe0vgNCAc35s27sp-17" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="120" y="690" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mp6vCe0vgNCAc35s27sp-22" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="120" y="560" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mp6vCe0vgNCAc35s27sp-27" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="120" y="420" width="10" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
   <diagram id="phzOuya-qcsGt7snxKQ_" name="Encoder/Decoder">
     <mxGraphModel dx="2017" dy="1101" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1893,56 +1943,6 @@
         </mxCell>
         <mxCell id="TbbrXiGsE-RcAC-Tg2B8-211" value="Rendering" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#f8cecc;strokeColor=#b85450;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;" vertex="1" parent="TbbrXiGsE-RcAC-Tg2B8-205">
           <mxGeometry x="45" y="370" width="10" height="20" as="geometry" />
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-  <diagram id="viqjntm8W3Yq4gX7jfZi" name="Hooking">
-    <mxGraphModel dx="1412" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="mp6vCe0vgNCAc35s27sp-3" value="SessionChange&lt;br&gt;Watcher" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
-          <mxGeometry x="70" y="30" width="100" height="970" as="geometry" />
-        </mxCell>
-        <mxCell id="mp6vCe0vgNCAc35s27sp-4" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="mp6vCe0vgNCAc35s27sp-3" vertex="1">
-          <mxGeometry x="45" y="120" width="10" height="630" as="geometry" />
-        </mxCell>
-        <mxCell id="mp6vCe0vgNCAc35s27sp-5" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="mp6vCe0vgNCAc35s27sp-3" vertex="1">
-          <mxGeometry x="50" y="128" width="10" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="mp6vCe0vgNCAc35s27sp-6" value="Win8 Dupulication" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="230" y="30" width="100" height="970" as="geometry" />
-        </mxCell>
-        <mxCell id="mp6vCe0vgNCAc35s27sp-7" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="mp6vCe0vgNCAc35s27sp-6" vertex="1">
-          <mxGeometry x="45" y="120" width="10" height="630" as="geometry" />
-        </mxCell>
-        <mxCell id="mp6vCe0vgNCAc35s27sp-8" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="mp6vCe0vgNCAc35s27sp-6" vertex="1">
-          <mxGeometry x="40" y="128" width="10" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="mp6vCe0vgNCAc35s27sp-13" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="mp6vCe0vgNCAc35s27sp-6" vertex="1">
-          <mxGeometry x="50" y="263" width="10" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="mp6vCe0vgNCAc35s27sp-28" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="mp6vCe0vgNCAc35s27sp-6" vertex="1">
-          <mxGeometry x="50" y="390" width="10" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="mp6vCe0vgNCAc35s27sp-23" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="mp6vCe0vgNCAc35s27sp-6" vertex="1">
-          <mxGeometry x="50" y="530" width="10" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="mp6vCe0vgNCAc35s27sp-18" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="mp6vCe0vgNCAc35s27sp-6" vertex="1">
-          <mxGeometry x="50" y="660" width="10" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="mp6vCe0vgNCAc35s27sp-12" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
-          <mxGeometry x="120" y="293" width="10" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="mp6vCe0vgNCAc35s27sp-17" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
-          <mxGeometry x="120" y="690" width="10" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="mp6vCe0vgNCAc35s27sp-22" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
-          <mxGeometry x="120" y="560" width="10" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="mp6vCe0vgNCAc35s27sp-27" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
-          <mxGeometry x="120" y="420" width="10" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
