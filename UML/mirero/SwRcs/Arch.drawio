@@ -186,7 +186,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="Iv0SBjlh1--z4rjAcG8h-2" value="Desktop Server" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" parent="1" vertex="1">
-          <mxGeometry x="660" y="50" width="400" height="340" as="geometry" />
+          <mxGeometry x="660" y="50" width="400" height="300" as="geometry" />
         </mxCell>
         <mxCell id="Jv90dzYF-x8rAAyQ6jZ8-3" value="DesktopServerDispatcher" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" parent="1" vertex="1">
           <mxGeometry x="710" y="150" width="130" height="120" as="geometry" />
@@ -325,28 +325,28 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Jv90dzYF-x8rAAyQ6jZ8-15" value="UpdateHandlerServer" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;" parent="1" vertex="1">
-          <mxGeometry x="890" y="150" width="130" height="60" as="geometry" />
+          <mxGeometry x="890" y="140" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Jv90dzYF-x8rAAyQ6jZ8-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;dashed=1;startArrow=classic;startFill=1;" parent="1" source="Jv90dzYF-x8rAAyQ6jZ8-16" target="Jv90dzYF-x8rAAyQ6jZ8-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Jv90dzYF-x8rAAyQ6jZ8-16" value="UserInputServer" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;" parent="1" vertex="1">
-          <mxGeometry x="890" y="235" width="130" height="60" as="geometry" />
+          <mxGeometry x="890" y="185" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="KM2MgEZzQkmA2IUi9ary-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;fillColor=#dae8fc;strokeColor=#6c8ebf;startArrow=classic;startFill=1;" parent="1" source="KM2MgEZzQkmA2IUi9ary-1" target="Jv90dzYF-x8rAAyQ6jZ8-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="KM2MgEZzQkmA2IUi9ary-1" value="ConfigServer" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;" parent="1" vertex="1">
-          <mxGeometry x="890" y="70" width="130" height="60" as="geometry" />
+          <mxGeometry x="890" y="90" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="KM2MgEZzQkmA2IUi9ary-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;fillColor=#dae8fc;strokeColor=#6c8ebf;startArrow=classic;startFill=1;" parent="1" source="KM2MgEZzQkmA2IUi9ary-2" target="Jv90dzYF-x8rAAyQ6jZ8-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="KM2MgEZzQkmA2IUi9ary-2" value="GateKickHandler" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;" parent="1" vertex="1">
-          <mxGeometry x="890" y="320" width="130" height="60" as="geometry" />
+          <mxGeometry x="890" y="230" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="KM2MgEZzQkmA2IUi9ary-7" value="SessionChange Watcher" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;" parent="1" vertex="1">
-          <mxGeometry x="710" y="290" width="130" height="60" as="geometry" />
+          <mxGeometry x="710" y="285" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="B56aCnBa60eBYTL7g0Tj-1" value="VNC2Rtsp Server Application" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
           <mxGeometry x="-390" y="50" width="350" height="280" as="geometry" />
