@@ -363,8 +363,13 @@
         <mxCell id="B56aCnBa60eBYTL7g0Tj-5" value="VNC Client" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-180" y="70" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="B56aCnBa60eBYTL7g0Tj-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.431;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="B56aCnBa60eBYTL7g0Tj-5" target="UsfD8vVUkFi7ll9GRyOD-10">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="B56aCnBa60eBYTL7g0Tj-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.431;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;startArrow=classic;startFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="B56aCnBa60eBYTL7g0Tj-1" target="UsfD8vVUkFi7ll9GRyOD-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-10" y="190" />
+              <mxPoint x="-10" y="139" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="B56aCnBa60eBYTL7g0Tj-9" value="Discovery Server" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-355" y="175" width="90" height="50" as="geometry" />
