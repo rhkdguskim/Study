@@ -348,6 +348,36 @@
         <mxCell id="KM2MgEZzQkmA2IUi9ary-7" value="SessionChange Watcher" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" parent="1" vertex="1">
           <mxGeometry x="710" y="320" width="90" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="B56aCnBa60eBYTL7g0Tj-1" value="VNC2Rtsp Server Application" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="-390" y="50" width="350" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="B56aCnBa60eBYTL7g0Tj-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="B56aCnBa60eBYTL7g0Tj-3" target="B56aCnBa60eBYTL7g0Tj-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="B56aCnBa60eBYTL7g0Tj-3" value="Rtsp Server" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-370" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="B56aCnBa60eBYTL7g0Tj-4" value="OnvifServer" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="-370" y="160" width="230" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="B56aCnBa60eBYTL7g0Tj-5" value="VNC Client" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-180" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="B56aCnBa60eBYTL7g0Tj-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.431;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="B56aCnBa60eBYTL7g0Tj-5" target="UsfD8vVUkFi7ll9GRyOD-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="B56aCnBa60eBYTL7g0Tj-9" value="Discovery Server" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-355" y="170" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="B56aCnBa60eBYTL7g0Tj-10" value="Media Server" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-250" y="170" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="B56aCnBa60eBYTL7g0Tj-12" value="Event Server" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-250" y="230" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="B56aCnBa60eBYTL7g0Tj-13" value="Device Server" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-355" y="230" width="90" height="50" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
