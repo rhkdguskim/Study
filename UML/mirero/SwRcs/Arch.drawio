@@ -966,7 +966,7 @@
         <mxCell id="rxfQjxZo8IX__7zrFzP1-1" value="DesktopWindow" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="522" y="30" width="98" height="700" as="geometry" />
         </mxCell>
-        <mxCell id="cI0WLSKy5Dd5EQOQfzj1-34" value="Scale Locally" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#d5e8d4;strokeColor=#82b366;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="rxfQjxZo8IX__7zrFzP1-1">
+        <mxCell id="cI0WLSKy5Dd5EQOQfzj1-34" value="Scale Locally&lt;br&gt;( HWND to Desktop Size)" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#d5e8d4;strokeColor=#82b366;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="rxfQjxZo8IX__7zrFzP1-1">
           <mxGeometry x="45" y="240" width="10" height="40" as="geometry" />
         </mxCell>
         <mxCell id="cI0WLSKy5Dd5EQOQfzj1-9" value="WinProc" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
