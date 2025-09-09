@@ -943,6 +943,9 @@
         <mxCell id="cI0WLSKy5Dd5EQOQfzj1-32" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#f5f5f5;strokeColor=#666666;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;fontColor=#333333;" vertex="1" parent="cI0WLSKy5Dd5EQOQfzj1-9">
           <mxGeometry x="45" y="240" width="10" height="40" as="geometry" />
         </mxCell>
+        <mxCell id="cI0WLSKy5Dd5EQOQfzj1-59" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#f5f5f5;strokeColor=#666666;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;fontColor=#333333;" vertex="1" parent="cI0WLSKy5Dd5EQOQfzj1-9">
+          <mxGeometry x="45" y="350" width="10" height="40" as="geometry" />
+        </mxCell>
         <mxCell id="rxfQjxZo8IX__7zrFzP1-3" value="RemoteViewerCore" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="670" y="30" width="110" height="900" as="geometry" />
         </mxCell>
@@ -1075,8 +1078,9 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="cI0WLSKy5Dd5EQOQfzj1-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1" source="cI0WLSKy5Dd5EQOQfzj1-50" target="cI0WLSKy5Dd5EQOQfzj1-9">
+        <mxCell id="cI0WLSKy5Dd5EQOQfzj1-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1" source="cI0WLSKy5Dd5EQOQfzj1-50">
           <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="400" as="targetPoint" />
             <Array as="points">
               <mxPoint x="170" y="400" />
               <mxPoint x="170" y="400" />
