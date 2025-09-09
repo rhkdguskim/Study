@@ -929,13 +929,13 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="rxfQjxZo8IX__7zrFzP1-3" value="RemoteViewerCore" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="640" y="30" width="150" height="620" as="geometry" />
+          <mxGeometry x="670" y="30" width="110" height="620" as="geometry" />
         </mxCell>
         <mxCell id="cI0WLSKy5Dd5EQOQfzj1-38" value="Send to Server" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#f8cecc;strokeColor=#b85450;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="rxfQjxZo8IX__7zrFzP1-3">
-          <mxGeometry x="70" y="260" width="10" height="40" as="geometry" />
+          <mxGeometry x="50" y="260" width="10" height="40" as="geometry" />
         </mxCell>
         <mxCell id="cI0WLSKy5Dd5EQOQfzj1-42" value="Send to Server" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#f8cecc;strokeColor=#b85450;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="rxfQjxZo8IX__7zrFzP1-3">
-          <mxGeometry x="70" y="370" width="10" height="40" as="geometry" />
+          <mxGeometry x="50" y="370" width="10" height="40" as="geometry" />
         </mxCell>
         <mxCell id="mp6vCe0vgNCAc35s27sp-3" value="ViewerWindow" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
           <mxGeometry x="210" y="30" width="100" height="620" as="geometry" />
