@@ -191,7 +191,7 @@
         <mxCell id="Jv90dzYF-x8rAAyQ6jZ8-3" value="DesktopServerDispatcher" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" parent="1" vertex="1">
           <mxGeometry x="710" y="150" width="130" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="Iv0SBjlh1--z4rjAcG8h-1" value="SwRCS Service (RCS Service)" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+        <mxCell id="Iv0SBjlh1--z4rjAcG8h-1" value="SwRCS Service (RCS Service)" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;" parent="1" vertex="1">
           <mxGeometry x="40" y="50" width="420" height="300" as="geometry" />
         </mxCell>
         <mxCell id="Iv0SBjlh1--z4rjAcG8h-4" value="Anonymous Pipe" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" source="Jv90dzYF-x8rAAyQ6jZ8-7" target="Jv90dzYF-x8rAAyQ6jZ8-3" edge="1">
