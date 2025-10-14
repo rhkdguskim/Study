@@ -2170,24 +2170,28 @@
         <mxCell id="_hYlmbEq5dqjJyHW8cLB-18" value="SingleView" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Personal_Computer.svg;" vertex="1" parent="1">
           <mxGeometry x="40" y="340" width="45.6" height="61.800000000000004" as="geometry" />
         </mxCell>
-        <mxCell id="_hYlmbEq5dqjJyHW8cLB-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_hYlmbEq5dqjJyHW8cLB-19" target="_hYlmbEq5dqjJyHW8cLB-2">
+        <mxCell id="_hYlmbEq5dqjJyHW8cLB-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="_hYlmbEq5dqjJyHW8cLB-2">
           <mxGeometry relative="1" as="geometry">
+            <mxPoint x="73.65" y="280" as="sourcePoint" />
+            <mxPoint x="466.33000000000004" y="250.14000000000004" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="284" y="283" />
-              <mxPoint x="284" y="280" />
-              <mxPoint x="480" y="280" />
+              <mxPoint x="450" y="280" />
+              <mxPoint x="450" y="250" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="_hYlmbEq5dqjJyHW8cLB-19" value="MultiView" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.computer;pointerEvents=1;" vertex="1" parent="1">
           <mxGeometry x="37.8" y="260" width="50" height="45" as="geometry" />
         </mxCell>
-        <mxCell id="_hYlmbEq5dqjJyHW8cLB-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_hYlmbEq5dqjJyHW8cLB-20" target="_hYlmbEq5dqjJyHW8cLB-2">
+        <mxCell id="_hYlmbEq5dqjJyHW8cLB-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.012;entryY=0.508;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="_hYlmbEq5dqjJyHW8cLB-2">
           <mxGeometry relative="1" as="geometry">
+            <mxPoint x="71.69999999999997" y="470.9038461538461" as="sourcePoint" />
+            <mxPoint x="480" y="250" as="targetPoint" />
             <Array as="points">
               <mxPoint x="420" y="471" />
               <mxPoint x="420" y="280" />
-              <mxPoint x="480" y="280" />
+              <mxPoint x="450" y="280" />
+              <mxPoint x="450" y="251" />
             </Array>
           </mxGeometry>
         </mxCell>
