@@ -2115,14 +2115,13 @@
         <mxCell id="_hYlmbEq5dqjJyHW8cLB-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_hYlmbEq5dqjJyHW8cLB-1" target="_hYlmbEq5dqjJyHW8cLB-7">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="900" y="315" />
+              <mxPoint x="910" y="315" />
               <mxPoint x="960" y="315" />
-              <mxPoint x="960" y="340" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="_hYlmbEq5dqjJyHW8cLB-1" value="RFB Server&lt;br&gt;(9000)" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="860" y="210" width="80" height="80" as="geometry" />
+          <mxGeometry x="860" y="190" width="100" height="100" as="geometry" />
         </mxCell>
         <mxCell id="_hYlmbEq5dqjJyHW8cLB-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_hYlmbEq5dqjJyHW8cLB-2" target="_hYlmbEq5dqjJyHW8cLB-3">
           <mxGeometry relative="1" as="geometry" />
@@ -2158,7 +2157,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="_hYlmbEq5dqjJyHW8cLB-12" value="Desktop&lt;br&gt;Application" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="860" y="70" width="80" height="80" as="geometry" />
+          <mxGeometry x="860" y="70" width="100" height="100" as="geometry" />
         </mxCell>
         <mxCell id="_hYlmbEq5dqjJyHW8cLB-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_hYlmbEq5dqjJyHW8cLB-18" target="_hYlmbEq5dqjJyHW8cLB-2">
           <mxGeometry relative="1" as="geometry">
