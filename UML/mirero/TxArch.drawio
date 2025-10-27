@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.8">
   <diagram name="페이지-1" id="eijeviOJ0A92Obpc7Fhu">
-    <mxGraphModel dx="2488" dy="898" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2004" dy="636" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -114,7 +114,7 @@
           <mxGeometry x="320" y="40" width="440" height="40" as="geometry" />
         </mxCell>
         <mxCell id="EUjXb08K46rmB5CWR4bu-25" value="&lt;b&gt;Race Condition Risk:&lt;br&gt;&lt;/b&gt;&lt;br&gt;H264 Thread가 조건에 따라&lt;br&gt;m_pqInMulti 또는 m_pqInCapture에&lt;br&gt;Add하므로 경쟁 조건 발생 가능" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcccc;strokeColor=#cc0000;fontSize=10;align=left;verticalAlign=top" vertex="1" parent="1">
-          <mxGeometry x="130" y="70" width="200" height="100" as="geometry" />
+          <mxGeometry x="130" y="60" width="200" height="100" as="geometry" />
         </mxCell>
         <mxCell id="EUjXb08K46rmB5CWR4bu-56" value="CaptureSDK Thread" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="30" y="710" width="160" height="60" as="geometry" />
@@ -154,6 +154,11 @@
             <Array as="points">
               <mxPoint x="820" y="660" />
             </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EUjXb08K46rmB5CWR4bu-94" value="&lt;b&gt;Add()&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="EUjXb08K46rmB5CWR4bu-65">
+          <mxGeometry x="-0.113" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="EUjXb08K46rmB5CWR4bu-67" value="Remove()" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;strokeColor=#0000FF;fontSize=12;fontStyle=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0" edge="1" parent="1" source="EUjXb08K46rmB5CWR4bu-58" target="EUjXb08K46rmB5CWR4bu-61">
