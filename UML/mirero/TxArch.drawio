@@ -265,9 +265,6 @@
         <mxCell id="dl-TtVm1QGUjBCEcy3Kk-6" value="SendQueue" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="260" y="140" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="dl-TtVm1QGUjBCEcy3Kk-7" value="DummyQueue" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="500" y="500" width="120" height="60" as="geometry" />
-        </mxCell>
         <mxCell id="dl-TtVm1QGUjBCEcy3Kk-13" value="Add()" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="dl-TtVm1QGUjBCEcy3Kk-12" target="dl-TtVm1QGUjBCEcy3Kk-5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
