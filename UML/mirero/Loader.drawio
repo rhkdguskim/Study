@@ -103,6 +103,30 @@
         <mxCell id="A3clJxqAfhtB9QBw3ZQc-11" value="ServiceModule.Loader.LoaderDataManager" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="590" y="1125" width="280" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="A3clJxqAfhtB9QBw3ZQc-15" value="Data.Common.DDL" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="1450" width="290" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A3clJxqAfhtB9QBw3ZQc-16" value="Configs.HoconConfigReader" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="1450" width="290" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A3clJxqAfhtB9QBw3ZQc-20" value="Asset.Utility" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="1566" width="290" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A3clJxqAfhtB9QBw3ZQc-21" value="Asset.LogWizard" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="1495" width="290" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A3clJxqAfhtB9QBw3ZQc-22" value="Asset.Dapper" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="1420" width="290" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A3clJxqAfhtB9QBw3ZQc-24" value="Asset.AkkaHocon" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="1210" width="290" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A3clJxqAfhtB9QBw3ZQc-25" value="Asset.AkkaPackage" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="1282" width="290" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A3clJxqAfhtB9QBw3ZQc-26" value="Asset.ContectContainer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="1350" width="290" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
