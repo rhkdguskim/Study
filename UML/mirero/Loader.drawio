@@ -1,0 +1,85 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.9">
+  <diagram name="ProjectDependency" id="z_B9Ze-PMumvZEiE0exD">
+    <mxGraphModel dx="1426" dy="777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="XOEExNfiTrmt_EpPyvX4-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="XOEExNfiTrmt_EpPyvX4-1" target="XOEExNfiTrmt_EpPyvX4-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XOEExNfiTrmt_EpPyvX4-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="XOEExNfiTrmt_EpPyvX4-1" target="XOEExNfiTrmt_EpPyvX4-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XOEExNfiTrmt_EpPyvX4-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="XOEExNfiTrmt_EpPyvX4-1" target="XOEExNfiTrmt_EpPyvX4-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XOEExNfiTrmt_EpPyvX4-1" value="Mirero.App.Loader.DDLService" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="110" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XOEExNfiTrmt_EpPyvX4-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="XOEExNfiTrmt_EpPyvX4-2" target="XOEExNfiTrmt_EpPyvX4-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XOEExNfiTrmt_EpPyvX4-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="XOEExNfiTrmt_EpPyvX4-2" target="XOEExNfiTrmt_EpPyvX4-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XOEExNfiTrmt_EpPyvX4-2" value="Mirero.Asset.Window.Service" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="495" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XOEExNfiTrmt_EpPyvX4-3" value="Mirero.ServiceModule.Loader.ConfigManager" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="750" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XOEExNfiTrmt_EpPyvX4-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="XOEExNfiTrmt_EpPyvX4-4" target="XOEExNfiTrmt_EpPyvX4-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="120" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XOEExNfiTrmt_EpPyvX4-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="XOEExNfiTrmt_EpPyvX4-4" target="XOEExNfiTrmt_EpPyvX4-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XOEExNfiTrmt_EpPyvX4-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="XOEExNfiTrmt_EpPyvX4-4" target="XOEExNfiTrmt_EpPyvX4-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="845" y="370" />
+              <mxPoint x="395" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XOEExNfiTrmt_EpPyvX4-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="XOEExNfiTrmt_EpPyvX4-4" target="XOEExNfiTrmt_EpPyvX4-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XOEExNfiTrmt_EpPyvX4-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="XOEExNfiTrmt_EpPyvX4-4" target="XOEExNfiTrmt_EpPyvX4-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XOEExNfiTrmt_EpPyvX4-4" value="Mirero.ServiceModule.Loader.DDLService" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="290" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XOEExNfiTrmt_EpPyvX4-8" value="Topshelf" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="615" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XOEExNfiTrmt_EpPyvX4-9" value="Topshelf.NLog" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="615" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XOEExNfiTrmt_EpPyvX4-14" value="Mirero.Data.Common.DDLRepository" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="520" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XOEExNfiTrmt_EpPyvX4-16" value="Mirero.Data.Common.IO.DDLService" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="520" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XOEExNfiTrmt_EpPyvX4-17" value="Mirero.Message.Common.DDLService.DDLMonitor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="520" width="290" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XOEExNfiTrmt_EpPyvX4-18" value="Mirero.Message.ROC.Actor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="595" width="290" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XOEExNfiTrmt_EpPyvX4-19" value="Mirero.Message.TATOMS.Server.DDL" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="670" width="290" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XOEExNfiTrmt_EpPyvX4-20" value="Mirero.ServiceModule.Loader.ActorSender" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="820" width="270" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
