@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.9">
   <diagram name="ProjectDependency" id="z_B9Ze-PMumvZEiE0exD">
-    <mxGraphModel dx="1426" dy="777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1901" dy="1036" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -10,15 +10,11 @@
         <mxCell id="XOEExNfiTrmt_EpPyvX4-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="XOEExNfiTrmt_EpPyvX4-1" target="XOEExNfiTrmt_EpPyvX4-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="A3clJxqAfhtB9QBw3ZQc-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="XOEExNfiTrmt_EpPyvX4-1" target="XOEExNfiTrmt_EpPyvX4-3">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="390" y="460" />
-            </Array>
-          </mxGeometry>
+        <mxCell id="A3clJxqAfhtB9QBw3ZQc-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="XOEExNfiTrmt_EpPyvX4-1" target="XOEExNfiTrmt_EpPyvX4-3">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="XOEExNfiTrmt_EpPyvX4-1" value="Mirero.App.Loader.DDLService" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="260" y="110" width="270" height="60" as="geometry" />
+          <mxGeometry x="275" y="120" width="270" height="60" as="geometry" />
         </mxCell>
         <mxCell id="XOEExNfiTrmt_EpPyvX4-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="XOEExNfiTrmt_EpPyvX4-2" target="XOEExNfiTrmt_EpPyvX4-9" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -30,7 +26,7 @@
           <mxGeometry x="10" y="495" width="220" height="60" as="geometry" />
         </mxCell>
         <mxCell id="XOEExNfiTrmt_EpPyvX4-3" value="ServiceModule.Loader.ConfigManager" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="250" y="750" width="280" height="60" as="geometry" />
+          <mxGeometry x="270" y="495" width="280" height="60" as="geometry" />
         </mxCell>
         <mxCell id="XOEExNfiTrmt_EpPyvX4-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="XOEExNfiTrmt_EpPyvX4-4" target="XOEExNfiTrmt_EpPyvX4-2" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -45,11 +41,11 @@
         <mxCell id="XOEExNfiTrmt_EpPyvX4-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="XOEExNfiTrmt_EpPyvX4-4" target="XOEExNfiTrmt_EpPyvX4-17" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="A3clJxqAfhtB9QBw3ZQc-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="XOEExNfiTrmt_EpPyvX4-4" target="XOEExNfiTrmt_EpPyvX4-3">
+        <mxCell id="A3clJxqAfhtB9QBw3ZQc-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="XOEExNfiTrmt_EpPyvX4-4" target="XOEExNfiTrmt_EpPyvX4-3">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="845" y="400" />
-              <mxPoint x="390" y="400" />
+              <mxPoint x="845" y="380" />
+              <mxPoint x="410" y="380" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -63,49 +59,49 @@
           <mxGeometry x="120" y="615" width="110" height="60" as="geometry" />
         </mxCell>
         <mxCell id="XOEExNfiTrmt_EpPyvX4-14" value="Data.Common.DDLRepository" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="890" y="750" width="260" height="60" as="geometry" />
+          <mxGeometry x="910" y="495" width="260" height="60" as="geometry" />
         </mxCell>
         <mxCell id="XOEExNfiTrmt_EpPyvX4-16" value="Data.Common.IO.DDLService" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="890" y="820" width="260" height="60" as="geometry" />
+          <mxGeometry x="910" y="565" width="260" height="60" as="geometry" />
         </mxCell>
         <mxCell id="XOEExNfiTrmt_EpPyvX4-17" value="Message.Common.DDLService.DDLMonitor" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1520" y="750" width="290" height="60" as="geometry" />
+          <mxGeometry x="1200" y="495" width="290" height="60" as="geometry" />
         </mxCell>
         <mxCell id="XOEExNfiTrmt_EpPyvX4-18" value="Message.ROC.Actor" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1520" y="825" width="290" height="60" as="geometry" />
+          <mxGeometry x="1200" y="570" width="290" height="60" as="geometry" />
         </mxCell>
         <mxCell id="XOEExNfiTrmt_EpPyvX4-19" value="Message.TATOMS.Server.DDL" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1520" y="900" width="290" height="60" as="geometry" />
+          <mxGeometry x="1200" y="645" width="290" height="60" as="geometry" />
         </mxCell>
         <mxCell id="XOEExNfiTrmt_EpPyvX4-20" value="ServiceModule.Loader.ActorSender" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="570" y="750" width="280" height="60" as="geometry" />
+          <mxGeometry x="590" y="495" width="280" height="60" as="geometry" />
         </mxCell>
         <mxCell id="A3clJxqAfhtB9QBw3ZQc-1" value="ServiceModule.Loader.DBMHandler" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="570" y="820" width="280" height="60" as="geometry" />
+          <mxGeometry x="590" y="565" width="280" height="60" as="geometry" />
         </mxCell>
         <mxCell id="A3clJxqAfhtB9QBw3ZQc-2" value="ServiceModule.Loader.DCMHandler" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="570" y="890" width="280" height="60" as="geometry" />
+          <mxGeometry x="590" y="635" width="280" height="60" as="geometry" />
         </mxCell>
         <mxCell id="A3clJxqAfhtB9QBw3ZQc-3" value="ServiceModule.Loader.DeviceCollector.Infra" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="570" y="960" width="280" height="60" as="geometry" />
+          <mxGeometry x="590" y="705" width="280" height="60" as="geometry" />
         </mxCell>
         <mxCell id="A3clJxqAfhtB9QBw3ZQc-6" value="ServiceModule.Loader.DeviceCollectorHandler" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="570" y="1030" width="280" height="60" as="geometry" />
+          <mxGeometry x="590" y="775" width="280" height="60" as="geometry" />
         </mxCell>
         <mxCell id="A3clJxqAfhtB9QBw3ZQc-7" value="ServiceModule.Loader.DeviceCollectorHandler" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="570" y="1100" width="280" height="60" as="geometry" />
+          <mxGeometry x="590" y="845" width="280" height="60" as="geometry" />
         </mxCell>
         <mxCell id="A3clJxqAfhtB9QBw3ZQc-8" value="ServiceModule.Loader.EndPointManager" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="570" y="1169" width="280" height="60" as="geometry" />
+          <mxGeometry x="590" y="914" width="280" height="60" as="geometry" />
         </mxCell>
         <mxCell id="A3clJxqAfhtB9QBw3ZQc-9" value="ServiceModule.Loader.GatewayService" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="570" y="1240" width="280" height="60" as="geometry" />
+          <mxGeometry x="590" y="985" width="280" height="60" as="geometry" />
         </mxCell>
         <mxCell id="A3clJxqAfhtB9QBw3ZQc-10" value="ServiceModule.Loader.Helper" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="570" y="1310" width="280" height="60" as="geometry" />
+          <mxGeometry x="590" y="1055" width="280" height="60" as="geometry" />
         </mxCell>
         <mxCell id="A3clJxqAfhtB9QBw3ZQc-11" value="ServiceModule.Loader.LoaderDataManager" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="570" y="1380" width="280" height="60" as="geometry" />
+          <mxGeometry x="590" y="1125" width="280" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
