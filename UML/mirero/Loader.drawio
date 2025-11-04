@@ -98,6 +98,18 @@
         <mxCell id="A3clJxqAfhtB9QBw3ZQc-7" value="ServiceModule.Loader.DeviceCollectorHandler" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="570" y="1100" width="280" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="A3clJxqAfhtB9QBw3ZQc-8" value="ServiceModule.Loader.EndPointManager" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="1169" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A3clJxqAfhtB9QBw3ZQc-9" value="ServiceModule.Loader.GatewayService" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="1240" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A3clJxqAfhtB9QBw3ZQc-10" value="ServiceModule.Loader.Helper" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="1310" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A3clJxqAfhtB9QBw3ZQc-11" value="ServiceModule.Loader.LoaderDataManager" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="1380" width="280" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
